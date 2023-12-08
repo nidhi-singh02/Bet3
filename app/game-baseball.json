@@ -1,0 +1,5321 @@
+{
+    "get": "games",
+    "parameters": {
+      "league": "35",
+      "season": "2023"
+    },
+    "errors": [],
+    "results": 90,
+    "response": [
+      {
+        "id": 41949,
+        "date": "2023-09-02T14:00:00+00:00",
+        "time": "14:00",
+        "timestamp": 1693663200,
+        "timezone": "UTC",
+        "week": "1",
+        "status": {
+          "long": "Finished",
+          "short": "FT"
+        },
+        "country": {
+          "id": 19,
+          "name": "Scotland",
+          "code": "GB",
+          "flag": "https://media-4.api-sports.io/flags/gb.svg"
+        },
+        "league": {
+          "id": 35,
+          "name": "Tennent's Premiership",
+          "type": "League",
+          "logo": "https://media-4.api-sports.io/rugby/leagues/35.png",
+          "season": 2023
+        },
+        "teams": {
+          "home": {
+            "id": 286,
+            "name": "Selkirk",
+            "logo": "https://media-4.api-sports.io/rugby/teams/286.png"
+          },
+          "away": {
+            "id": 278,
+            "name": "Currie",
+            "logo": "https://media-4.api-sports.io/rugby/teams/278.png"
+          }
+        },
+        "scores": {
+          "home": 17,
+          "away": 47
+        },
+        "periods": {
+          "first": {
+            "home": null,
+            "away": null
+          },
+          "second": {
+            "home": null,
+            "away": null
+          },
+          "overtime": {
+            "home": null,
+            "away": null
+          },
+          "second_overtime": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "id": 41950,
+        "date": "2023-09-02T14:00:00+00:00",
+        "time": "14:00",
+        "timestamp": 1693663200,
+        "timezone": "UTC",
+        "week": "1",
+        "status": {
+          "long": "Finished",
+          "short": "FT"
+        },
+        "country": {
+          "id": 19,
+          "name": "Scotland",
+          "code": "GB",
+          "flag": "https://media-4.api-sports.io/flags/gb.svg"
+        },
+        "league": {
+          "id": 35,
+          "name": "Tennent's Premiership",
+          "type": "League",
+          "logo": "https://media-4.api-sports.io/rugby/leagues/35.png",
+          "season": 2023
+        },
+        "teams": {
+          "home": {
+            "id": 738,
+            "name": "Heriots 2",
+            "logo": "https://media-4.api-sports.io/rugby/teams/738.png"
+          },
+          "away": {
+            "id": 284,
+            "name": "Marr",
+            "logo": "https://media-4.api-sports.io/rugby/teams/284.png"
+          }
+        },
+        "scores": {
+          "home": 29,
+          "away": 26
+        },
+        "periods": {
+          "first": {
+            "home": null,
+            "away": null
+          },
+          "second": {
+            "home": null,
+            "away": null
+          },
+          "overtime": {
+            "home": null,
+            "away": null
+          },
+          "second_overtime": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "id": 41951,
+        "date": "2023-09-02T14:00:00+00:00",
+        "time": "14:00",
+        "timestamp": 1693663200,
+        "timezone": "UTC",
+        "week": "1",
+        "status": {
+          "long": "Finished",
+          "short": "FT"
+        },
+        "country": {
+          "id": 19,
+          "name": "Scotland",
+          "code": "GB",
+          "flag": "https://media-4.api-sports.io/flags/gb.svg"
+        },
+        "league": {
+          "id": 35,
+          "name": "Tennent's Premiership",
+          "type": "League",
+          "logo": "https://media-4.api-sports.io/rugby/leagues/35.png",
+          "season": 2023
+        },
+        "teams": {
+          "home": {
+            "id": 285,
+            "name": "Musselburgh",
+            "logo": "https://media-4.api-sports.io/rugby/teams/285.png"
+          },
+          "away": {
+            "id": 798,
+            "name": "Kelso",
+            "logo": "https://media-4.api-sports.io/rugby/teams/798.png"
+          }
+        },
+        "scores": {
+          "home": 31,
+          "away": 31
+        },
+        "periods": {
+          "first": {
+            "home": null,
+            "away": null
+          },
+          "second": {
+            "home": null,
+            "away": null
+          },
+          "overtime": {
+            "home": null,
+            "away": null
+          },
+          "second_overtime": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "id": 41952,
+        "date": "2023-09-02T14:00:00+00:00",
+        "time": "14:00",
+        "timestamp": 1693663200,
+        "timezone": "UTC",
+        "week": "1",
+        "status": {
+          "long": "Finished",
+          "short": "FT"
+        },
+        "country": {
+          "id": 19,
+          "name": "Scotland",
+          "code": "GB",
+          "flag": "https://media-4.api-sports.io/flags/gb.svg"
+        },
+        "league": {
+          "id": 35,
+          "name": "Tennent's Premiership",
+          "type": "League",
+          "logo": "https://media-4.api-sports.io/rugby/leagues/35.png",
+          "season": 2023
+        },
+        "teams": {
+          "home": {
+            "id": 283,
+            "name": "Jed-Forest",
+            "logo": "https://media-4.api-sports.io/rugby/teams/283.png"
+          },
+          "away": {
+            "id": 613,
+            "name": "Edinburgh Academical",
+            "logo": "https://media-4.api-sports.io/rugby/teams/613.png"
+          }
+        },
+        "scores": {
+          "home": 17,
+          "away": 41
+        },
+        "periods": {
+          "first": {
+            "home": null,
+            "away": null
+          },
+          "second": {
+            "home": null,
+            "away": null
+          },
+          "overtime": {
+            "home": null,
+            "away": null
+          },
+          "second_overtime": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "id": 41948,
+        "date": "2023-09-02T14:00:00+00:00",
+        "time": "14:00",
+        "timestamp": 1693663200,
+        "timezone": "UTC",
+        "week": "1",
+        "status": {
+          "long": "Finished",
+          "short": "FT"
+        },
+        "country": {
+          "id": 19,
+          "name": "Scotland",
+          "code": "GB",
+          "flag": "https://media-4.api-sports.io/flags/gb.svg"
+        },
+        "league": {
+          "id": 35,
+          "name": "Tennent's Premiership",
+          "type": "League",
+          "logo": "https://media-4.api-sports.io/rugby/leagues/35.png",
+          "season": 2023
+        },
+        "teams": {
+          "home": {
+            "id": 282,
+            "name": "Hawick",
+            "logo": "https://media-4.api-sports.io/rugby/teams/282.png"
+          },
+          "away": {
+            "id": 281,
+            "name": "Glasgow Hawks",
+            "logo": "https://media-4.api-sports.io/rugby/teams/281.png"
+          }
+        },
+        "scores": {
+          "home": 27,
+          "away": 12
+        },
+        "periods": {
+          "first": {
+            "home": null,
+            "away": null
+          },
+          "second": {
+            "home": null,
+            "away": null
+          },
+          "overtime": {
+            "home": null,
+            "away": null
+          },
+          "second_overtime": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "id": 41953,
+        "date": "2023-09-09T14:00:00+00:00",
+        "time": "14:00",
+        "timestamp": 1694268000,
+        "timezone": "UTC",
+        "week": "2",
+        "status": {
+          "long": "Finished",
+          "short": "FT"
+        },
+        "country": {
+          "id": 19,
+          "name": "Scotland",
+          "code": "GB",
+          "flag": "https://media-4.api-sports.io/flags/gb.svg"
+        },
+        "league": {
+          "id": 35,
+          "name": "Tennent's Premiership",
+          "type": "League",
+          "logo": "https://media-4.api-sports.io/rugby/leagues/35.png",
+          "season": 2023
+        },
+        "teams": {
+          "home": {
+            "id": 278,
+            "name": "Currie",
+            "logo": "https://media-4.api-sports.io/rugby/teams/278.png"
+          },
+          "away": {
+            "id": 283,
+            "name": "Jed-Forest",
+            "logo": "https://media-4.api-sports.io/rugby/teams/283.png"
+          }
+        },
+        "scores": {
+          "home": 54,
+          "away": 7
+        },
+        "periods": {
+          "first": {
+            "home": 28,
+            "away": 0
+          },
+          "second": {
+            "home": 26,
+            "away": 7
+          },
+          "overtime": {
+            "home": null,
+            "away": null
+          },
+          "second_overtime": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "id": 41954,
+        "date": "2023-09-09T14:00:00+00:00",
+        "time": "14:00",
+        "timestamp": 1694268000,
+        "timezone": "UTC",
+        "week": "2",
+        "status": {
+          "long": "Finished",
+          "short": "FT"
+        },
+        "country": {
+          "id": 19,
+          "name": "Scotland",
+          "code": "GB",
+          "flag": "https://media-4.api-sports.io/flags/gb.svg"
+        },
+        "league": {
+          "id": 35,
+          "name": "Tennent's Premiership",
+          "type": "League",
+          "logo": "https://media-4.api-sports.io/rugby/leagues/35.png",
+          "season": 2023
+        },
+        "teams": {
+          "home": {
+            "id": 613,
+            "name": "Edinburgh Academical",
+            "logo": "https://media-4.api-sports.io/rugby/teams/613.png"
+          },
+          "away": {
+            "id": 285,
+            "name": "Musselburgh",
+            "logo": "https://media-4.api-sports.io/rugby/teams/285.png"
+          }
+        },
+        "scores": {
+          "home": 41,
+          "away": 25
+        },
+        "periods": {
+          "first": {
+            "home": 27,
+            "away": 10
+          },
+          "second": {
+            "home": 14,
+            "away": 15
+          },
+          "overtime": {
+            "home": null,
+            "away": null
+          },
+          "second_overtime": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "id": 41955,
+        "date": "2023-09-09T14:00:00+00:00",
+        "time": "14:00",
+        "timestamp": 1694268000,
+        "timezone": "UTC",
+        "week": "2",
+        "status": {
+          "long": "Finished",
+          "short": "FT"
+        },
+        "country": {
+          "id": 19,
+          "name": "Scotland",
+          "code": "GB",
+          "flag": "https://media-4.api-sports.io/flags/gb.svg"
+        },
+        "league": {
+          "id": 35,
+          "name": "Tennent's Premiership",
+          "type": "League",
+          "logo": "https://media-4.api-sports.io/rugby/leagues/35.png",
+          "season": 2023
+        },
+        "teams": {
+          "home": {
+            "id": 281,
+            "name": "Glasgow Hawks",
+            "logo": "https://media-4.api-sports.io/rugby/teams/281.png"
+          },
+          "away": {
+            "id": 286,
+            "name": "Selkirk",
+            "logo": "https://media-4.api-sports.io/rugby/teams/286.png"
+          }
+        },
+        "scores": {
+          "home": 45,
+          "away": 19
+        },
+        "periods": {
+          "first": {
+            "home": 19,
+            "away": 7
+          },
+          "second": {
+            "home": 26,
+            "away": 12
+          },
+          "overtime": {
+            "home": null,
+            "away": null
+          },
+          "second_overtime": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "id": 41956,
+        "date": "2023-09-09T14:00:00+00:00",
+        "time": "14:00",
+        "timestamp": 1694268000,
+        "timezone": "UTC",
+        "week": "2",
+        "status": {
+          "long": "Finished",
+          "short": "FT"
+        },
+        "country": {
+          "id": 19,
+          "name": "Scotland",
+          "code": "GB",
+          "flag": "https://media-4.api-sports.io/flags/gb.svg"
+        },
+        "league": {
+          "id": 35,
+          "name": "Tennent's Premiership",
+          "type": "League",
+          "logo": "https://media-4.api-sports.io/rugby/leagues/35.png",
+          "season": 2023
+        },
+        "teams": {
+          "home": {
+            "id": 798,
+            "name": "Kelso",
+            "logo": "https://media-4.api-sports.io/rugby/teams/798.png"
+          },
+          "away": {
+            "id": 738,
+            "name": "Heriots 2",
+            "logo": "https://media-4.api-sports.io/rugby/teams/738.png"
+          }
+        },
+        "scores": {
+          "home": 24,
+          "away": 24
+        },
+        "periods": {
+          "first": {
+            "home": 14,
+            "away": 5
+          },
+          "second": {
+            "home": 10,
+            "away": 19
+          },
+          "overtime": {
+            "home": null,
+            "away": null
+          },
+          "second_overtime": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "id": 41957,
+        "date": "2023-09-09T14:00:00+00:00",
+        "time": "14:00",
+        "timestamp": 1694268000,
+        "timezone": "UTC",
+        "week": "2",
+        "status": {
+          "long": "Finished",
+          "short": "FT"
+        },
+        "country": {
+          "id": 19,
+          "name": "Scotland",
+          "code": "GB",
+          "flag": "https://media-4.api-sports.io/flags/gb.svg"
+        },
+        "league": {
+          "id": 35,
+          "name": "Tennent's Premiership",
+          "type": "League",
+          "logo": "https://media-4.api-sports.io/rugby/leagues/35.png",
+          "season": 2023
+        },
+        "teams": {
+          "home": {
+            "id": 284,
+            "name": "Marr",
+            "logo": "https://media-4.api-sports.io/rugby/teams/284.png"
+          },
+          "away": {
+            "id": 282,
+            "name": "Hawick",
+            "logo": "https://media-4.api-sports.io/rugby/teams/282.png"
+          }
+        },
+        "scores": {
+          "home": 24,
+          "away": 5
+        },
+        "periods": {
+          "first": {
+            "home": 16,
+            "away": 5
+          },
+          "second": {
+            "home": 8,
+            "away": 0
+          },
+          "overtime": {
+            "home": null,
+            "away": null
+          },
+          "second_overtime": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "id": 41959,
+        "date": "2023-09-16T14:00:00+00:00",
+        "time": "14:00",
+        "timestamp": 1694872800,
+        "timezone": "UTC",
+        "week": "3",
+        "status": {
+          "long": "Finished",
+          "short": "FT"
+        },
+        "country": {
+          "id": 19,
+          "name": "Scotland",
+          "code": "GB",
+          "flag": "https://media-4.api-sports.io/flags/gb.svg"
+        },
+        "league": {
+          "id": 35,
+          "name": "Tennent's Premiership",
+          "type": "League",
+          "logo": "https://media-4.api-sports.io/rugby/leagues/35.png",
+          "season": 2023
+        },
+        "teams": {
+          "home": {
+            "id": 282,
+            "name": "Hawick",
+            "logo": "https://media-4.api-sports.io/rugby/teams/282.png"
+          },
+          "away": {
+            "id": 798,
+            "name": "Kelso",
+            "logo": "https://media-4.api-sports.io/rugby/teams/798.png"
+          }
+        },
+        "scores": {
+          "home": 61,
+          "away": 7
+        },
+        "periods": {
+          "first": {
+            "home": 33,
+            "away": 7
+          },
+          "second": {
+            "home": 28,
+            "away": 0
+          },
+          "overtime": {
+            "home": null,
+            "away": null
+          },
+          "second_overtime": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "id": 41962,
+        "date": "2023-09-16T14:00:00+00:00",
+        "time": "14:00",
+        "timestamp": 1694872800,
+        "timezone": "UTC",
+        "week": "3",
+        "status": {
+          "long": "Finished",
+          "short": "FT"
+        },
+        "country": {
+          "id": 19,
+          "name": "Scotland",
+          "code": "GB",
+          "flag": "https://media-4.api-sports.io/flags/gb.svg"
+        },
+        "league": {
+          "id": 35,
+          "name": "Tennent's Premiership",
+          "type": "League",
+          "logo": "https://media-4.api-sports.io/rugby/leagues/35.png",
+          "season": 2023
+        },
+        "teams": {
+          "home": {
+            "id": 738,
+            "name": "Heriots 2",
+            "logo": "https://media-4.api-sports.io/rugby/teams/738.png"
+          },
+          "away": {
+            "id": 613,
+            "name": "Edinburgh Academical",
+            "logo": "https://media-4.api-sports.io/rugby/teams/613.png"
+          }
+        },
+        "scores": {
+          "home": 24,
+          "away": 18
+        },
+        "periods": {
+          "first": {
+            "home": null,
+            "away": null
+          },
+          "second": {
+            "home": null,
+            "away": null
+          },
+          "overtime": {
+            "home": null,
+            "away": null
+          },
+          "second_overtime": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "id": 41961,
+        "date": "2023-09-16T14:00:00+00:00",
+        "time": "14:00",
+        "timestamp": 1694872800,
+        "timezone": "UTC",
+        "week": "3",
+        "status": {
+          "long": "Finished",
+          "short": "FT"
+        },
+        "country": {
+          "id": 19,
+          "name": "Scotland",
+          "code": "GB",
+          "flag": "https://media-4.api-sports.io/flags/gb.svg"
+        },
+        "league": {
+          "id": 35,
+          "name": "Tennent's Premiership",
+          "type": "League",
+          "logo": "https://media-4.api-sports.io/rugby/leagues/35.png",
+          "season": 2023
+        },
+        "teams": {
+          "home": {
+            "id": 286,
+            "name": "Selkirk",
+            "logo": "https://media-4.api-sports.io/rugby/teams/286.png"
+          },
+          "away": {
+            "id": 283,
+            "name": "Jed-Forest",
+            "logo": "https://media-4.api-sports.io/rugby/teams/283.png"
+          }
+        },
+        "scores": {
+          "home": 65,
+          "away": 35
+        },
+        "periods": {
+          "first": {
+            "home": null,
+            "away": null
+          },
+          "second": {
+            "home": null,
+            "away": null
+          },
+          "overtime": {
+            "home": null,
+            "away": null
+          },
+          "second_overtime": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "id": 41960,
+        "date": "2023-09-16T14:00:00+00:00",
+        "time": "14:00",
+        "timestamp": 1694872800,
+        "timezone": "UTC",
+        "week": "3",
+        "status": {
+          "long": "Finished",
+          "short": "FT"
+        },
+        "country": {
+          "id": 19,
+          "name": "Scotland",
+          "code": "GB",
+          "flag": "https://media-4.api-sports.io/flags/gb.svg"
+        },
+        "league": {
+          "id": 35,
+          "name": "Tennent's Premiership",
+          "type": "League",
+          "logo": "https://media-4.api-sports.io/rugby/leagues/35.png",
+          "season": 2023
+        },
+        "teams": {
+          "home": {
+            "id": 285,
+            "name": "Musselburgh",
+            "logo": "https://media-4.api-sports.io/rugby/teams/285.png"
+          },
+          "away": {
+            "id": 278,
+            "name": "Currie",
+            "logo": "https://media-4.api-sports.io/rugby/teams/278.png"
+          }
+        },
+        "scores": {
+          "home": 7,
+          "away": 46
+        },
+        "periods": {
+          "first": {
+            "home": 0,
+            "away": 17
+          },
+          "second": {
+            "home": 7,
+            "away": 29
+          },
+          "overtime": {
+            "home": null,
+            "away": null
+          },
+          "second_overtime": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "id": 41958,
+        "date": "2023-09-16T14:00:00+00:00",
+        "time": "14:00",
+        "timestamp": 1694872800,
+        "timezone": "UTC",
+        "week": "3",
+        "status": {
+          "long": "Finished",
+          "short": "FT"
+        },
+        "country": {
+          "id": 19,
+          "name": "Scotland",
+          "code": "GB",
+          "flag": "https://media-4.api-sports.io/flags/gb.svg"
+        },
+        "league": {
+          "id": 35,
+          "name": "Tennent's Premiership",
+          "type": "League",
+          "logo": "https://media-4.api-sports.io/rugby/leagues/35.png",
+          "season": 2023
+        },
+        "teams": {
+          "home": {
+            "id": 281,
+            "name": "Glasgow Hawks",
+            "logo": "https://media-4.api-sports.io/rugby/teams/281.png"
+          },
+          "away": {
+            "id": 284,
+            "name": "Marr",
+            "logo": "https://media-4.api-sports.io/rugby/teams/284.png"
+          }
+        },
+        "scores": {
+          "home": 30,
+          "away": 35
+        },
+        "periods": {
+          "first": {
+            "home": 10,
+            "away": 10
+          },
+          "second": {
+            "home": 20,
+            "away": 25
+          },
+          "overtime": {
+            "home": null,
+            "away": null
+          },
+          "second_overtime": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "id": 41963,
+        "date": "2023-09-23T14:00:00+00:00",
+        "time": "14:00",
+        "timestamp": 1695477600,
+        "timezone": "UTC",
+        "week": "4",
+        "status": {
+          "long": "Finished",
+          "short": "FT"
+        },
+        "country": {
+          "id": 19,
+          "name": "Scotland",
+          "code": "GB",
+          "flag": "https://media-4.api-sports.io/flags/gb.svg"
+        },
+        "league": {
+          "id": 35,
+          "name": "Tennent's Premiership",
+          "type": "League",
+          "logo": "https://media-4.api-sports.io/rugby/leagues/35.png",
+          "season": 2023
+        },
+        "teams": {
+          "home": {
+            "id": 278,
+            "name": "Currie",
+            "logo": "https://media-4.api-sports.io/rugby/teams/278.png"
+          },
+          "away": {
+            "id": 738,
+            "name": "Heriots 2",
+            "logo": "https://media-4.api-sports.io/rugby/teams/738.png"
+          }
+        },
+        "scores": {
+          "home": 46,
+          "away": 5
+        },
+        "periods": {
+          "first": {
+            "home": null,
+            "away": null
+          },
+          "second": {
+            "home": null,
+            "away": null
+          },
+          "overtime": {
+            "home": null,
+            "away": null
+          },
+          "second_overtime": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "id": 41964,
+        "date": "2023-09-23T14:00:00+00:00",
+        "time": "14:00",
+        "timestamp": 1695477600,
+        "timezone": "UTC",
+        "week": "4",
+        "status": {
+          "long": "Finished",
+          "short": "FT"
+        },
+        "country": {
+          "id": 19,
+          "name": "Scotland",
+          "code": "GB",
+          "flag": "https://media-4.api-sports.io/flags/gb.svg"
+        },
+        "league": {
+          "id": 35,
+          "name": "Tennent's Premiership",
+          "type": "League",
+          "logo": "https://media-4.api-sports.io/rugby/leagues/35.png",
+          "season": 2023
+        },
+        "teams": {
+          "home": {
+            "id": 613,
+            "name": "Edinburgh Academical",
+            "logo": "https://media-4.api-sports.io/rugby/teams/613.png"
+          },
+          "away": {
+            "id": 282,
+            "name": "Hawick",
+            "logo": "https://media-4.api-sports.io/rugby/teams/282.png"
+          }
+        },
+        "scores": {
+          "home": 15,
+          "away": 20
+        },
+        "periods": {
+          "first": {
+            "home": null,
+            "away": null
+          },
+          "second": {
+            "home": null,
+            "away": null
+          },
+          "overtime": {
+            "home": null,
+            "away": null
+          },
+          "second_overtime": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "id": 41965,
+        "date": "2023-09-23T14:00:00+00:00",
+        "time": "14:00",
+        "timestamp": 1695477600,
+        "timezone": "UTC",
+        "week": "4",
+        "status": {
+          "long": "Finished",
+          "short": "FT"
+        },
+        "country": {
+          "id": 19,
+          "name": "Scotland",
+          "code": "GB",
+          "flag": "https://media-4.api-sports.io/flags/gb.svg"
+        },
+        "league": {
+          "id": 35,
+          "name": "Tennent's Premiership",
+          "type": "League",
+          "logo": "https://media-4.api-sports.io/rugby/leagues/35.png",
+          "season": 2023
+        },
+        "teams": {
+          "home": {
+            "id": 283,
+            "name": "Jed-Forest",
+            "logo": "https://media-4.api-sports.io/rugby/teams/283.png"
+          },
+          "away": {
+            "id": 285,
+            "name": "Musselburgh",
+            "logo": "https://media-4.api-sports.io/rugby/teams/285.png"
+          }
+        },
+        "scores": {
+          "home": 31,
+          "away": 40
+        },
+        "periods": {
+          "first": {
+            "home": null,
+            "away": null
+          },
+          "second": {
+            "home": null,
+            "away": null
+          },
+          "overtime": {
+            "home": null,
+            "away": null
+          },
+          "second_overtime": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "id": 41966,
+        "date": "2023-09-23T14:00:00+00:00",
+        "time": "14:00",
+        "timestamp": 1695477600,
+        "timezone": "UTC",
+        "week": "4",
+        "status": {
+          "long": "Finished",
+          "short": "FT"
+        },
+        "country": {
+          "id": 19,
+          "name": "Scotland",
+          "code": "GB",
+          "flag": "https://media-4.api-sports.io/flags/gb.svg"
+        },
+        "league": {
+          "id": 35,
+          "name": "Tennent's Premiership",
+          "type": "League",
+          "logo": "https://media-4.api-sports.io/rugby/leagues/35.png",
+          "season": 2023
+        },
+        "teams": {
+          "home": {
+            "id": 798,
+            "name": "Kelso",
+            "logo": "https://media-4.api-sports.io/rugby/teams/798.png"
+          },
+          "away": {
+            "id": 281,
+            "name": "Glasgow Hawks",
+            "logo": "https://media-4.api-sports.io/rugby/teams/281.png"
+          }
+        },
+        "scores": {
+          "home": 29,
+          "away": 14
+        },
+        "periods": {
+          "first": {
+            "home": null,
+            "away": null
+          },
+          "second": {
+            "home": null,
+            "away": null
+          },
+          "overtime": {
+            "home": null,
+            "away": null
+          },
+          "second_overtime": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "id": 41967,
+        "date": "2023-09-23T14:00:00+00:00",
+        "time": "14:00",
+        "timestamp": 1695477600,
+        "timezone": "UTC",
+        "week": "4",
+        "status": {
+          "long": "Finished",
+          "short": "FT"
+        },
+        "country": {
+          "id": 19,
+          "name": "Scotland",
+          "code": "GB",
+          "flag": "https://media-4.api-sports.io/flags/gb.svg"
+        },
+        "league": {
+          "id": 35,
+          "name": "Tennent's Premiership",
+          "type": "League",
+          "logo": "https://media-4.api-sports.io/rugby/leagues/35.png",
+          "season": 2023
+        },
+        "teams": {
+          "home": {
+            "id": 284,
+            "name": "Marr",
+            "logo": "https://media-4.api-sports.io/rugby/teams/284.png"
+          },
+          "away": {
+            "id": 286,
+            "name": "Selkirk",
+            "logo": "https://media-4.api-sports.io/rugby/teams/286.png"
+          }
+        },
+        "scores": {
+          "home": 38,
+          "away": 24
+        },
+        "periods": {
+          "first": {
+            "home": null,
+            "away": null
+          },
+          "second": {
+            "home": null,
+            "away": null
+          },
+          "overtime": {
+            "home": null,
+            "away": null
+          },
+          "second_overtime": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "id": 41969,
+        "date": "2023-09-30T13:30:00+00:00",
+        "time": "13:30",
+        "timestamp": 1696080600,
+        "timezone": "UTC",
+        "week": "5",
+        "status": {
+          "long": "Finished",
+          "short": "FT"
+        },
+        "country": {
+          "id": 19,
+          "name": "Scotland",
+          "code": "GB",
+          "flag": "https://media-4.api-sports.io/flags/gb.svg"
+        },
+        "league": {
+          "id": 35,
+          "name": "Tennent's Premiership",
+          "type": "League",
+          "logo": "https://media-4.api-sports.io/rugby/leagues/35.png",
+          "season": 2023
+        },
+        "teams": {
+          "home": {
+            "id": 286,
+            "name": "Selkirk",
+            "logo": "https://media-4.api-sports.io/rugby/teams/286.png"
+          },
+          "away": {
+            "id": 285,
+            "name": "Musselburgh",
+            "logo": "https://media-4.api-sports.io/rugby/teams/285.png"
+          }
+        },
+        "scores": {
+          "home": 21,
+          "away": 24
+        },
+        "periods": {
+          "first": {
+            "home": null,
+            "away": null
+          },
+          "second": {
+            "home": null,
+            "away": null
+          },
+          "overtime": {
+            "home": null,
+            "away": null
+          },
+          "second_overtime": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "id": 41971,
+        "date": "2023-09-30T14:00:00+00:00",
+        "time": "14:00",
+        "timestamp": 1696082400,
+        "timezone": "UTC",
+        "week": "5",
+        "status": {
+          "long": "Finished",
+          "short": "FT"
+        },
+        "country": {
+          "id": 19,
+          "name": "Scotland",
+          "code": "GB",
+          "flag": "https://media-4.api-sports.io/flags/gb.svg"
+        },
+        "league": {
+          "id": 35,
+          "name": "Tennent's Premiership",
+          "type": "League",
+          "logo": "https://media-4.api-sports.io/rugby/leagues/35.png",
+          "season": 2023
+        },
+        "teams": {
+          "home": {
+            "id": 284,
+            "name": "Marr",
+            "logo": "https://media-4.api-sports.io/rugby/teams/284.png"
+          },
+          "away": {
+            "id": 798,
+            "name": "Kelso",
+            "logo": "https://media-4.api-sports.io/rugby/teams/798.png"
+          }
+        },
+        "scores": {
+          "home": 48,
+          "away": 14
+        },
+        "periods": {
+          "first": {
+            "home": null,
+            "away": null
+          },
+          "second": {
+            "home": null,
+            "away": null
+          },
+          "overtime": {
+            "home": null,
+            "away": null
+          },
+          "second_overtime": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "id": 41972,
+        "date": "2023-09-30T14:00:00+00:00",
+        "time": "14:00",
+        "timestamp": 1696082400,
+        "timezone": "UTC",
+        "week": "5",
+        "status": {
+          "long": "Finished",
+          "short": "FT"
+        },
+        "country": {
+          "id": 19,
+          "name": "Scotland",
+          "code": "GB",
+          "flag": "https://media-4.api-sports.io/flags/gb.svg"
+        },
+        "league": {
+          "id": 35,
+          "name": "Tennent's Premiership",
+          "type": "League",
+          "logo": "https://media-4.api-sports.io/rugby/leagues/35.png",
+          "season": 2023
+        },
+        "teams": {
+          "home": {
+            "id": 281,
+            "name": "Glasgow Hawks",
+            "logo": "https://media-4.api-sports.io/rugby/teams/281.png"
+          },
+          "away": {
+            "id": 613,
+            "name": "Edinburgh Academical",
+            "logo": "https://media-4.api-sports.io/rugby/teams/613.png"
+          }
+        },
+        "scores": {
+          "home": 26,
+          "away": 32
+        },
+        "periods": {
+          "first": {
+            "home": null,
+            "away": null
+          },
+          "second": {
+            "home": null,
+            "away": null
+          },
+          "overtime": {
+            "home": null,
+            "away": null
+          },
+          "second_overtime": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "id": 41970,
+        "date": "2023-09-30T14:00:00+00:00",
+        "time": "14:00",
+        "timestamp": 1696082400,
+        "timezone": "UTC",
+        "week": "5",
+        "status": {
+          "long": "Finished",
+          "short": "FT"
+        },
+        "country": {
+          "id": 19,
+          "name": "Scotland",
+          "code": "GB",
+          "flag": "https://media-4.api-sports.io/flags/gb.svg"
+        },
+        "league": {
+          "id": 35,
+          "name": "Tennent's Premiership",
+          "type": "League",
+          "logo": "https://media-4.api-sports.io/rugby/leagues/35.png",
+          "season": 2023
+        },
+        "teams": {
+          "home": {
+            "id": 282,
+            "name": "Hawick",
+            "logo": "https://media-4.api-sports.io/rugby/teams/282.png"
+          },
+          "away": {
+            "id": 278,
+            "name": "Currie",
+            "logo": "https://media-4.api-sports.io/rugby/teams/278.png"
+          }
+        },
+        "scores": {
+          "home": 35,
+          "away": 13
+        },
+        "periods": {
+          "first": {
+            "home": null,
+            "away": null
+          },
+          "second": {
+            "home": null,
+            "away": null
+          },
+          "overtime": {
+            "home": null,
+            "away": null
+          },
+          "second_overtime": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "id": 41968,
+        "date": "2023-09-30T14:00:00+00:00",
+        "time": "14:00",
+        "timestamp": 1696082400,
+        "timezone": "UTC",
+        "week": "5",
+        "status": {
+          "long": "Finished",
+          "short": "FT"
+        },
+        "country": {
+          "id": 19,
+          "name": "Scotland",
+          "code": "GB",
+          "flag": "https://media-4.api-sports.io/flags/gb.svg"
+        },
+        "league": {
+          "id": 35,
+          "name": "Tennent's Premiership",
+          "type": "League",
+          "logo": "https://media-4.api-sports.io/rugby/leagues/35.png",
+          "season": 2023
+        },
+        "teams": {
+          "home": {
+            "id": 738,
+            "name": "Heriots 2",
+            "logo": "https://media-4.api-sports.io/rugby/teams/738.png"
+          },
+          "away": {
+            "id": 283,
+            "name": "Jed-Forest",
+            "logo": "https://media-4.api-sports.io/rugby/teams/283.png"
+          }
+        },
+        "scores": {
+          "home": 53,
+          "away": 20
+        },
+        "periods": {
+          "first": {
+            "home": null,
+            "away": null
+          },
+          "second": {
+            "home": null,
+            "away": null
+          },
+          "overtime": {
+            "home": null,
+            "away": null
+          },
+          "second_overtime": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "id": 41973,
+        "date": "2023-10-07T14:00:00+00:00",
+        "time": "14:00",
+        "timestamp": 1696687200,
+        "timezone": "UTC",
+        "week": "6",
+        "status": {
+          "long": "Finished",
+          "short": "FT"
+        },
+        "country": {
+          "id": 19,
+          "name": "Scotland",
+          "code": "GB",
+          "flag": "https://media-4.api-sports.io/flags/gb.svg"
+        },
+        "league": {
+          "id": 35,
+          "name": "Tennent's Premiership",
+          "type": "League",
+          "logo": "https://media-4.api-sports.io/rugby/leagues/35.png",
+          "season": 2023
+        },
+        "teams": {
+          "home": {
+            "id": 613,
+            "name": "Edinburgh Academical",
+            "logo": "https://media-4.api-sports.io/rugby/teams/613.png"
+          },
+          "away": {
+            "id": 284,
+            "name": "Marr",
+            "logo": "https://media-4.api-sports.io/rugby/teams/284.png"
+          }
+        },
+        "scores": {
+          "home": 17,
+          "away": 20
+        },
+        "periods": {
+          "first": {
+            "home": 17,
+            "away": 10
+          },
+          "second": {
+            "home": 0,
+            "away": 10
+          },
+          "overtime": {
+            "home": null,
+            "away": null
+          },
+          "second_overtime": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "id": 41974,
+        "date": "2023-10-07T14:00:00+00:00",
+        "time": "14:00",
+        "timestamp": 1696687200,
+        "timezone": "UTC",
+        "week": "6",
+        "status": {
+          "long": "Finished",
+          "short": "FT"
+        },
+        "country": {
+          "id": 19,
+          "name": "Scotland",
+          "code": "GB",
+          "flag": "https://media-4.api-sports.io/flags/gb.svg"
+        },
+        "league": {
+          "id": 35,
+          "name": "Tennent's Premiership",
+          "type": "League",
+          "logo": "https://media-4.api-sports.io/rugby/leagues/35.png",
+          "season": 2023
+        },
+        "teams": {
+          "home": {
+            "id": 283,
+            "name": "Jed-Forest",
+            "logo": "https://media-4.api-sports.io/rugby/teams/283.png"
+          },
+          "away": {
+            "id": 282,
+            "name": "Hawick",
+            "logo": "https://media-4.api-sports.io/rugby/teams/282.png"
+          }
+        },
+        "scores": {
+          "home": 0,
+          "away": 61
+        },
+        "periods": {
+          "first": {
+            "home": 0,
+            "away": 33
+          },
+          "second": {
+            "home": 0,
+            "away": 28
+          },
+          "overtime": {
+            "home": null,
+            "away": null
+          },
+          "second_overtime": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "id": 41975,
+        "date": "2023-10-07T14:00:00+00:00",
+        "time": "14:00",
+        "timestamp": 1696687200,
+        "timezone": "UTC",
+        "week": "6",
+        "status": {
+          "long": "Finished",
+          "short": "FT"
+        },
+        "country": {
+          "id": 19,
+          "name": "Scotland",
+          "code": "GB",
+          "flag": "https://media-4.api-sports.io/flags/gb.svg"
+        },
+        "league": {
+          "id": 35,
+          "name": "Tennent's Premiership",
+          "type": "League",
+          "logo": "https://media-4.api-sports.io/rugby/leagues/35.png",
+          "season": 2023
+        },
+        "teams": {
+          "home": {
+            "id": 798,
+            "name": "Kelso",
+            "logo": "https://media-4.api-sports.io/rugby/teams/798.png"
+          },
+          "away": {
+            "id": 286,
+            "name": "Selkirk",
+            "logo": "https://media-4.api-sports.io/rugby/teams/286.png"
+          }
+        },
+        "scores": {
+          "home": 19,
+          "away": 21
+        },
+        "periods": {
+          "first": {
+            "home": null,
+            "away": null
+          },
+          "second": {
+            "home": null,
+            "away": null
+          },
+          "overtime": {
+            "home": null,
+            "away": null
+          },
+          "second_overtime": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "id": 41976,
+        "date": "2023-10-07T14:00:00+00:00",
+        "time": "14:00",
+        "timestamp": 1696687200,
+        "timezone": "UTC",
+        "week": "6",
+        "status": {
+          "long": "Finished",
+          "short": "FT"
+        },
+        "country": {
+          "id": 19,
+          "name": "Scotland",
+          "code": "GB",
+          "flag": "https://media-4.api-sports.io/flags/gb.svg"
+        },
+        "league": {
+          "id": 35,
+          "name": "Tennent's Premiership",
+          "type": "League",
+          "logo": "https://media-4.api-sports.io/rugby/leagues/35.png",
+          "season": 2023
+        },
+        "teams": {
+          "home": {
+            "id": 285,
+            "name": "Musselburgh",
+            "logo": "https://media-4.api-sports.io/rugby/teams/285.png"
+          },
+          "away": {
+            "id": 738,
+            "name": "Heriots 2",
+            "logo": "https://media-4.api-sports.io/rugby/teams/738.png"
+          }
+        },
+        "scores": {
+          "home": 39,
+          "away": 34
+        },
+        "periods": {
+          "first": {
+            "home": 24,
+            "away": 5
+          },
+          "second": {
+            "home": 15,
+            "away": 29
+          },
+          "overtime": {
+            "home": null,
+            "away": null
+          },
+          "second_overtime": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "id": 41978,
+        "date": "2023-10-14T14:00:00+00:00",
+        "time": "14:00",
+        "timestamp": 1697292000,
+        "timezone": "UTC",
+        "week": "7",
+        "status": {
+          "long": "Finished",
+          "short": "FT"
+        },
+        "country": {
+          "id": 19,
+          "name": "Scotland",
+          "code": "GB",
+          "flag": "https://media-4.api-sports.io/flags/gb.svg"
+        },
+        "league": {
+          "id": 35,
+          "name": "Tennent's Premiership",
+          "type": "League",
+          "logo": "https://media-4.api-sports.io/rugby/leagues/35.png",
+          "season": 2023
+        },
+        "teams": {
+          "home": {
+            "id": 284,
+            "name": "Marr",
+            "logo": "https://media-4.api-sports.io/rugby/teams/284.png"
+          },
+          "away": {
+            "id": 278,
+            "name": "Currie",
+            "logo": "https://media-4.api-sports.io/rugby/teams/278.png"
+          }
+        },
+        "scores": {
+          "home": 34,
+          "away": 28
+        },
+        "periods": {
+          "first": {
+            "home": 10,
+            "away": 14
+          },
+          "second": {
+            "home": 24,
+            "away": 14
+          },
+          "overtime": {
+            "home": null,
+            "away": null
+          },
+          "second_overtime": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "id": 41979,
+        "date": "2023-10-14T14:00:00+00:00",
+        "time": "14:00",
+        "timestamp": 1697292000,
+        "timezone": "UTC",
+        "week": "7",
+        "status": {
+          "long": "Finished",
+          "short": "FT"
+        },
+        "country": {
+          "id": 19,
+          "name": "Scotland",
+          "code": "GB",
+          "flag": "https://media-4.api-sports.io/flags/gb.svg"
+        },
+        "league": {
+          "id": 35,
+          "name": "Tennent's Premiership",
+          "type": "League",
+          "logo": "https://media-4.api-sports.io/rugby/leagues/35.png",
+          "season": 2023
+        },
+        "teams": {
+          "home": {
+            "id": 286,
+            "name": "Selkirk",
+            "logo": "https://media-4.api-sports.io/rugby/teams/286.png"
+          },
+          "away": {
+            "id": 738,
+            "name": "Heriots 2",
+            "logo": "https://media-4.api-sports.io/rugby/teams/738.png"
+          }
+        },
+        "scores": {
+          "home": 13,
+          "away": 26
+        },
+        "periods": {
+          "first": {
+            "home": 10,
+            "away": 12
+          },
+          "second": {
+            "home": 3,
+            "away": 14
+          },
+          "overtime": {
+            "home": null,
+            "away": null
+          },
+          "second_overtime": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "id": 41980,
+        "date": "2023-10-14T14:00:00+00:00",
+        "time": "14:00",
+        "timestamp": 1697292000,
+        "timezone": "UTC",
+        "week": "7",
+        "status": {
+          "long": "Finished",
+          "short": "FT"
+        },
+        "country": {
+          "id": 19,
+          "name": "Scotland",
+          "code": "GB",
+          "flag": "https://media-4.api-sports.io/flags/gb.svg"
+        },
+        "league": {
+          "id": 35,
+          "name": "Tennent's Premiership",
+          "type": "League",
+          "logo": "https://media-4.api-sports.io/rugby/leagues/35.png",
+          "season": 2023
+        },
+        "teams": {
+          "home": {
+            "id": 798,
+            "name": "Kelso",
+            "logo": "https://media-4.api-sports.io/rugby/teams/798.png"
+          },
+          "away": {
+            "id": 613,
+            "name": "Edinburgh Academical",
+            "logo": "https://media-4.api-sports.io/rugby/teams/613.png"
+          }
+        },
+        "scores": {
+          "home": 32,
+          "away": 22
+        },
+        "periods": {
+          "first": {
+            "home": 10,
+            "away": 12
+          },
+          "second": {
+            "home": 22,
+            "away": 10
+          },
+          "overtime": {
+            "home": null,
+            "away": null
+          },
+          "second_overtime": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "id": 41981,
+        "date": "2023-10-14T14:00:00+00:00",
+        "time": "14:00",
+        "timestamp": 1697292000,
+        "timezone": "UTC",
+        "week": "7",
+        "status": {
+          "long": "Finished",
+          "short": "FT"
+        },
+        "country": {
+          "id": 19,
+          "name": "Scotland",
+          "code": "GB",
+          "flag": "https://media-4.api-sports.io/flags/gb.svg"
+        },
+        "league": {
+          "id": 35,
+          "name": "Tennent's Premiership",
+          "type": "League",
+          "logo": "https://media-4.api-sports.io/rugby/leagues/35.png",
+          "season": 2023
+        },
+        "teams": {
+          "home": {
+            "id": 282,
+            "name": "Hawick",
+            "logo": "https://media-4.api-sports.io/rugby/teams/282.png"
+          },
+          "away": {
+            "id": 285,
+            "name": "Musselburgh",
+            "logo": "https://media-4.api-sports.io/rugby/teams/285.png"
+          }
+        },
+        "scores": {
+          "home": 27,
+          "away": 25
+        },
+        "periods": {
+          "first": {
+            "home": 10,
+            "away": 20
+          },
+          "second": {
+            "home": 17,
+            "away": 5
+          },
+          "overtime": {
+            "home": null,
+            "away": null
+          },
+          "second_overtime": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "id": 41982,
+        "date": "2023-10-14T14:00:00+00:00",
+        "time": "14:00",
+        "timestamp": 1697292000,
+        "timezone": "UTC",
+        "week": "7",
+        "status": {
+          "long": "Finished",
+          "short": "FT"
+        },
+        "country": {
+          "id": 19,
+          "name": "Scotland",
+          "code": "GB",
+          "flag": "https://media-4.api-sports.io/flags/gb.svg"
+        },
+        "league": {
+          "id": 35,
+          "name": "Tennent's Premiership",
+          "type": "League",
+          "logo": "https://media-4.api-sports.io/rugby/leagues/35.png",
+          "season": 2023
+        },
+        "teams": {
+          "home": {
+            "id": 281,
+            "name": "Glasgow Hawks",
+            "logo": "https://media-4.api-sports.io/rugby/teams/281.png"
+          },
+          "away": {
+            "id": 283,
+            "name": "Jed-Forest",
+            "logo": "https://media-4.api-sports.io/rugby/teams/283.png"
+          }
+        },
+        "scores": {
+          "home": 57,
+          "away": 19
+        },
+        "periods": {
+          "first": {
+            "home": 26,
+            "away": 12
+          },
+          "second": {
+            "home": 31,
+            "away": 7
+          },
+          "overtime": {
+            "home": null,
+            "away": null
+          },
+          "second_overtime": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "id": 41983,
+        "date": "2023-10-21T14:00:00+00:00",
+        "time": "14:00",
+        "timestamp": 1697896800,
+        "timezone": "UTC",
+        "week": "8",
+        "status": {
+          "long": "Finished",
+          "short": "FT"
+        },
+        "country": {
+          "id": 19,
+          "name": "Scotland",
+          "code": "GB",
+          "flag": "https://media-4.api-sports.io/flags/gb.svg"
+        },
+        "league": {
+          "id": 35,
+          "name": "Tennent's Premiership",
+          "type": "League",
+          "logo": "https://media-4.api-sports.io/rugby/leagues/35.png",
+          "season": 2023
+        },
+        "teams": {
+          "home": {
+            "id": 282,
+            "name": "Hawick",
+            "logo": "https://media-4.api-sports.io/rugby/teams/282.png"
+          },
+          "away": {
+            "id": 738,
+            "name": "Heriots 2",
+            "logo": "https://media-4.api-sports.io/rugby/teams/738.png"
+          }
+        },
+        "scores": {
+          "home": 45,
+          "away": 33
+        },
+        "periods": {
+          "first": {
+            "home": 24,
+            "away": 7
+          },
+          "second": {
+            "home": 21,
+            "away": 26
+          },
+          "overtime": {
+            "home": null,
+            "away": null
+          },
+          "second_overtime": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "id": 41987,
+        "date": "2023-10-21T14:00:00+00:00",
+        "time": "14:00",
+        "timestamp": 1697896800,
+        "timezone": "UTC",
+        "week": "8",
+        "status": {
+          "long": "Finished",
+          "short": "FT"
+        },
+        "country": {
+          "id": 19,
+          "name": "Scotland",
+          "code": "GB",
+          "flag": "https://media-4.api-sports.io/flags/gb.svg"
+        },
+        "league": {
+          "id": 35,
+          "name": "Tennent's Premiership",
+          "type": "League",
+          "logo": "https://media-4.api-sports.io/rugby/leagues/35.png",
+          "season": 2023
+        },
+        "teams": {
+          "home": {
+            "id": 278,
+            "name": "Currie",
+            "logo": "https://media-4.api-sports.io/rugby/teams/278.png"
+          },
+          "away": {
+            "id": 798,
+            "name": "Kelso",
+            "logo": "https://media-4.api-sports.io/rugby/teams/798.png"
+          }
+        },
+        "scores": {
+          "home": 48,
+          "away": 13
+        },
+        "periods": {
+          "first": {
+            "home": 13,
+            "away": 3
+          },
+          "second": {
+            "home": 35,
+            "away": 10
+          },
+          "overtime": {
+            "home": null,
+            "away": null
+          },
+          "second_overtime": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "id": 41986,
+        "date": "2023-10-21T14:00:00+00:00",
+        "time": "14:00",
+        "timestamp": 1697896800,
+        "timezone": "UTC",
+        "week": "8",
+        "status": {
+          "long": "Finished",
+          "short": "FT"
+        },
+        "country": {
+          "id": 19,
+          "name": "Scotland",
+          "code": "GB",
+          "flag": "https://media-4.api-sports.io/flags/gb.svg"
+        },
+        "league": {
+          "id": 35,
+          "name": "Tennent's Premiership",
+          "type": "League",
+          "logo": "https://media-4.api-sports.io/rugby/leagues/35.png",
+          "season": 2023
+        },
+        "teams": {
+          "home": {
+            "id": 286,
+            "name": "Selkirk",
+            "logo": "https://media-4.api-sports.io/rugby/teams/286.png"
+          },
+          "away": {
+            "id": 613,
+            "name": "Edinburgh Academical",
+            "logo": "https://media-4.api-sports.io/rugby/teams/613.png"
+          }
+        },
+        "scores": {
+          "home": 25,
+          "away": 32
+        },
+        "periods": {
+          "first": {
+            "home": 0,
+            "away": 20
+          },
+          "second": {
+            "home": 25,
+            "away": 12
+          },
+          "overtime": {
+            "home": null,
+            "away": null
+          },
+          "second_overtime": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "id": 41985,
+        "date": "2023-10-21T14:00:00+00:00",
+        "time": "14:00",
+        "timestamp": 1697896800,
+        "timezone": "UTC",
+        "week": "8",
+        "status": {
+          "long": "Finished",
+          "short": "FT"
+        },
+        "country": {
+          "id": 19,
+          "name": "Scotland",
+          "code": "GB",
+          "flag": "https://media-4.api-sports.io/flags/gb.svg"
+        },
+        "league": {
+          "id": 35,
+          "name": "Tennent's Premiership",
+          "type": "League",
+          "logo": "https://media-4.api-sports.io/rugby/leagues/35.png",
+          "season": 2023
+        },
+        "teams": {
+          "home": {
+            "id": 285,
+            "name": "Musselburgh",
+            "logo": "https://media-4.api-sports.io/rugby/teams/285.png"
+          },
+          "away": {
+            "id": 281,
+            "name": "Glasgow Hawks",
+            "logo": "https://media-4.api-sports.io/rugby/teams/281.png"
+          }
+        },
+        "scores": {
+          "home": 42,
+          "away": 42
+        },
+        "periods": {
+          "first": {
+            "home": 15,
+            "away": 20
+          },
+          "second": {
+            "home": 27,
+            "away": 22
+          },
+          "overtime": {
+            "home": null,
+            "away": null
+          },
+          "second_overtime": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "id": 41984,
+        "date": "2023-10-21T14:00:00+00:00",
+        "time": "14:00",
+        "timestamp": 1697896800,
+        "timezone": "UTC",
+        "week": "8",
+        "status": {
+          "long": "Finished",
+          "short": "FT"
+        },
+        "country": {
+          "id": 19,
+          "name": "Scotland",
+          "code": "GB",
+          "flag": "https://media-4.api-sports.io/flags/gb.svg"
+        },
+        "league": {
+          "id": 35,
+          "name": "Tennent's Premiership",
+          "type": "League",
+          "logo": "https://media-4.api-sports.io/rugby/leagues/35.png",
+          "season": 2023
+        },
+        "teams": {
+          "home": {
+            "id": 283,
+            "name": "Jed-Forest",
+            "logo": "https://media-4.api-sports.io/rugby/teams/283.png"
+          },
+          "away": {
+            "id": 284,
+            "name": "Marr",
+            "logo": "https://media-4.api-sports.io/rugby/teams/284.png"
+          }
+        },
+        "scores": {
+          "home": 31,
+          "away": 41
+        },
+        "periods": {
+          "first": {
+            "home": 14,
+            "away": 27
+          },
+          "second": {
+            "home": 17,
+            "away": 14
+          },
+          "overtime": {
+            "home": null,
+            "away": null
+          },
+          "second_overtime": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "id": 41988,
+        "date": "2023-10-28T14:00:00+00:00",
+        "time": "14:00",
+        "timestamp": 1698501600,
+        "timezone": "UTC",
+        "week": "9",
+        "status": {
+          "long": "Finished",
+          "short": "FT"
+        },
+        "country": {
+          "id": 19,
+          "name": "Scotland",
+          "code": "GB",
+          "flag": "https://media-4.api-sports.io/flags/gb.svg"
+        },
+        "league": {
+          "id": 35,
+          "name": "Tennent's Premiership",
+          "type": "League",
+          "logo": "https://media-4.api-sports.io/rugby/leagues/35.png",
+          "season": 2023
+        },
+        "teams": {
+          "home": {
+            "id": 613,
+            "name": "Edinburgh Academical",
+            "logo": "https://media-4.api-sports.io/rugby/teams/613.png"
+          },
+          "away": {
+            "id": 278,
+            "name": "Currie",
+            "logo": "https://media-4.api-sports.io/rugby/teams/278.png"
+          }
+        },
+        "scores": {
+          "home": 31,
+          "away": 19
+        },
+        "periods": {
+          "first": {
+            "home": 13,
+            "away": 5
+          },
+          "second": {
+            "home": 18,
+            "away": 14
+          },
+          "overtime": {
+            "home": null,
+            "away": null
+          },
+          "second_overtime": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "id": 41989,
+        "date": "2023-10-28T14:00:00+00:00",
+        "time": "14:00",
+        "timestamp": 1698501600,
+        "timezone": "UTC",
+        "week": "9",
+        "status": {
+          "long": "Finished",
+          "short": "FT"
+        },
+        "country": {
+          "id": 19,
+          "name": "Scotland",
+          "code": "GB",
+          "flag": "https://media-4.api-sports.io/flags/gb.svg"
+        },
+        "league": {
+          "id": 35,
+          "name": "Tennent's Premiership",
+          "type": "League",
+          "logo": "https://media-4.api-sports.io/rugby/leagues/35.png",
+          "season": 2023
+        },
+        "teams": {
+          "home": {
+            "id": 281,
+            "name": "Glasgow Hawks",
+            "logo": "https://media-4.api-sports.io/rugby/teams/281.png"
+          },
+          "away": {
+            "id": 738,
+            "name": "Heriots 2",
+            "logo": "https://media-4.api-sports.io/rugby/teams/738.png"
+          }
+        },
+        "scores": {
+          "home": 27,
+          "away": 19
+        },
+        "periods": {
+          "first": {
+            "home": 24,
+            "away": 7
+          },
+          "second": {
+            "home": 3,
+            "away": 12
+          },
+          "overtime": {
+            "home": null,
+            "away": null
+          },
+          "second_overtime": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "id": 41990,
+        "date": "2023-10-28T14:00:00+00:00",
+        "time": "14:00",
+        "timestamp": 1698501600,
+        "timezone": "UTC",
+        "week": "9",
+        "status": {
+          "long": "Finished",
+          "short": "FT"
+        },
+        "country": {
+          "id": 19,
+          "name": "Scotland",
+          "code": "GB",
+          "flag": "https://media-4.api-sports.io/flags/gb.svg"
+        },
+        "league": {
+          "id": 35,
+          "name": "Tennent's Premiership",
+          "type": "League",
+          "logo": "https://media-4.api-sports.io/rugby/leagues/35.png",
+          "season": 2023
+        },
+        "teams": {
+          "home": {
+            "id": 282,
+            "name": "Hawick",
+            "logo": "https://media-4.api-sports.io/rugby/teams/282.png"
+          },
+          "away": {
+            "id": 286,
+            "name": "Selkirk",
+            "logo": "https://media-4.api-sports.io/rugby/teams/286.png"
+          }
+        },
+        "scores": {
+          "home": 36,
+          "away": 8
+        },
+        "periods": {
+          "first": {
+            "home": 7,
+            "away": 3
+          },
+          "second": {
+            "home": 29,
+            "away": 5
+          },
+          "overtime": {
+            "home": null,
+            "away": null
+          },
+          "second_overtime": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "id": 41991,
+        "date": "2023-10-28T14:00:00+00:00",
+        "time": "14:00",
+        "timestamp": 1698501600,
+        "timezone": "UTC",
+        "week": "9",
+        "status": {
+          "long": "Finished",
+          "short": "FT"
+        },
+        "country": {
+          "id": 19,
+          "name": "Scotland",
+          "code": "GB",
+          "flag": "https://media-4.api-sports.io/flags/gb.svg"
+        },
+        "league": {
+          "id": 35,
+          "name": "Tennent's Premiership",
+          "type": "League",
+          "logo": "https://media-4.api-sports.io/rugby/leagues/35.png",
+          "season": 2023
+        },
+        "teams": {
+          "home": {
+            "id": 798,
+            "name": "Kelso",
+            "logo": "https://media-4.api-sports.io/rugby/teams/798.png"
+          },
+          "away": {
+            "id": 283,
+            "name": "Jed-Forest",
+            "logo": "https://media-4.api-sports.io/rugby/teams/283.png"
+          }
+        },
+        "scores": {
+          "home": 30,
+          "away": 21
+        },
+        "periods": {
+          "first": {
+            "home": 24,
+            "away": 7
+          },
+          "second": {
+            "home": 6,
+            "away": 14
+          },
+          "overtime": {
+            "home": null,
+            "away": null
+          },
+          "second_overtime": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "id": 41992,
+        "date": "2023-10-28T14:00:00+00:00",
+        "time": "14:00",
+        "timestamp": 1698501600,
+        "timezone": "UTC",
+        "week": "9",
+        "status": {
+          "long": "Finished",
+          "short": "FT"
+        },
+        "country": {
+          "id": 19,
+          "name": "Scotland",
+          "code": "GB",
+          "flag": "https://media-4.api-sports.io/flags/gb.svg"
+        },
+        "league": {
+          "id": 35,
+          "name": "Tennent's Premiership",
+          "type": "League",
+          "logo": "https://media-4.api-sports.io/rugby/leagues/35.png",
+          "season": 2023
+        },
+        "teams": {
+          "home": {
+            "id": 284,
+            "name": "Marr",
+            "logo": "https://media-4.api-sports.io/rugby/teams/284.png"
+          },
+          "away": {
+            "id": 285,
+            "name": "Musselburgh",
+            "logo": "https://media-4.api-sports.io/rugby/teams/285.png"
+          }
+        },
+        "scores": {
+          "home": 28,
+          "away": 36
+        },
+        "periods": {
+          "first": {
+            "home": 7,
+            "away": 28
+          },
+          "second": {
+            "home": 21,
+            "away": 8
+          },
+          "overtime": {
+            "home": null,
+            "away": null
+          },
+          "second_overtime": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "id": 41993,
+        "date": "2023-11-04T14:00:00+00:00",
+        "time": "14:00",
+        "timestamp": 1699106400,
+        "timezone": "UTC",
+        "week": "10",
+        "status": {
+          "long": "Finished",
+          "short": "FT"
+        },
+        "country": {
+          "id": 19,
+          "name": "Scotland",
+          "code": "GB",
+          "flag": "https://media-4.api-sports.io/flags/gb.svg"
+        },
+        "league": {
+          "id": 35,
+          "name": "Tennent's Premiership",
+          "type": "League",
+          "logo": "https://media-4.api-sports.io/rugby/leagues/35.png",
+          "season": 2023
+        },
+        "teams": {
+          "home": {
+            "id": 284,
+            "name": "Marr",
+            "logo": "https://media-4.api-sports.io/rugby/teams/284.png"
+          },
+          "away": {
+            "id": 738,
+            "name": "Heriots 2",
+            "logo": "https://media-4.api-sports.io/rugby/teams/738.png"
+          }
+        },
+        "scores": {
+          "home": 45,
+          "away": 34
+        },
+        "periods": {
+          "first": {
+            "home": null,
+            "away": null
+          },
+          "second": {
+            "home": null,
+            "away": null
+          },
+          "overtime": {
+            "home": null,
+            "away": null
+          },
+          "second_overtime": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "id": 41996,
+        "date": "2023-11-04T14:00:00+00:00",
+        "time": "14:00",
+        "timestamp": 1699106400,
+        "timezone": "UTC",
+        "week": "10",
+        "status": {
+          "long": "Finished",
+          "short": "FT"
+        },
+        "country": {
+          "id": 19,
+          "name": "Scotland",
+          "code": "GB",
+          "flag": "https://media-4.api-sports.io/flags/gb.svg"
+        },
+        "league": {
+          "id": 35,
+          "name": "Tennent's Premiership",
+          "type": "League",
+          "logo": "https://media-4.api-sports.io/rugby/leagues/35.png",
+          "season": 2023
+        },
+        "teams": {
+          "home": {
+            "id": 613,
+            "name": "Edinburgh Academical",
+            "logo": "https://media-4.api-sports.io/rugby/teams/613.png"
+          },
+          "away": {
+            "id": 283,
+            "name": "Jed-Forest",
+            "logo": "https://media-4.api-sports.io/rugby/teams/283.png"
+          }
+        },
+        "scores": {
+          "home": 57,
+          "away": 14
+        },
+        "periods": {
+          "first": {
+            "home": null,
+            "away": null
+          },
+          "second": {
+            "home": null,
+            "away": null
+          },
+          "overtime": {
+            "home": null,
+            "away": null
+          },
+          "second_overtime": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "id": 41995,
+        "date": "2023-11-04T14:00:00+00:00",
+        "time": "14:00",
+        "timestamp": 1699106400,
+        "timezone": "UTC",
+        "week": "10",
+        "status": {
+          "long": "Finished",
+          "short": "FT"
+        },
+        "country": {
+          "id": 19,
+          "name": "Scotland",
+          "code": "GB",
+          "flag": "https://media-4.api-sports.io/flags/gb.svg"
+        },
+        "league": {
+          "id": 35,
+          "name": "Tennent's Premiership",
+          "type": "League",
+          "logo": "https://media-4.api-sports.io/rugby/leagues/35.png",
+          "season": 2023
+        },
+        "teams": {
+          "home": {
+            "id": 281,
+            "name": "Glasgow Hawks",
+            "logo": "https://media-4.api-sports.io/rugby/teams/281.png"
+          },
+          "away": {
+            "id": 282,
+            "name": "Hawick",
+            "logo": "https://media-4.api-sports.io/rugby/teams/282.png"
+          }
+        },
+        "scores": {
+          "home": 15,
+          "away": 36
+        },
+        "periods": {
+          "first": {
+            "home": null,
+            "away": null
+          },
+          "second": {
+            "home": null,
+            "away": null
+          },
+          "overtime": {
+            "home": null,
+            "away": null
+          },
+          "second_overtime": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "id": 41994,
+        "date": "2023-11-04T14:00:00+00:00",
+        "time": "14:00",
+        "timestamp": 1699106400,
+        "timezone": "UTC",
+        "week": "10",
+        "status": {
+          "long": "Finished",
+          "short": "FT"
+        },
+        "country": {
+          "id": 19,
+          "name": "Scotland",
+          "code": "GB",
+          "flag": "https://media-4.api-sports.io/flags/gb.svg"
+        },
+        "league": {
+          "id": 35,
+          "name": "Tennent's Premiership",
+          "type": "League",
+          "logo": "https://media-4.api-sports.io/rugby/leagues/35.png",
+          "season": 2023
+        },
+        "teams": {
+          "home": {
+            "id": 278,
+            "name": "Currie",
+            "logo": "https://media-4.api-sports.io/rugby/teams/278.png"
+          },
+          "away": {
+            "id": 286,
+            "name": "Selkirk",
+            "logo": "https://media-4.api-sports.io/rugby/teams/286.png"
+          }
+        },
+        "scores": {
+          "home": 40,
+          "away": 36
+        },
+        "periods": {
+          "first": {
+            "home": null,
+            "away": null
+          },
+          "second": {
+            "home": null,
+            "away": null
+          },
+          "overtime": {
+            "home": null,
+            "away": null
+          },
+          "second_overtime": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "id": 41997,
+        "date": "2023-11-04T15:00:00+00:00",
+        "time": "15:00",
+        "timestamp": 1699110000,
+        "timezone": "UTC",
+        "week": "10",
+        "status": {
+          "long": "Finished",
+          "short": "FT"
+        },
+        "country": {
+          "id": 19,
+          "name": "Scotland",
+          "code": "GB",
+          "flag": "https://media-4.api-sports.io/flags/gb.svg"
+        },
+        "league": {
+          "id": 35,
+          "name": "Tennent's Premiership",
+          "type": "League",
+          "logo": "https://media-4.api-sports.io/rugby/leagues/35.png",
+          "season": 2023
+        },
+        "teams": {
+          "home": {
+            "id": 798,
+            "name": "Kelso",
+            "logo": "https://media-4.api-sports.io/rugby/teams/798.png"
+          },
+          "away": {
+            "id": 285,
+            "name": "Musselburgh",
+            "logo": "https://media-4.api-sports.io/rugby/teams/285.png"
+          }
+        },
+        "scores": {
+          "home": 45,
+          "away": 12
+        },
+        "periods": {
+          "first": {
+            "home": null,
+            "away": null
+          },
+          "second": {
+            "home": null,
+            "away": null
+          },
+          "overtime": {
+            "home": null,
+            "away": null
+          },
+          "second_overtime": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "id": 41999,
+        "date": "2023-11-11T14:00:00+00:00",
+        "time": "14:00",
+        "timestamp": 1699711200,
+        "timezone": "UTC",
+        "week": "11",
+        "status": {
+          "long": "Finished",
+          "short": "FT"
+        },
+        "country": {
+          "id": 19,
+          "name": "Scotland",
+          "code": "GB",
+          "flag": "https://media-4.api-sports.io/flags/gb.svg"
+        },
+        "league": {
+          "id": 35,
+          "name": "Tennent's Premiership",
+          "type": "League",
+          "logo": "https://media-4.api-sports.io/rugby/leagues/35.png",
+          "season": 2023
+        },
+        "teams": {
+          "home": {
+            "id": 738,
+            "name": "Heriots 2",
+            "logo": "https://media-4.api-sports.io/rugby/teams/738.png"
+          },
+          "away": {
+            "id": 798,
+            "name": "Kelso",
+            "logo": "https://media-4.api-sports.io/rugby/teams/798.png"
+          }
+        },
+        "scores": {
+          "home": 31,
+          "away": 32
+        },
+        "periods": {
+          "first": {
+            "home": 19,
+            "away": 8
+          },
+          "second": {
+            "home": 12,
+            "away": 24
+          },
+          "overtime": {
+            "home": null,
+            "away": null
+          },
+          "second_overtime": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "id": 41998,
+        "date": "2023-11-11T15:00:00+00:00",
+        "time": "15:00",
+        "timestamp": 1699714800,
+        "timezone": "UTC",
+        "week": "11",
+        "status": {
+          "long": "Finished",
+          "short": "FT"
+        },
+        "country": {
+          "id": 19,
+          "name": "Scotland",
+          "code": "GB",
+          "flag": "https://media-4.api-sports.io/flags/gb.svg"
+        },
+        "league": {
+          "id": 35,
+          "name": "Tennent's Premiership",
+          "type": "League",
+          "logo": "https://media-4.api-sports.io/rugby/leagues/35.png",
+          "season": 2023
+        },
+        "teams": {
+          "home": {
+            "id": 282,
+            "name": "Hawick",
+            "logo": "https://media-4.api-sports.io/rugby/teams/282.png"
+          },
+          "away": {
+            "id": 284,
+            "name": "Marr",
+            "logo": "https://media-4.api-sports.io/rugby/teams/284.png"
+          }
+        },
+        "scores": {
+          "home": 21,
+          "away": 15
+        },
+        "periods": {
+          "first": {
+            "home": 10,
+            "away": 9
+          },
+          "second": {
+            "home": 11,
+            "away": 6
+          },
+          "overtime": {
+            "home": null,
+            "away": null
+          },
+          "second_overtime": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "id": 42000,
+        "date": "2023-11-11T15:00:00+00:00",
+        "time": "15:00",
+        "timestamp": 1699714800,
+        "timezone": "UTC",
+        "week": "11",
+        "status": {
+          "long": "Finished",
+          "short": "FT"
+        },
+        "country": {
+          "id": 19,
+          "name": "Scotland",
+          "code": "GB",
+          "flag": "https://media-4.api-sports.io/flags/gb.svg"
+        },
+        "league": {
+          "id": 35,
+          "name": "Tennent's Premiership",
+          "type": "League",
+          "logo": "https://media-4.api-sports.io/rugby/leagues/35.png",
+          "season": 2023
+        },
+        "teams": {
+          "home": {
+            "id": 285,
+            "name": "Musselburgh",
+            "logo": "https://media-4.api-sports.io/rugby/teams/285.png"
+          },
+          "away": {
+            "id": 613,
+            "name": "Edinburgh Academical",
+            "logo": "https://media-4.api-sports.io/rugby/teams/613.png"
+          }
+        },
+        "scores": {
+          "home": 37,
+          "away": 35
+        },
+        "periods": {
+          "first": {
+            "home": 19,
+            "away": 14
+          },
+          "second": {
+            "home": 18,
+            "away": 21
+          },
+          "overtime": {
+            "home": null,
+            "away": null
+          },
+          "second_overtime": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "id": 42001,
+        "date": "2023-11-11T15:00:00+00:00",
+        "time": "15:00",
+        "timestamp": 1699714800,
+        "timezone": "UTC",
+        "week": "11",
+        "status": {
+          "long": "Finished",
+          "short": "FT"
+        },
+        "country": {
+          "id": 19,
+          "name": "Scotland",
+          "code": "GB",
+          "flag": "https://media-4.api-sports.io/flags/gb.svg"
+        },
+        "league": {
+          "id": 35,
+          "name": "Tennent's Premiership",
+          "type": "League",
+          "logo": "https://media-4.api-sports.io/rugby/leagues/35.png",
+          "season": 2023
+        },
+        "teams": {
+          "home": {
+            "id": 283,
+            "name": "Jed-Forest",
+            "logo": "https://media-4.api-sports.io/rugby/teams/283.png"
+          },
+          "away": {
+            "id": 278,
+            "name": "Currie",
+            "logo": "https://media-4.api-sports.io/rugby/teams/278.png"
+          }
+        },
+        "scores": {
+          "home": 7,
+          "away": 31
+        },
+        "periods": {
+          "first": {
+            "home": 7,
+            "away": 17
+          },
+          "second": {
+            "home": 0,
+            "away": 14
+          },
+          "overtime": {
+            "home": null,
+            "away": null
+          },
+          "second_overtime": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "id": 42002,
+        "date": "2023-11-11T15:00:00+00:00",
+        "time": "15:00",
+        "timestamp": 1699714800,
+        "timezone": "UTC",
+        "week": "11",
+        "status": {
+          "long": "Finished",
+          "short": "FT"
+        },
+        "country": {
+          "id": 19,
+          "name": "Scotland",
+          "code": "GB",
+          "flag": "https://media-4.api-sports.io/flags/gb.svg"
+        },
+        "league": {
+          "id": 35,
+          "name": "Tennent's Premiership",
+          "type": "League",
+          "logo": "https://media-4.api-sports.io/rugby/leagues/35.png",
+          "season": 2023
+        },
+        "teams": {
+          "home": {
+            "id": 286,
+            "name": "Selkirk",
+            "logo": "https://media-4.api-sports.io/rugby/teams/286.png"
+          },
+          "away": {
+            "id": 281,
+            "name": "Glasgow Hawks",
+            "logo": "https://media-4.api-sports.io/rugby/teams/281.png"
+          }
+        },
+        "scores": {
+          "home": 27,
+          "away": 23
+        },
+        "periods": {
+          "first": {
+            "home": 12,
+            "away": 12
+          },
+          "second": {
+            "home": 15,
+            "away": 11
+          },
+          "overtime": {
+            "home": null,
+            "away": null
+          },
+          "second_overtime": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "id": 42004,
+        "date": "2023-11-18T14:00:00+00:00",
+        "time": "14:00",
+        "timestamp": 1700316000,
+        "timezone": "UTC",
+        "week": "12",
+        "status": {
+          "long": "Finished",
+          "short": "FT"
+        },
+        "country": {
+          "id": 19,
+          "name": "Scotland",
+          "code": "GB",
+          "flag": "https://media-4.api-sports.io/flags/gb.svg"
+        },
+        "league": {
+          "id": 35,
+          "name": "Tennent's Premiership",
+          "type": "League",
+          "logo": "https://media-4.api-sports.io/rugby/leagues/35.png",
+          "season": 2023
+        },
+        "teams": {
+          "home": {
+            "id": 613,
+            "name": "Edinburgh Academical",
+            "logo": "https://media-4.api-sports.io/rugby/teams/613.png"
+          },
+          "away": {
+            "id": 738,
+            "name": "Heriots 2",
+            "logo": "https://media-4.api-sports.io/rugby/teams/738.png"
+          }
+        },
+        "scores": {
+          "home": 17,
+          "away": 31
+        },
+        "periods": {
+          "first": {
+            "home": 5,
+            "away": 17
+          },
+          "second": {
+            "home": 12,
+            "away": 14
+          },
+          "overtime": {
+            "home": null,
+            "away": null
+          },
+          "second_overtime": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "id": 42005,
+        "date": "2023-11-18T14:00:00+00:00",
+        "time": "14:00",
+        "timestamp": 1700316000,
+        "timezone": "UTC",
+        "week": "12",
+        "status": {
+          "long": "Finished",
+          "short": "FT"
+        },
+        "country": {
+          "id": 19,
+          "name": "Scotland",
+          "code": "GB",
+          "flag": "https://media-4.api-sports.io/flags/gb.svg"
+        },
+        "league": {
+          "id": 35,
+          "name": "Tennent's Premiership",
+          "type": "League",
+          "logo": "https://media-4.api-sports.io/rugby/leagues/35.png",
+          "season": 2023
+        },
+        "teams": {
+          "home": {
+            "id": 278,
+            "name": "Currie",
+            "logo": "https://media-4.api-sports.io/rugby/teams/278.png"
+          },
+          "away": {
+            "id": 285,
+            "name": "Musselburgh",
+            "logo": "https://media-4.api-sports.io/rugby/teams/285.png"
+          }
+        },
+        "scores": {
+          "home": 52,
+          "away": 10
+        },
+        "periods": {
+          "first": {
+            "home": null,
+            "away": null
+          },
+          "second": {
+            "home": null,
+            "away": null
+          },
+          "overtime": {
+            "home": null,
+            "away": null
+          },
+          "second_overtime": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "id": 42003,
+        "date": "2023-11-18T14:00:00+00:00",
+        "time": "14:00",
+        "timestamp": 1700316000,
+        "timezone": "UTC",
+        "week": "12",
+        "status": {
+          "long": "Finished",
+          "short": "FT"
+        },
+        "country": {
+          "id": 19,
+          "name": "Scotland",
+          "code": "GB",
+          "flag": "https://media-4.api-sports.io/flags/gb.svg"
+        },
+        "league": {
+          "id": 35,
+          "name": "Tennent's Premiership",
+          "type": "League",
+          "logo": "https://media-4.api-sports.io/rugby/leagues/35.png",
+          "season": 2023
+        },
+        "teams": {
+          "home": {
+            "id": 284,
+            "name": "Marr",
+            "logo": "https://media-4.api-sports.io/rugby/teams/284.png"
+          },
+          "away": {
+            "id": 281,
+            "name": "Glasgow Hawks",
+            "logo": "https://media-4.api-sports.io/rugby/teams/281.png"
+          }
+        },
+        "scores": {
+          "home": 31,
+          "away": 14
+        },
+        "periods": {
+          "first": {
+            "home": 26,
+            "away": 0
+          },
+          "second": {
+            "home": 5,
+            "away": 14
+          },
+          "overtime": {
+            "home": null,
+            "away": null
+          },
+          "second_overtime": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "id": 42006,
+        "date": "2023-11-18T15:00:00+00:00",
+        "time": "15:00",
+        "timestamp": 1700319600,
+        "timezone": "UTC",
+        "week": "12",
+        "status": {
+          "long": "Finished",
+          "short": "FT"
+        },
+        "country": {
+          "id": 19,
+          "name": "Scotland",
+          "code": "GB",
+          "flag": "https://media-4.api-sports.io/flags/gb.svg"
+        },
+        "league": {
+          "id": 35,
+          "name": "Tennent's Premiership",
+          "type": "League",
+          "logo": "https://media-4.api-sports.io/rugby/leagues/35.png",
+          "season": 2023
+        },
+        "teams": {
+          "home": {
+            "id": 283,
+            "name": "Jed-Forest",
+            "logo": "https://media-4.api-sports.io/rugby/teams/283.png"
+          },
+          "away": {
+            "id": 286,
+            "name": "Selkirk",
+            "logo": "https://media-4.api-sports.io/rugby/teams/286.png"
+          }
+        },
+        "scores": {
+          "home": 12,
+          "away": 33
+        },
+        "periods": {
+          "first": {
+            "home": 5,
+            "away": 19
+          },
+          "second": {
+            "home": 7,
+            "away": 14
+          },
+          "overtime": {
+            "home": null,
+            "away": null
+          },
+          "second_overtime": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "id": 42007,
+        "date": "2023-11-18T15:00:00+00:00",
+        "time": "15:00",
+        "timestamp": 1700319600,
+        "timezone": "UTC",
+        "week": "12",
+        "status": {
+          "long": "Finished",
+          "short": "FT"
+        },
+        "country": {
+          "id": 19,
+          "name": "Scotland",
+          "code": "GB",
+          "flag": "https://media-4.api-sports.io/flags/gb.svg"
+        },
+        "league": {
+          "id": 35,
+          "name": "Tennent's Premiership",
+          "type": "League",
+          "logo": "https://media-4.api-sports.io/rugby/leagues/35.png",
+          "season": 2023
+        },
+        "teams": {
+          "home": {
+            "id": 798,
+            "name": "Kelso",
+            "logo": "https://media-4.api-sports.io/rugby/teams/798.png"
+          },
+          "away": {
+            "id": 282,
+            "name": "Hawick",
+            "logo": "https://media-4.api-sports.io/rugby/teams/282.png"
+          }
+        },
+        "scores": {
+          "home": 20,
+          "away": 28
+        },
+        "periods": {
+          "first": {
+            "home": 12,
+            "away": 21
+          },
+          "second": {
+            "home": 8,
+            "away": 7
+          },
+          "overtime": {
+            "home": null,
+            "away": null
+          },
+          "second_overtime": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "id": 42010,
+        "date": "2023-11-25T14:00:00+00:00",
+        "time": "14:00",
+        "timestamp": 1700920800,
+        "timezone": "UTC",
+        "week": "13",
+        "status": {
+          "long": "Finished",
+          "short": "FT"
+        },
+        "country": {
+          "id": 19,
+          "name": "Scotland",
+          "code": "GB",
+          "flag": "https://media-4.api-sports.io/flags/gb.svg"
+        },
+        "league": {
+          "id": 35,
+          "name": "Tennent's Premiership",
+          "type": "League",
+          "logo": "https://media-4.api-sports.io/rugby/leagues/35.png",
+          "season": 2023
+        },
+        "teams": {
+          "home": {
+            "id": 738,
+            "name": "Heriots 2",
+            "logo": "https://media-4.api-sports.io/rugby/teams/738.png"
+          },
+          "away": {
+            "id": 278,
+            "name": "Currie",
+            "logo": "https://media-4.api-sports.io/rugby/teams/278.png"
+          }
+        },
+        "scores": {
+          "home": 21,
+          "away": 29
+        },
+        "periods": {
+          "first": {
+            "home": null,
+            "away": null
+          },
+          "second": {
+            "home": null,
+            "away": null
+          },
+          "overtime": {
+            "home": null,
+            "away": null
+          },
+          "second_overtime": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "id": 42009,
+        "date": "2023-11-25T15:00:00+00:00",
+        "time": "15:00",
+        "timestamp": 1700924400,
+        "timezone": "UTC",
+        "week": "13",
+        "status": {
+          "long": "Finished",
+          "short": "FT"
+        },
+        "country": {
+          "id": 19,
+          "name": "Scotland",
+          "code": "GB",
+          "flag": "https://media-4.api-sports.io/flags/gb.svg"
+        },
+        "league": {
+          "id": 35,
+          "name": "Tennent's Premiership",
+          "type": "League",
+          "logo": "https://media-4.api-sports.io/rugby/leagues/35.png",
+          "season": 2023
+        },
+        "teams": {
+          "home": {
+            "id": 282,
+            "name": "Hawick",
+            "logo": "https://media-4.api-sports.io/rugby/teams/282.png"
+          },
+          "away": {
+            "id": 613,
+            "name": "Edinburgh Academical",
+            "logo": "https://media-4.api-sports.io/rugby/teams/613.png"
+          }
+        },
+        "scores": {
+          "home": 26,
+          "away": 16
+        },
+        "periods": {
+          "first": {
+            "home": null,
+            "away": null
+          },
+          "second": {
+            "home": null,
+            "away": null
+          },
+          "overtime": {
+            "home": null,
+            "away": null
+          },
+          "second_overtime": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "id": 42011,
+        "date": "2023-11-25T15:00:00+00:00",
+        "time": "15:00",
+        "timestamp": 1700924400,
+        "timezone": "UTC",
+        "week": "13",
+        "status": {
+          "long": "Finished",
+          "short": "FT"
+        },
+        "country": {
+          "id": 19,
+          "name": "Scotland",
+          "code": "GB",
+          "flag": "https://media-4.api-sports.io/flags/gb.svg"
+        },
+        "league": {
+          "id": 35,
+          "name": "Tennent's Premiership",
+          "type": "League",
+          "logo": "https://media-4.api-sports.io/rugby/leagues/35.png",
+          "season": 2023
+        },
+        "teams": {
+          "home": {
+            "id": 285,
+            "name": "Musselburgh",
+            "logo": "https://media-4.api-sports.io/rugby/teams/285.png"
+          },
+          "away": {
+            "id": 283,
+            "name": "Jed-Forest",
+            "logo": "https://media-4.api-sports.io/rugby/teams/283.png"
+          }
+        },
+        "scores": {
+          "home": 51,
+          "away": 27
+        },
+        "periods": {
+          "first": {
+            "home": null,
+            "away": null
+          },
+          "second": {
+            "home": null,
+            "away": null
+          },
+          "overtime": {
+            "home": null,
+            "away": null
+          },
+          "second_overtime": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "id": 42012,
+        "date": "2023-11-25T15:00:00+00:00",
+        "time": "15:00",
+        "timestamp": 1700924400,
+        "timezone": "UTC",
+        "week": "13",
+        "status": {
+          "long": "Finished",
+          "short": "FT"
+        },
+        "country": {
+          "id": 19,
+          "name": "Scotland",
+          "code": "GB",
+          "flag": "https://media-4.api-sports.io/flags/gb.svg"
+        },
+        "league": {
+          "id": 35,
+          "name": "Tennent's Premiership",
+          "type": "League",
+          "logo": "https://media-4.api-sports.io/rugby/leagues/35.png",
+          "season": 2023
+        },
+        "teams": {
+          "home": {
+            "id": 286,
+            "name": "Selkirk",
+            "logo": "https://media-4.api-sports.io/rugby/teams/286.png"
+          },
+          "away": {
+            "id": 284,
+            "name": "Marr",
+            "logo": "https://media-4.api-sports.io/rugby/teams/284.png"
+          }
+        },
+        "scores": {
+          "home": 17,
+          "away": 50
+        },
+        "periods": {
+          "first": {
+            "home": null,
+            "away": null
+          },
+          "second": {
+            "home": null,
+            "away": null
+          },
+          "overtime": {
+            "home": null,
+            "away": null
+          },
+          "second_overtime": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "id": 42018,
+        "date": "2023-12-09T14:00:00+00:00",
+        "time": "14:00",
+        "timestamp": 1702130400,
+        "timezone": "UTC",
+        "week": "15",
+        "status": {
+          "long": "Not Started",
+          "short": "NS"
+        },
+        "country": {
+          "id": 19,
+          "name": "Scotland",
+          "code": "GB",
+          "flag": "https://media-4.api-sports.io/flags/gb.svg"
+        },
+        "league": {
+          "id": 35,
+          "name": "Tennent's Premiership",
+          "type": "League",
+          "logo": "https://media-4.api-sports.io/rugby/leagues/35.png",
+          "season": 2023
+        },
+        "teams": {
+          "home": {
+            "id": 281,
+            "name": "Glasgow Hawks",
+            "logo": "https://media-4.api-sports.io/rugby/teams/281.png"
+          },
+          "away": {
+            "id": 278,
+            "name": "Currie",
+            "logo": "https://media-4.api-sports.io/rugby/teams/278.png"
+          }
+        },
+        "scores": {
+          "home": null,
+          "away": null
+        },
+        "periods": {
+          "first": {
+            "home": null,
+            "away": null
+          },
+          "second": {
+            "home": null,
+            "away": null
+          },
+          "overtime": {
+            "home": null,
+            "away": null
+          },
+          "second_overtime": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "id": 42020,
+        "date": "2023-12-09T14:00:00+00:00",
+        "time": "14:00",
+        "timestamp": 1702130400,
+        "timezone": "UTC",
+        "week": "15",
+        "status": {
+          "long": "Not Started",
+          "short": "NS"
+        },
+        "country": {
+          "id": 19,
+          "name": "Scotland",
+          "code": "GB",
+          "flag": "https://media-4.api-sports.io/flags/gb.svg"
+        },
+        "league": {
+          "id": 35,
+          "name": "Tennent's Premiership",
+          "type": "League",
+          "logo": "https://media-4.api-sports.io/rugby/leagues/35.png",
+          "season": 2023
+        },
+        "teams": {
+          "home": {
+            "id": 738,
+            "name": "Heriots 2",
+            "logo": "https://media-4.api-sports.io/rugby/teams/738.png"
+          },
+          "away": {
+            "id": 285,
+            "name": "Musselburgh",
+            "logo": "https://media-4.api-sports.io/rugby/teams/285.png"
+          }
+        },
+        "scores": {
+          "home": null,
+          "away": null
+        },
+        "periods": {
+          "first": {
+            "home": null,
+            "away": null
+          },
+          "second": {
+            "home": null,
+            "away": null
+          },
+          "overtime": {
+            "home": null,
+            "away": null
+          },
+          "second_overtime": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "id": 42021,
+        "date": "2023-12-09T14:00:00+00:00",
+        "time": "14:00",
+        "timestamp": 1702130400,
+        "timezone": "UTC",
+        "week": "15",
+        "status": {
+          "long": "Not Started",
+          "short": "NS"
+        },
+        "country": {
+          "id": 19,
+          "name": "Scotland",
+          "code": "GB",
+          "flag": "https://media-4.api-sports.io/flags/gb.svg"
+        },
+        "league": {
+          "id": 35,
+          "name": "Tennent's Premiership",
+          "type": "League",
+          "logo": "https://media-4.api-sports.io/rugby/leagues/35.png",
+          "season": 2023
+        },
+        "teams": {
+          "home": {
+            "id": 284,
+            "name": "Marr",
+            "logo": "https://media-4.api-sports.io/rugby/teams/284.png"
+          },
+          "away": {
+            "id": 613,
+            "name": "Edinburgh Academical",
+            "logo": "https://media-4.api-sports.io/rugby/teams/613.png"
+          }
+        },
+        "scores": {
+          "home": null,
+          "away": null
+        },
+        "periods": {
+          "first": {
+            "home": null,
+            "away": null
+          },
+          "second": {
+            "home": null,
+            "away": null
+          },
+          "overtime": {
+            "home": null,
+            "away": null
+          },
+          "second_overtime": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "id": 42022,
+        "date": "2023-12-09T15:00:00+00:00",
+        "time": "15:00",
+        "timestamp": 1702134000,
+        "timezone": "UTC",
+        "week": "15",
+        "status": {
+          "long": "Not Started",
+          "short": "NS"
+        },
+        "country": {
+          "id": 19,
+          "name": "Scotland",
+          "code": "GB",
+          "flag": "https://media-4.api-sports.io/flags/gb.svg"
+        },
+        "league": {
+          "id": 35,
+          "name": "Tennent's Premiership",
+          "type": "League",
+          "logo": "https://media-4.api-sports.io/rugby/leagues/35.png",
+          "season": 2023
+        },
+        "teams": {
+          "home": {
+            "id": 286,
+            "name": "Selkirk",
+            "logo": "https://media-4.api-sports.io/rugby/teams/286.png"
+          },
+          "away": {
+            "id": 798,
+            "name": "Kelso",
+            "logo": "https://media-4.api-sports.io/rugby/teams/798.png"
+          }
+        },
+        "scores": {
+          "home": null,
+          "away": null
+        },
+        "periods": {
+          "first": {
+            "home": null,
+            "away": null
+          },
+          "second": {
+            "home": null,
+            "away": null
+          },
+          "overtime": {
+            "home": null,
+            "away": null
+          },
+          "second_overtime": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "id": 42019,
+        "date": "2023-12-09T15:00:00+00:00",
+        "time": "15:00",
+        "timestamp": 1702134000,
+        "timezone": "UTC",
+        "week": "15",
+        "status": {
+          "long": "Not Started",
+          "short": "NS"
+        },
+        "country": {
+          "id": 19,
+          "name": "Scotland",
+          "code": "GB",
+          "flag": "https://media-4.api-sports.io/flags/gb.svg"
+        },
+        "league": {
+          "id": 35,
+          "name": "Tennent's Premiership",
+          "type": "League",
+          "logo": "https://media-4.api-sports.io/rugby/leagues/35.png",
+          "season": 2023
+        },
+        "teams": {
+          "home": {
+            "id": 282,
+            "name": "Hawick",
+            "logo": "https://media-4.api-sports.io/rugby/teams/282.png"
+          },
+          "away": {
+            "id": 283,
+            "name": "Jed-Forest",
+            "logo": "https://media-4.api-sports.io/rugby/teams/283.png"
+          }
+        },
+        "scores": {
+          "home": null,
+          "away": null
+        },
+        "periods": {
+          "first": {
+            "home": null,
+            "away": null
+          },
+          "second": {
+            "home": null,
+            "away": null
+          },
+          "overtime": {
+            "home": null,
+            "away": null
+          },
+          "second_overtime": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "id": 41977,
+        "date": "2023-12-16T14:00:00+00:00",
+        "time": "14:00",
+        "timestamp": 1702735200,
+        "timezone": "UTC",
+        "week": "6",
+        "status": {
+          "long": "Not Started",
+          "short": "NS"
+        },
+        "country": {
+          "id": 19,
+          "name": "Scotland",
+          "code": "GB",
+          "flag": "https://media-4.api-sports.io/flags/gb.svg"
+        },
+        "league": {
+          "id": 35,
+          "name": "Tennent's Premiership",
+          "type": "League",
+          "logo": "https://media-4.api-sports.io/rugby/leagues/35.png",
+          "season": 2023
+        },
+        "teams": {
+          "home": {
+            "id": 278,
+            "name": "Currie",
+            "logo": "https://media-4.api-sports.io/rugby/teams/278.png"
+          },
+          "away": {
+            "id": 281,
+            "name": "Glasgow Hawks",
+            "logo": "https://media-4.api-sports.io/rugby/teams/281.png"
+          }
+        },
+        "scores": {
+          "home": null,
+          "away": null
+        },
+        "periods": {
+          "first": {
+            "home": null,
+            "away": null
+          },
+          "second": {
+            "home": null,
+            "away": null
+          },
+          "overtime": {
+            "home": null,
+            "away": null
+          },
+          "second_overtime": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "id": 42016,
+        "date": "2023-12-16T15:00:00+00:00",
+        "time": "15:00",
+        "timestamp": 1702738800,
+        "timezone": "UTC",
+        "week": "14",
+        "status": {
+          "long": "Not Started",
+          "short": "NS"
+        },
+        "country": {
+          "id": 19,
+          "name": "Scotland",
+          "code": "GB",
+          "flag": "https://media-4.api-sports.io/flags/gb.svg"
+        },
+        "league": {
+          "id": 35,
+          "name": "Tennent's Premiership",
+          "type": "League",
+          "logo": "https://media-4.api-sports.io/rugby/leagues/35.png",
+          "season": 2023
+        },
+        "teams": {
+          "home": {
+            "id": 283,
+            "name": "Jed-Forest",
+            "logo": "https://media-4.api-sports.io/rugby/teams/283.png"
+          },
+          "away": {
+            "id": 738,
+            "name": "Heriots 2",
+            "logo": "https://media-4.api-sports.io/rugby/teams/738.png"
+          }
+        },
+        "scores": {
+          "home": null,
+          "away": null
+        },
+        "periods": {
+          "first": {
+            "home": null,
+            "away": null
+          },
+          "second": {
+            "home": null,
+            "away": null
+          },
+          "overtime": {
+            "home": null,
+            "away": null
+          },
+          "second_overtime": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "id": 42015,
+        "date": "2023-12-16T15:00:00+00:00",
+        "time": "15:00",
+        "timestamp": 1702738800,
+        "timezone": "UTC",
+        "week": "14",
+        "status": {
+          "long": "Not Started",
+          "short": "NS"
+        },
+        "country": {
+          "id": 19,
+          "name": "Scotland",
+          "code": "GB",
+          "flag": "https://media-4.api-sports.io/flags/gb.svg"
+        },
+        "league": {
+          "id": 35,
+          "name": "Tennent's Premiership",
+          "type": "League",
+          "logo": "https://media-4.api-sports.io/rugby/leagues/35.png",
+          "season": 2023
+        },
+        "teams": {
+          "home": {
+            "id": 285,
+            "name": "Musselburgh",
+            "logo": "https://media-4.api-sports.io/rugby/teams/285.png"
+          },
+          "away": {
+            "id": 286,
+            "name": "Selkirk",
+            "logo": "https://media-4.api-sports.io/rugby/teams/286.png"
+          }
+        },
+        "scores": {
+          "home": null,
+          "away": null
+        },
+        "periods": {
+          "first": {
+            "home": null,
+            "away": null
+          },
+          "second": {
+            "home": null,
+            "away": null
+          },
+          "overtime": {
+            "home": null,
+            "away": null
+          },
+          "second_overtime": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "id": 42017,
+        "date": "2023-12-16T15:00:00+00:00",
+        "time": "15:00",
+        "timestamp": 1702738800,
+        "timezone": "UTC",
+        "week": "14",
+        "status": {
+          "long": "Not Started",
+          "short": "NS"
+        },
+        "country": {
+          "id": 19,
+          "name": "Scotland",
+          "code": "GB",
+          "flag": "https://media-4.api-sports.io/flags/gb.svg"
+        },
+        "league": {
+          "id": 35,
+          "name": "Tennent's Premiership",
+          "type": "League",
+          "logo": "https://media-4.api-sports.io/rugby/leagues/35.png",
+          "season": 2023
+        },
+        "teams": {
+          "home": {
+            "id": 798,
+            "name": "Kelso",
+            "logo": "https://media-4.api-sports.io/rugby/teams/798.png"
+          },
+          "away": {
+            "id": 284,
+            "name": "Marr",
+            "logo": "https://media-4.api-sports.io/rugby/teams/284.png"
+          }
+        },
+        "scores": {
+          "home": null,
+          "away": null
+        },
+        "periods": {
+          "first": {
+            "home": null,
+            "away": null
+          },
+          "second": {
+            "home": null,
+            "away": null
+          },
+          "overtime": {
+            "home": null,
+            "away": null
+          },
+          "second_overtime": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "id": 42013,
+        "date": "2024-01-06T14:00:00+00:00",
+        "time": "14:00",
+        "timestamp": 1704549600,
+        "timezone": "UTC",
+        "week": "14",
+        "status": {
+          "long": "Not Started",
+          "short": "NS"
+        },
+        "country": {
+          "id": 19,
+          "name": "Scotland",
+          "code": "GB",
+          "flag": "https://media-4.api-sports.io/flags/gb.svg"
+        },
+        "league": {
+          "id": 35,
+          "name": "Tennent's Premiership",
+          "type": "League",
+          "logo": "https://media-4.api-sports.io/rugby/leagues/35.png",
+          "season": 2023
+        },
+        "teams": {
+          "home": {
+            "id": 278,
+            "name": "Currie",
+            "logo": "https://media-4.api-sports.io/rugby/teams/278.png"
+          },
+          "away": {
+            "id": 282,
+            "name": "Hawick",
+            "logo": "https://media-4.api-sports.io/rugby/teams/282.png"
+          }
+        },
+        "scores": {
+          "home": null,
+          "away": null
+        },
+        "periods": {
+          "first": {
+            "home": null,
+            "away": null
+          },
+          "second": {
+            "home": null,
+            "away": null
+          },
+          "overtime": {
+            "home": null,
+            "away": null
+          },
+          "second_overtime": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "id": 42008,
+        "date": "2024-01-06T14:00:00+00:00",
+        "time": "14:00",
+        "timestamp": 1704549600,
+        "timezone": "UTC",
+        "week": "13",
+        "status": {
+          "long": "Not Started",
+          "short": "NS"
+        },
+        "country": {
+          "id": 19,
+          "name": "Scotland",
+          "code": "GB",
+          "flag": "https://media-4.api-sports.io/flags/gb.svg"
+        },
+        "league": {
+          "id": 35,
+          "name": "Tennent's Premiership",
+          "type": "League",
+          "logo": "https://media-4.api-sports.io/rugby/leagues/35.png",
+          "season": 2023
+        },
+        "teams": {
+          "home": {
+            "id": 281,
+            "name": "Glasgow Hawks",
+            "logo": "https://media-4.api-sports.io/rugby/teams/281.png"
+          },
+          "away": {
+            "id": 798,
+            "name": "Kelso",
+            "logo": "https://media-4.api-sports.io/rugby/teams/798.png"
+          }
+        },
+        "scores": {
+          "home": null,
+          "away": null
+        },
+        "periods": {
+          "first": {
+            "home": null,
+            "away": null
+          },
+          "second": {
+            "home": null,
+            "away": null
+          },
+          "overtime": {
+            "home": null,
+            "away": null
+          },
+          "second_overtime": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "id": 42014,
+        "date": "2024-01-13T14:00:00+00:00",
+        "time": "14:00",
+        "timestamp": 1705154400,
+        "timezone": "UTC",
+        "week": "14",
+        "status": {
+          "long": "Not Started",
+          "short": "NS"
+        },
+        "country": {
+          "id": 19,
+          "name": "Scotland",
+          "code": "GB",
+          "flag": "https://media-4.api-sports.io/flags/gb.svg"
+        },
+        "league": {
+          "id": 35,
+          "name": "Tennent's Premiership",
+          "type": "League",
+          "logo": "https://media-4.api-sports.io/rugby/leagues/35.png",
+          "season": 2023
+        },
+        "teams": {
+          "home": {
+            "id": 613,
+            "name": "Edinburgh Academical",
+            "logo": "https://media-4.api-sports.io/rugby/teams/613.png"
+          },
+          "away": {
+            "id": 281,
+            "name": "Glasgow Hawks",
+            "logo": "https://media-4.api-sports.io/rugby/teams/281.png"
+          }
+        },
+        "scores": {
+          "home": null,
+          "away": null
+        },
+        "periods": {
+          "first": {
+            "home": null,
+            "away": null
+          },
+          "second": {
+            "home": null,
+            "away": null
+          },
+          "overtime": {
+            "home": null,
+            "away": null
+          },
+          "second_overtime": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "id": 42023,
+        "date": "2024-01-20T14:00:00+00:00",
+        "time": "14:00",
+        "timestamp": 1705759200,
+        "timezone": "UTC",
+        "week": "16",
+        "status": {
+          "long": "Not Started",
+          "short": "NS"
+        },
+        "country": {
+          "id": 19,
+          "name": "Scotland",
+          "code": "GB",
+          "flag": "https://media-4.api-sports.io/flags/gb.svg"
+        },
+        "league": {
+          "id": 35,
+          "name": "Tennent's Premiership",
+          "type": "League",
+          "logo": "https://media-4.api-sports.io/rugby/leagues/35.png",
+          "season": 2023
+        },
+        "teams": {
+          "home": {
+            "id": 278,
+            "name": "Currie",
+            "logo": "https://media-4.api-sports.io/rugby/teams/278.png"
+          },
+          "away": {
+            "id": 284,
+            "name": "Marr",
+            "logo": "https://media-4.api-sports.io/rugby/teams/284.png"
+          }
+        },
+        "scores": {
+          "home": null,
+          "away": null
+        },
+        "periods": {
+          "first": {
+            "home": null,
+            "away": null
+          },
+          "second": {
+            "home": null,
+            "away": null
+          },
+          "overtime": {
+            "home": null,
+            "away": null
+          },
+          "second_overtime": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "id": 42024,
+        "date": "2024-01-20T14:00:00+00:00",
+        "time": "14:00",
+        "timestamp": 1705759200,
+        "timezone": "UTC",
+        "week": "16",
+        "status": {
+          "long": "Not Started",
+          "short": "NS"
+        },
+        "country": {
+          "id": 19,
+          "name": "Scotland",
+          "code": "GB",
+          "flag": "https://media-4.api-sports.io/flags/gb.svg"
+        },
+        "league": {
+          "id": 35,
+          "name": "Tennent's Premiership",
+          "type": "League",
+          "logo": "https://media-4.api-sports.io/rugby/leagues/35.png",
+          "season": 2023
+        },
+        "teams": {
+          "home": {
+            "id": 613,
+            "name": "Edinburgh Academical",
+            "logo": "https://media-4.api-sports.io/rugby/teams/613.png"
+          },
+          "away": {
+            "id": 798,
+            "name": "Kelso",
+            "logo": "https://media-4.api-sports.io/rugby/teams/798.png"
+          }
+        },
+        "scores": {
+          "home": null,
+          "away": null
+        },
+        "periods": {
+          "first": {
+            "home": null,
+            "away": null
+          },
+          "second": {
+            "home": null,
+            "away": null
+          },
+          "overtime": {
+            "home": null,
+            "away": null
+          },
+          "second_overtime": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "id": 42025,
+        "date": "2024-01-20T14:00:00+00:00",
+        "time": "14:00",
+        "timestamp": 1705759200,
+        "timezone": "UTC",
+        "week": "16",
+        "status": {
+          "long": "Not Started",
+          "short": "NS"
+        },
+        "country": {
+          "id": 19,
+          "name": "Scotland",
+          "code": "GB",
+          "flag": "https://media-4.api-sports.io/flags/gb.svg"
+        },
+        "league": {
+          "id": 35,
+          "name": "Tennent's Premiership",
+          "type": "League",
+          "logo": "https://media-4.api-sports.io/rugby/leagues/35.png",
+          "season": 2023
+        },
+        "teams": {
+          "home": {
+            "id": 738,
+            "name": "Heriots 2",
+            "logo": "https://media-4.api-sports.io/rugby/teams/738.png"
+          },
+          "away": {
+            "id": 286,
+            "name": "Selkirk",
+            "logo": "https://media-4.api-sports.io/rugby/teams/286.png"
+          }
+        },
+        "scores": {
+          "home": null,
+          "away": null
+        },
+        "periods": {
+          "first": {
+            "home": null,
+            "away": null
+          },
+          "second": {
+            "home": null,
+            "away": null
+          },
+          "overtime": {
+            "home": null,
+            "away": null
+          },
+          "second_overtime": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "id": 42026,
+        "date": "2024-01-20T15:00:00+00:00",
+        "time": "15:00",
+        "timestamp": 1705762800,
+        "timezone": "UTC",
+        "week": "16",
+        "status": {
+          "long": "Not Started",
+          "short": "NS"
+        },
+        "country": {
+          "id": 19,
+          "name": "Scotland",
+          "code": "GB",
+          "flag": "https://media-4.api-sports.io/flags/gb.svg"
+        },
+        "league": {
+          "id": 35,
+          "name": "Tennent's Premiership",
+          "type": "League",
+          "logo": "https://media-4.api-sports.io/rugby/leagues/35.png",
+          "season": 2023
+        },
+        "teams": {
+          "home": {
+            "id": 285,
+            "name": "Musselburgh",
+            "logo": "https://media-4.api-sports.io/rugby/teams/285.png"
+          },
+          "away": {
+            "id": 282,
+            "name": "Hawick",
+            "logo": "https://media-4.api-sports.io/rugby/teams/282.png"
+          }
+        },
+        "scores": {
+          "home": null,
+          "away": null
+        },
+        "periods": {
+          "first": {
+            "home": null,
+            "away": null
+          },
+          "second": {
+            "home": null,
+            "away": null
+          },
+          "overtime": {
+            "home": null,
+            "away": null
+          },
+          "second_overtime": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "id": 42027,
+        "date": "2024-01-20T15:00:00+00:00",
+        "time": "15:00",
+        "timestamp": 1705762800,
+        "timezone": "UTC",
+        "week": "16",
+        "status": {
+          "long": "Not Started",
+          "short": "NS"
+        },
+        "country": {
+          "id": 19,
+          "name": "Scotland",
+          "code": "GB",
+          "flag": "https://media-4.api-sports.io/flags/gb.svg"
+        },
+        "league": {
+          "id": 35,
+          "name": "Tennent's Premiership",
+          "type": "League",
+          "logo": "https://media-4.api-sports.io/rugby/leagues/35.png",
+          "season": 2023
+        },
+        "teams": {
+          "home": {
+            "id": 283,
+            "name": "Jed-Forest",
+            "logo": "https://media-4.api-sports.io/rugby/teams/283.png"
+          },
+          "away": {
+            "id": 281,
+            "name": "Glasgow Hawks",
+            "logo": "https://media-4.api-sports.io/rugby/teams/281.png"
+          }
+        },
+        "scores": {
+          "home": null,
+          "away": null
+        },
+        "periods": {
+          "first": {
+            "home": null,
+            "away": null
+          },
+          "second": {
+            "home": null,
+            "away": null
+          },
+          "overtime": {
+            "home": null,
+            "away": null
+          },
+          "second_overtime": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "id": 42028,
+        "date": "2024-01-27T14:00:00+00:00",
+        "time": "14:00",
+        "timestamp": 1706364000,
+        "timezone": "UTC",
+        "week": "17",
+        "status": {
+          "long": "Not Started",
+          "short": "NS"
+        },
+        "country": {
+          "id": 19,
+          "name": "Scotland",
+          "code": "GB",
+          "flag": "https://media-4.api-sports.io/flags/gb.svg"
+        },
+        "league": {
+          "id": 35,
+          "name": "Tennent's Premiership",
+          "type": "League",
+          "logo": "https://media-4.api-sports.io/rugby/leagues/35.png",
+          "season": 2023
+        },
+        "teams": {
+          "home": {
+            "id": 613,
+            "name": "Edinburgh Academical",
+            "logo": "https://media-4.api-sports.io/rugby/teams/613.png"
+          },
+          "away": {
+            "id": 286,
+            "name": "Selkirk",
+            "logo": "https://media-4.api-sports.io/rugby/teams/286.png"
+          }
+        },
+        "scores": {
+          "home": null,
+          "away": null
+        },
+        "periods": {
+          "first": {
+            "home": null,
+            "away": null
+          },
+          "second": {
+            "home": null,
+            "away": null
+          },
+          "overtime": {
+            "home": null,
+            "away": null
+          },
+          "second_overtime": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "id": 42031,
+        "date": "2024-01-27T14:00:00+00:00",
+        "time": "14:00",
+        "timestamp": 1706364000,
+        "timezone": "UTC",
+        "week": "17",
+        "status": {
+          "long": "Not Started",
+          "short": "NS"
+        },
+        "country": {
+          "id": 19,
+          "name": "Scotland",
+          "code": "GB",
+          "flag": "https://media-4.api-sports.io/flags/gb.svg"
+        },
+        "league": {
+          "id": 35,
+          "name": "Tennent's Premiership",
+          "type": "League",
+          "logo": "https://media-4.api-sports.io/rugby/leagues/35.png",
+          "season": 2023
+        },
+        "teams": {
+          "home": {
+            "id": 284,
+            "name": "Marr",
+            "logo": "https://media-4.api-sports.io/rugby/teams/284.png"
+          },
+          "away": {
+            "id": 283,
+            "name": "Jed-Forest",
+            "logo": "https://media-4.api-sports.io/rugby/teams/283.png"
+          }
+        },
+        "scores": {
+          "home": null,
+          "away": null
+        },
+        "periods": {
+          "first": {
+            "home": null,
+            "away": null
+          },
+          "second": {
+            "home": null,
+            "away": null
+          },
+          "overtime": {
+            "home": null,
+            "away": null
+          },
+          "second_overtime": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "id": 42030,
+        "date": "2024-01-27T14:00:00+00:00",
+        "time": "14:00",
+        "timestamp": 1706364000,
+        "timezone": "UTC",
+        "week": "17",
+        "status": {
+          "long": "Not Started",
+          "short": "NS"
+        },
+        "country": {
+          "id": 19,
+          "name": "Scotland",
+          "code": "GB",
+          "flag": "https://media-4.api-sports.io/flags/gb.svg"
+        },
+        "league": {
+          "id": 35,
+          "name": "Tennent's Premiership",
+          "type": "League",
+          "logo": "https://media-4.api-sports.io/rugby/leagues/35.png",
+          "season": 2023
+        },
+        "teams": {
+          "home": {
+            "id": 738,
+            "name": "Heriots 2",
+            "logo": "https://media-4.api-sports.io/rugby/teams/738.png"
+          },
+          "away": {
+            "id": 282,
+            "name": "Hawick",
+            "logo": "https://media-4.api-sports.io/rugby/teams/282.png"
+          }
+        },
+        "scores": {
+          "home": null,
+          "away": null
+        },
+        "periods": {
+          "first": {
+            "home": null,
+            "away": null
+          },
+          "second": {
+            "home": null,
+            "away": null
+          },
+          "overtime": {
+            "home": null,
+            "away": null
+          },
+          "second_overtime": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "id": 42029,
+        "date": "2024-01-27T14:00:00+00:00",
+        "time": "14:00",
+        "timestamp": 1706364000,
+        "timezone": "UTC",
+        "week": "17",
+        "status": {
+          "long": "Not Started",
+          "short": "NS"
+        },
+        "country": {
+          "id": 19,
+          "name": "Scotland",
+          "code": "GB",
+          "flag": "https://media-4.api-sports.io/flags/gb.svg"
+        },
+        "league": {
+          "id": 35,
+          "name": "Tennent's Premiership",
+          "type": "League",
+          "logo": "https://media-4.api-sports.io/rugby/leagues/35.png",
+          "season": 2023
+        },
+        "teams": {
+          "home": {
+            "id": 281,
+            "name": "Glasgow Hawks",
+            "logo": "https://media-4.api-sports.io/rugby/teams/281.png"
+          },
+          "away": {
+            "id": 285,
+            "name": "Musselburgh",
+            "logo": "https://media-4.api-sports.io/rugby/teams/285.png"
+          }
+        },
+        "scores": {
+          "home": null,
+          "away": null
+        },
+        "periods": {
+          "first": {
+            "home": null,
+            "away": null
+          },
+          "second": {
+            "home": null,
+            "away": null
+          },
+          "overtime": {
+            "home": null,
+            "away": null
+          },
+          "second_overtime": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "id": 42032,
+        "date": "2024-01-27T15:00:00+00:00",
+        "time": "15:00",
+        "timestamp": 1706367600,
+        "timezone": "UTC",
+        "week": "17",
+        "status": {
+          "long": "Not Started",
+          "short": "NS"
+        },
+        "country": {
+          "id": 19,
+          "name": "Scotland",
+          "code": "GB",
+          "flag": "https://media-4.api-sports.io/flags/gb.svg"
+        },
+        "league": {
+          "id": 35,
+          "name": "Tennent's Premiership",
+          "type": "League",
+          "logo": "https://media-4.api-sports.io/rugby/leagues/35.png",
+          "season": 2023
+        },
+        "teams": {
+          "home": {
+            "id": 798,
+            "name": "Kelso",
+            "logo": "https://media-4.api-sports.io/rugby/teams/798.png"
+          },
+          "away": {
+            "id": 278,
+            "name": "Currie",
+            "logo": "https://media-4.api-sports.io/rugby/teams/278.png"
+          }
+        },
+        "scores": {
+          "home": null,
+          "away": null
+        },
+        "periods": {
+          "first": {
+            "home": null,
+            "away": null
+          },
+          "second": {
+            "home": null,
+            "away": null
+          },
+          "overtime": {
+            "home": null,
+            "away": null
+          },
+          "second_overtime": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "id": 42033,
+        "date": "2024-02-03T14:00:00+00:00",
+        "time": "14:00",
+        "timestamp": 1706968800,
+        "timezone": "UTC",
+        "week": "18",
+        "status": {
+          "long": "Not Started",
+          "short": "NS"
+        },
+        "country": {
+          "id": 19,
+          "name": "Scotland",
+          "code": "GB",
+          "flag": "https://media-4.api-sports.io/flags/gb.svg"
+        },
+        "league": {
+          "id": 35,
+          "name": "Tennent's Premiership",
+          "type": "League",
+          "logo": "https://media-4.api-sports.io/rugby/leagues/35.png",
+          "season": 2023
+        },
+        "teams": {
+          "home": {
+            "id": 278,
+            "name": "Currie",
+            "logo": "https://media-4.api-sports.io/rugby/teams/278.png"
+          },
+          "away": {
+            "id": 613,
+            "name": "Edinburgh Academical",
+            "logo": "https://media-4.api-sports.io/rugby/teams/613.png"
+          }
+        },
+        "scores": {
+          "home": null,
+          "away": null
+        },
+        "periods": {
+          "first": {
+            "home": null,
+            "away": null
+          },
+          "second": {
+            "home": null,
+            "away": null
+          },
+          "overtime": {
+            "home": null,
+            "away": null
+          },
+          "second_overtime": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "id": 42034,
+        "date": "2024-02-03T14:00:00+00:00",
+        "time": "14:00",
+        "timestamp": 1706968800,
+        "timezone": "UTC",
+        "week": "18",
+        "status": {
+          "long": "Not Started",
+          "short": "NS"
+        },
+        "country": {
+          "id": 19,
+          "name": "Scotland",
+          "code": "GB",
+          "flag": "https://media-4.api-sports.io/flags/gb.svg"
+        },
+        "league": {
+          "id": 35,
+          "name": "Tennent's Premiership",
+          "type": "League",
+          "logo": "https://media-4.api-sports.io/rugby/leagues/35.png",
+          "season": 2023
+        },
+        "teams": {
+          "home": {
+            "id": 738,
+            "name": "Heriots 2",
+            "logo": "https://media-4.api-sports.io/rugby/teams/738.png"
+          },
+          "away": {
+            "id": 281,
+            "name": "Glasgow Hawks",
+            "logo": "https://media-4.api-sports.io/rugby/teams/281.png"
+          }
+        },
+        "scores": {
+          "home": null,
+          "away": null
+        },
+        "periods": {
+          "first": {
+            "home": null,
+            "away": null
+          },
+          "second": {
+            "home": null,
+            "away": null
+          },
+          "overtime": {
+            "home": null,
+            "away": null
+          },
+          "second_overtime": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "id": 42035,
+        "date": "2024-02-03T15:00:00+00:00",
+        "time": "15:00",
+        "timestamp": 1706972400,
+        "timezone": "UTC",
+        "week": "18",
+        "status": {
+          "long": "Not Started",
+          "short": "NS"
+        },
+        "country": {
+          "id": 19,
+          "name": "Scotland",
+          "code": "GB",
+          "flag": "https://media-4.api-sports.io/flags/gb.svg"
+        },
+        "league": {
+          "id": 35,
+          "name": "Tennent's Premiership",
+          "type": "League",
+          "logo": "https://media-4.api-sports.io/rugby/leagues/35.png",
+          "season": 2023
+        },
+        "teams": {
+          "home": {
+            "id": 285,
+            "name": "Musselburgh",
+            "logo": "https://media-4.api-sports.io/rugby/teams/285.png"
+          },
+          "away": {
+            "id": 284,
+            "name": "Marr",
+            "logo": "https://media-4.api-sports.io/rugby/teams/284.png"
+          }
+        },
+        "scores": {
+          "home": null,
+          "away": null
+        },
+        "periods": {
+          "first": {
+            "home": null,
+            "away": null
+          },
+          "second": {
+            "home": null,
+            "away": null
+          },
+          "overtime": {
+            "home": null,
+            "away": null
+          },
+          "second_overtime": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "id": 42036,
+        "date": "2024-02-03T15:00:00+00:00",
+        "time": "15:00",
+        "timestamp": 1706972400,
+        "timezone": "UTC",
+        "week": "18",
+        "status": {
+          "long": "Not Started",
+          "short": "NS"
+        },
+        "country": {
+          "id": 19,
+          "name": "Scotland",
+          "code": "GB",
+          "flag": "https://media-4.api-sports.io/flags/gb.svg"
+        },
+        "league": {
+          "id": 35,
+          "name": "Tennent's Premiership",
+          "type": "League",
+          "logo": "https://media-4.api-sports.io/rugby/leagues/35.png",
+          "season": 2023
+        },
+        "teams": {
+          "home": {
+            "id": 283,
+            "name": "Jed-Forest",
+            "logo": "https://media-4.api-sports.io/rugby/teams/283.png"
+          },
+          "away": {
+            "id": 798,
+            "name": "Kelso",
+            "logo": "https://media-4.api-sports.io/rugby/teams/798.png"
+          }
+        },
+        "scores": {
+          "home": null,
+          "away": null
+        },
+        "periods": {
+          "first": {
+            "home": null,
+            "away": null
+          },
+          "second": {
+            "home": null,
+            "away": null
+          },
+          "overtime": {
+            "home": null,
+            "away": null
+          },
+          "second_overtime": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "id": 42037,
+        "date": "2024-02-03T15:00:00+00:00",
+        "time": "15:00",
+        "timestamp": 1706972400,
+        "timezone": "UTC",
+        "week": "18",
+        "status": {
+          "long": "Not Started",
+          "short": "NS"
+        },
+        "country": {
+          "id": 19,
+          "name": "Scotland",
+          "code": "GB",
+          "flag": "https://media-4.api-sports.io/flags/gb.svg"
+        },
+        "league": {
+          "id": 35,
+          "name": "Tennent's Premiership",
+          "type": "League",
+          "logo": "https://media-4.api-sports.io/rugby/leagues/35.png",
+          "season": 2023
+        },
+        "teams": {
+          "home": {
+            "id": 286,
+            "name": "Selkirk",
+            "logo": "https://media-4.api-sports.io/rugby/teams/286.png"
+          },
+          "away": {
+            "id": 282,
+            "name": "Hawick",
+            "logo": "https://media-4.api-sports.io/rugby/teams/282.png"
+          }
+        },
+        "scores": {
+          "home": null,
+          "away": null
+        },
+        "periods": {
+          "first": {
+            "home": null,
+            "away": null
+          },
+          "second": {
+            "home": null,
+            "away": null
+          },
+          "overtime": {
+            "home": null,
+            "away": null
+          },
+          "second_overtime": {
+            "home": null,
+            "away": null
+          }
+        }
+      }
+    ]
+  }
