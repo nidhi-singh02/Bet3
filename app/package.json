@@ -27,6 +27,7 @@
     "class-variance-authority": "^0.6.0",
     "clsx": "^1.2.1",
     "date-fns": "^2.30.0",
+    "dotenv": "^16.3.1",
     "ethereum-blockies": "^0.1.1",
     "lucide-react": "^0.220.0",
     "next": "^13.4.0",

@@ -10,7 +10,7 @@ export default function LeagueSection({
 }) {
   return (
     <div className="max-w-[100vw]">
-      <div className="mx-4 mb-4 mt-6 flex h-[152px] flex-col items-center justify-center rounded-[8px] bg-[url('/bg-field.png')] bg-center bg-no-repeat">
+      <div className="mx-4 mb-4 mt-6 flex h-[152px] flex-col items-center justify-center rounded-[8px] bg-[url('/cricket_field2.png')] bg-center bg-no-repeat">
         <Image
           src={league.logo ?? '/na.webp'}
           width={116}

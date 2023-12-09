@@ -18,6 +18,7 @@ import {
   useSportsPredictionGameGetPastPredictions,
 } from '@/generated'
 import { Game, PredictionResponse } from '@/types'
+import dotenv from 'dotenv';
 
 function addIndexToPredictions(
   predictions: readonly PredictionResponse[] | undefined,

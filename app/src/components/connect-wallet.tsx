@@ -40,6 +40,7 @@ const ConnectWallet = () => {
           >
             {(() => {
               if (!connected) {
+                console.log("chain not connected",chain);
                 return (
                   <Button
                     onClick={openConnectModal}
@@ -50,6 +51,7 @@ const ConnectWallet = () => {
                 )
               }
               if (chain.unsupported) {
+                console.log("chain",chain);
                 return (
                   <Button
                     onClick={openChainModal}

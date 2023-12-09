@@ -1,6 +1,7 @@
 import { getDefaultWallets } from '@rainbow-me/rainbowkit'
 import { configureChains, createConfig } from 'wagmi'
-import { polygonMumbai } from 'wagmi/chains'
+import { polygonMumbai,arbitrumGoerli,scrollTestnet,mantleTestnet,celoAlfajores,baseGoerli,lineaTestnet,filecoinCalibration} from 'wagmi/chains'
+// import { scrollTestnet} from 'wagmi/chains'
 import { alchemyProvider } from 'wagmi/providers/alchemy'
 import { publicProvider } from 'wagmi/providers/public'
 

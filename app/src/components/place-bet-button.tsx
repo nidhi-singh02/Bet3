@@ -16,6 +16,7 @@ import { Alert, AlertTitle } from '@/components/ui/alert'
 import { contractAddress, maxWager, minWager } from '@/config/contract'
 import { winnerToResult } from '@/config/api'
 import { sportsPredictionGameABI } from '@/generated'
+// import dotenv from 'dotenv';
 
 export default function PlaceBetButton({
   setTab,
@@ -116,6 +117,25 @@ export default function PlaceBetButton({
       setIsLoading(false)
     }
   }
+
+  // Load environment variables from .env file
+  // dotenv.config();
+  // const CurrChain = process.env.CURRENT_CHAIN;
+  // console.log("CurrChain", CurrChain);
+
+  // const chainToTokenSymbol = {
+  //   "polygonMumbai": "MATIC",
+  //   "arbitrumGoerli": "ETH",
+  //   "scrollTestnet": "ETH",
+  //   "mantleTestnet": "MNT",
+  //   "celoAlfajores": "CELO",
+  //   "baseGoerli": "ETH",
+  //   "lineaTestnet": "ETH"
+  // };
+
+  // const tokenSymbol = chainToTokenSymbol[process.env.CURRENT_CHAIN] || "UNKNOWN";
+
+  // console.log("Token Symbol:", tokenSymbol);
 
   return (
     <>

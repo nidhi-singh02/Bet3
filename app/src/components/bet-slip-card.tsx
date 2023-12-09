@@ -10,13 +10,15 @@ import { useDebounce } from '@/hooks/useDebounce'
 import { useLocalStateContext } from '@/app/context'
 import { Input } from '@/components/ui/input'
 import { Form, FormControl, FormField, FormItem } from '@/components/ui/form'
-import { contractAddress, minWager } from '@/config/contract'
+import { contractAddress, currChain, minWager } from '@/config/contract'
 import { winnerToResult } from '@/config/api'
 import {
   useSportsPredictionGameCalculateWinnings,
   useSportsPredictionGameGetGameId,
 } from '@/generated'
 import { Prediction } from '@/types'
+// import dotenv from 'dotenv';
+
 
 const formSchema = z.object({
   wager: z.coerce.number().gt(0),
@@ -74,6 +76,38 @@ export default function BetslipCard({
     },
   })
 
+  // Load environment variables from .env file
+  // dotenv.config();
+  // const CurrChain = process.env.CURRENT_CHAIN;
+  // const CurrChain = "mantleTestnet"
+  // console.log("CurrChain", CurrChain);
+  // const chainToTokenSymbol = {
+  //   "polygonMumbai": "MATIC",
+  //   "arbitrumGoerli": "ETH",
+  //   "scrollTestnet": "ETH",
+  //   "mantleTestnet": "MNT",
+  //   "celoAlfajores": "CELO",
+  //   "baseGoerli": "ETH",
+  //   "lineaTestnet": "ETH"
+  // };
+
+  console.log("curr chain",currChain);
+  const tokenSymbol = currChain.nativeCurrency.symbol;
+  console.log("Token Symbol:", tokenSymbol);
+  const chainToToken = {
+    MATIC: "/matic.svg",
+    ETH: "/ethereum-eth-logo.svg",
+    MNT: "/mantle-mnt-logo.svg",
+    CELO: "/celo-celo-logo.svg",
+  };
+  const tokenImage = chainToToken[tokenSymbol];
+  
+
+
+
+
+
+
   return (
     <div className="mb-4 flex w-full items-start space-x-[24px] rounded-[8px] border-l-[12px] border-l-[#2FB96C] bg-card py-6 pl-3 pr-4">
       <button
@@ -125,7 +159,7 @@ export default function BetslipCard({
                     <FormControl>
                       <div className="flex space-x-[8px] rounded-[8px] bg-secondary px-4 py-3">
                         <Image
-                          src="/matic.svg"
+                          src={tokenImage}
                           width={16}
                           height={16}
                           alt="matic"
@@ -158,7 +192,7 @@ export default function BetslipCard({
                     <FormControl>
                       <div className="flex space-x-[8px] rounded-[8px] bg-secondary px-4 py-3">
                         <Image
-                          src="/matic.svg"
+                          src={tokenImage}
                           width={16}
                           height={16}
                           alt="matic"

@@ -7,13 +7,14 @@ import Image from 'next/image'
 import { format } from 'date-fns'
 import { Button } from '@/components/ui/button'
 import ClaimButton from '@/components/claim-button'
-import { contractAddress } from '@/config/contract'
+import { contractAddress} from '@/config/contract'
 import {
   useSportsPredictionGameCalculateWinnings,
   useSportsPredictionGameGetGame,
   useSportsPredictionGameIsPredictionCorrect,
 } from '@/generated'
 import { Game, Winner, PredictionResponse } from '@/types'
+
 
 export default function BetCard({
   prediction,
