@@ -10,9 +10,13 @@ import { useSDK } from '@metamask/sdk-react'
 
 const ConnectWallet = () => {
   const { connect, address } = useCelo()
-  const { sdk, connected, connecting, provider, chainId } = useSDK()
+  const { sdk, connected, connecting, provider } = useSDK()
   const [state, setState] = useState(false)
   const [account, setAccount] = useState<any>()
+  //Add supported chains here
+  const chainIdList = [
+    44787, 1, 137, 80001, 421613, 534351, 84531, 59140, 314159, 5001, 5003,
+  ]
 
   const metaMaskConnect = async () => {
     try {
@@ -52,52 +56,27 @@ const ConnectWallet = () => {
               },
             })}
           >
-            {state && (
-              <div className="!absolute rounded-md top-[50%] right-[50%] bg-secondary p-4 w-[300px]">
-                <div className=" flex">
-                  <div className="flex-shrink-0">
-                    <button
-                      className="h-5 w-5 text-lg font-bold text-white"
-                      onClick={() => setState(false)}
-                    >
-                      X
-                    </button>
-                  </div>
-                  <div className="ml-3">
-                    <h3 className="text-lg font-bold text-white">Wallets</h3>
-                    <div className="mt-2 w-full">
-                      <Button
-                        onClick={connect}
-                        className="w-full bg-[#375BD2] text-base font-black leading-4 text-foreground hover:bg-[#375BD2]/90"
-                      >
-                        MiniPay Wallet
-                      </Button>
-                    </div>
-                    <div className="mt-2 w-full">
-                      <Button
-                        className="w-full bg-[#375BD2] text-base font-black leading-4 text-foreground hover:bg-[#375BD2]/90"
-                        onClick={metaMaskConnect}
-                      >
-                        Metamask Sdk Wallet
-                      </Button>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            )}
             {(() => {
               if (!connected) {
                 console.log('chain not connected', chain)
                 return (
-                  //Minpay wallet connect
+                  //Metamask SDK wallet connect
+                  // <Button
+                  //   className="w-full bg-[#375BD2] text-base font-black leading-4 text-foreground hover:bg-[#375BD2]/90"
+                  //   onClick={metaMaskConnect}
+                  // >
+                  //   Metamask Sdk Wallet
+                  // </Button>
+
+                  // Minipay kit Wallet connect
                   <Button
-                    onClick={() => setState(true)}
+                    onClick={connect}
                     className="w-full bg-[#375BD2] text-base font-black leading-4 text-foreground hover:bg-[#375BD2]/90"
                   >
-                    Connect wallet
+                    Minipay wallet
                   </Button>
 
-                  //Rainbow kit Wallet connect
+                  // Rainbow kit Wallet connect
                   // <Button
                   //   onClick={openConnectModal}
                   //   className="w-full bg-[#375BD2] text-base font-black leading-4 text-foreground hover:bg-[#375BD2]/90"
@@ -106,7 +85,7 @@ const ConnectWallet = () => {
                   // </Button>
                 )
               }
-              if (chain.unsupported && !(chain.id === 44787)) {
+              if (!chainIdList.includes(chain.id)) {
                 console.log('chain', chain)
                 return (
                   <Button
