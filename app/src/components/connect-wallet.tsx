@@ -4,13 +4,16 @@ import Image from 'next/image'
 import { ConnectButton } from '@rainbow-me/rainbowkit'
 import blockies from 'ethereum-blockies'
 import { Button } from '@/components/ui/button'
-import { useCelo } from '@celo/react-celo'
-import Caret from '../../public/caret.svg'
-import { useSDK } from '@metamask/sdk-react'
+import { useCelo } from '@celo/react-celo';
+import Caret from '../../public/caret.svg';
+import { useSDK } from '@metamask/sdk-react';
+// import { useAccountAbstraction } from "./store/accountAbstractionContext";
+// import SafeWallet from './safe-wallet'
 
 const ConnectWallet = () => {
   const { connect, address } = useCelo()
   const { sdk, connected, connecting, provider } = useSDK()
+  // const { loginWeb3Auth, isAuthenticated, safeSelected, chainId, setChainId } = useAccountAbstraction();
   const [state, setState] = useState(false)
   const [account, setAccount] = useState<any>()
   //Add supported chains here
@@ -66,6 +69,14 @@ const ConnectWallet = () => {
                   //   onClick={metaMaskConnect}
                   // >
                   //   Metamask Sdk Wallet
+                  // </Button>
+
+                  // <SafeWallet/>
+                  // <Button
+                  //   onClick={loginWeb3Auth}
+                  //   className="w-full bg-[#375BD2] text-base font-black leading-4 text-foreground hover:bg-[#375BD2]/90"
+                  // >
+                  //   Safe Wallet
                   // </Button>
 
                   // Minipay kit Wallet connect
