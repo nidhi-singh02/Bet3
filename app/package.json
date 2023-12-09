@@ -11,6 +11,8 @@
     "prettier:write": "prettier --write ."
   },
   "dependencies": {
+    "@celo/contractkit": "^3.2.0",
+    "@celo/react-celo": "^5.0.4",
     "@hookform/resolvers": "^3.2.0",
     "@radix-ui/react-accordion": "^1.1.2",
     "@radix-ui/react-alert-dialog": "^1.0.4",

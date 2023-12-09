@@ -4,10 +4,11 @@ import Image from 'next/image'
 import { ConnectButton } from '@rainbow-me/rainbowkit'
 import blockies from 'ethereum-blockies'
 import { Button } from '@/components/ui/button'
-
+import { useCelo } from '@celo/react-celo'
 import Caret from '../../public/caret.svg'
 
 const ConnectWallet = () => {
+  const { connect, address } = useCelo()
   return (
     <ConnectButton.Custom>
       {({
@@ -40,18 +41,27 @@ const ConnectWallet = () => {
           >
             {(() => {
               if (!connected) {
-                console.log("chain not connected",chain);
+                console.log('chain not connected', chain)
                 return (
+                  //Minpay wallet connect
                   <Button
-                    onClick={openConnectModal}
+                    onClick={connect}
                     className="w-full bg-[#375BD2] text-base font-black leading-4 text-foreground hover:bg-[#375BD2]/90"
                   >
-                    Connect Wallet
+                    Connect wallet
                   </Button>
+
+                  //Rainbow kit Wallet connect
+                  // <Button
+                  //   onClick={openConnectModal}
+                  //   className="w-full bg-[#375BD2] text-base font-black leading-4 text-foreground hover:bg-[#375BD2]/90"
+                  // >
+                  //   Connect Wallet
+                  // </Button>
                 )
               }
-              if (chain.unsupported) {
-                console.log("chain",chain);
+              if (chain.unsupported && !(chain.id === 44787)) {
+                console.log('chain', chain)
                 return (
                   <Button
                     onClick={openChainModal}

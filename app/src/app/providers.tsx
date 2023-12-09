@@ -11,6 +11,10 @@ import {
 } from '@rainbow-me/rainbowkit'
 import { chains, config } from '@/wagmi'
 import { LocalStateContextProvider } from '@/app/context'
+import { Alfajores, CeloProvider } from '@celo/react-celo'
+import '@celo/react-celo/lib/styles.css'
+
+export const WC_PROJECT_ID = 'cbd4dfc72c388f372fc45f003becb013'
 
 const CustomAvatar: AvatarComponent = ({ address, ensImage, size }) => {
   return ensImage ? (
@@ -35,22 +39,43 @@ const CustomAvatar: AvatarComponent = ({ address, ensImage, size }) => {
 export function Providers({ children }: { children: React.ReactNode }) {
   const [mounted, setMounted] = React.useState(false)
   React.useEffect(() => setMounted(true), [])
-  console.log("all chains",chains)
+  console.log('all chains', chains)
   return (
     <WagmiConfig config={config}>
-      <RainbowKitProvider
-        chains={chains}
-        avatar={CustomAvatar}
-        theme={darkTheme({
-          accentColor: '#375BD2',
-          accentColorForeground: '#FFFFFF',
-        })}
-        modalSize="compact"
+      <CeloProvider
+        dapp={{
+          name: 'react-celo demo',
+          description: 'A demo DApp to showcase functionality',
+          url: 'https://react-celo.vercel.app',
+          icon: 'https://react-celo.vercel.app/favicon.ico',
+          walletConnectProjectId: WC_PROJECT_ID,
+        }}
+        network={{
+          name: 'Alfajores',
+          rpcUrl: 'https://alfajores-forno.celo-testnet.org',
+          graphQl: 'https://alfajores-blockscout.celo-testnet.org/graphiql',
+          explorer: 'https://alfajores-blockscout.celo-testnet.org',
+          chainId: 44787,
+        }}
+        defaultNetwork={Alfajores.name}
+        connectModal={{
+          providersOptions: { searchable: true },
+        }}
       >
-        <LocalStateContextProvider>
-          {mounted && children}
-        </LocalStateContextProvider>
-      </RainbowKitProvider>
+        <RainbowKitProvider
+          chains={chains}
+          avatar={CustomAvatar}
+          theme={darkTheme({
+            accentColor: '#375BD2',
+            accentColorForeground: '#FFFFFF',
+          })}
+          modalSize="compact"
+        >
+          <LocalStateContextProvider>
+            {mounted && children}
+          </LocalStateContextProvider>
+        </RainbowKitProvider>
+      </CeloProvider>
     </WagmiConfig>
   )
 }
