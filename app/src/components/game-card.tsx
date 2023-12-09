@@ -20,9 +20,9 @@ export default function GameCard({ game }: { game: Game }) {
           {game.teams.home.name}
         </p>
         <div className="flex items-center">
-          <div className="mx-4 rounded bg-primary px-[10px] py-1">
+          {/* <div className="mx-4 rounded bg-primary px-[10px] py-1">
             {game.scores.home ?? '0'}
-          </div>
+          </div> */}
           <PredictButton game={game} predictedWinner={Winner.Home} />
         </div>
       </div>
@@ -42,9 +42,9 @@ export default function GameCard({ game }: { game: Game }) {
           {game.teams.away.name}
         </p>
         <div className="flex items-center">
-          <div className="mx-4 rounded bg-primary px-[10px] py-1">
+          {/* <div className="mx-4 rounded bg-primary px-[10px] py-1">
             {game.scores.away ?? '0'}
-          </div>
+          </div> */}
           <PredictButton game={game} predictedWinner={Winner.Away} />
         </div>
       </div>
@@ -59,7 +59,8 @@ export default function GameCard({ game }: { game: Game }) {
       )}
       {!isLive && (
         <p className="mt-1 text-[12px] font-[450] leading-4 text-secondary-foreground">
-          {`${format(game.date, 'eeee, MMMM d @ h:mm aaa z')}`}
+          {/* {`${format(game.date, 'eeee, MMMM d @ h:mm aaa z')}`} */}
+          Upcoming Match
         </p>
       )}
     </div>

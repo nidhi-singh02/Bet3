@@ -14,23 +14,30 @@ import { json } from 'stream/consumers'
 export const fetchCurrentGames = async (sport: Sport, leagueId: number) => {
 
   console.log("games First")
-  const jsonString = readFileSync('game-baseball.json', 'utf8');
+  const jsonString = readFileSync('cricket_data.json', 'utf8');
   // Parse the JSON string into a JavaScript object
   const jsonObject = JSON.parse(jsonString);
-  const res1 = jsonObject
+  const res1 = jsonObject.typeMatches[0].seriesAdWrapper
 
-  const games: Game[] = res1.response.map((game: any) =>
+let allMatches: any[] = []
+for(const series of res1){
+  if(series.seriesMatches){
+    allMatches = allMatches.concat(series.seriesMatches.matches)
+  }
+}
+  const games: Game[] = allMatches.map((game: any) =>
     transformGame(game, sport),
   )
-  console.log("games 1",games)
+  // console.log("games 1",games)
 
 
+return games
   // const games = await fetchGames(sport, leagueId, currentSeason)
-  console.log("games our",games)
-  const upcoming: Game[] = games.filter((game: Game) =>
-    currentGameStatuses.includes(game.status),
-  )
-  return upcoming
+  // console.log("games our",games)
+  // const upcoming: Game[] = games.filter((game: Game) =>
+  //   currentGameStatuses.includes(game.status),
+  // )
+  // return upcoming
 }
 
 const gamesPaths = {
@@ -39,6 +46,7 @@ const gamesPaths = {
   [Sport.Hockey]: '/games',
   [Sport.Rugby]: '/games',
   [Sport.Soccer]: '/fixtures',
+  [Sport.Cricket]: '/fixtures',
 }
 
 export const fetchGames = async (
@@ -51,7 +59,7 @@ export const fetchGames = async (
     season: season.toString(),
   })
   
-  console.log("debug1")
+  // console.log("debug1")
   // const res = await fetchSportData(sport, gamesPaths[sport], params)
 
   const jsonString = readFileSync('game-baseball.json', 'utf8');
@@ -59,62 +67,87 @@ export const fetchGames = async (
   const jsonObject = JSON.parse(jsonString);
   const res1 = jsonObject
 
-
   const games: Game[] = res1.response.map((game: any) =>
     transformGame(game, sport),
   )
-  console.log("debugg")
+  // console.log("debugg")
   return games
 }
 
 const transformGame = (game: any, sport: Sport) => {
-  switch (sport) {
-    case Sport.Basketball:
-    case Sport.Baseball:
-    case Sport.Hockey:
-    case Sport.Rugby:
-      return {
-        id: game.id,
-        date: new Date(game.date),
-        timestamp: game.timestamp,
-        timezone: game.timezone,
-        status: game.status.short,
+       game = game.matchInfo
+       let winTeam = game.status.includes(game.team1.teamName)?game.team1.teamName:game.team2.teamName
+       let scores = {
+        home :0,
+        away:0
+       }
+       return {
+        id: game.matchId,
+        date: new Date(game.startDate),
+        timestamp: game.startDate,
+        timezone: game.startDate,
+        status: "FT",
         teams: {
           home: {
-            name: game.teams.home.name,
-            logo: game.teams.home.logo,
+            name: game.team1.teamName,
+            logo: "/"+game.team1.teamName+".png",
           },
           away: {
-            name: game.teams.away.name,
-            logo: game.teams.away.logo,
+            name: game.team2.teamName,
+            logo: "/"+game.team2.teamName+".png",
           },
         },
-        scores: transformScore(game.scores, sport),
+        scores: scores,
         sportId: sport,
+        winner : winTeam
       } as Game
-    case Sport.Soccer:
-      return {
-        id: game.fixture.id,
-        date: new Date(game.fixture.date),
-        timestamp: game.fixture.timestamp,
-        timezone: game.fixture.timezone,
-        status: game.fixture.status.short,
-        teams: {
-          home: {
-            name: game.teams.home.name,
-            logo: game.teams.home.logo,
-          },
-          away: {
-            name: game.teams.away.name,
-            logo: game.teams.away.logo,
-          },
-        },
-        scores: transformScore(game.goals, sport),
-        sportId: sport,
-      } as Game
-    default:
-      throw new Error(`Unknown sport ${sport}`)
-  }
+  // switch (sport) {
+  //   case Sport.Basketball:
+  //   case Sport.Baseball:
+  //   case Sport.Hockey:
+  //   case Sport.Rugby:
+  //     return {
+  //       id: game.id,
+  //       date: new Date(game.date),
+  //       timestamp: game.timestamp,
+  //       timezone: game.timezone,
+  //       status: game.status.short,
+  //       teams: {
+  //         home: {
+  //           name: game.teams.home.name,
+  //           logo: game.teams.home.logo,
+  //         },
+  //         away: {
+  //           name: game.teams.away.name,
+  //           logo: game.teams.away.logo,
+  //         },
+  //       },
+  //       scores: transformScore(game.scores, sport),
+  //       sportId: sport,
+  //     } as Game
+  //   case Sport.Soccer:
+  //     return {
+  //       id: game.fixture.id,
+  //       date: new Date(game.fixture.date),
+  //       timestamp: game.fixture.timestamp,
+  //       timezone: game.fixture.timezone,
+  //       status: game.fixture.status.short,
+  //       teams: {
+  //         home: {
+  //           name: game.teams.home.name,
+  //           logo: game.teams.home.logo,
+  //         },
+  //         away: {
+  //           name: game.teams.away.name,
+  //           logo: game.teams.away.logo,
+  //         },
+  //       },
+  //       scores: transformScore(game.goals, sport),
+  //       sportId: sport,
+  //     } as Game
+  //   default:
+  //     throw new Error(`Unknown sport ${sport}`)
+  // }
 }
 
 const transformScore = (scores: any, sport: Sport) => {
@@ -156,7 +189,7 @@ const jsonObject = JSON.parse(jsonString);
     league.seasons.some((season) => season.current === true),
   )
   // console.log("currentLeagues",currentLeagues)
-  console.log("reverse",currentLeagues.reverse().slice(0, leaguesCountLimit))
+  // console.log("reverse",currentLeagues.reverse().slice(0, leaguesCountLimit))
   return currentLeagues.reverse().slice(0, leaguesCountLimit)
 }
 
@@ -206,6 +239,7 @@ const baseUrls = {
   [Sport.Hockey]: 'https://v1.hockey.api-sports.io',
   [Sport.Rugby]: 'https://v1.rugby.api-sports.io',
   [Sport.Soccer]: 'https://v3.football.api-sports.io',
+  [Sport.Cricket]: 'https://v3.football.api-sports.io',
 }
 const apiKey = process.env.API_KEY || ''
 

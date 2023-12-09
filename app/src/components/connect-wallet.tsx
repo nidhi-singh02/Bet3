@@ -61,7 +61,7 @@ const ConnectWallet = () => {
           >
             {(() => {
               if (!connected) {
-                console.log('chain not connected', chain)
+                // console.log('chain not connected', chain)
                 return (
                   //Metamask SDK wallet connect
                   // <Button
@@ -80,24 +80,24 @@ const ConnectWallet = () => {
                   // </Button>
 
                   // Minipay kit Wallet connect
-                  <Button
-                    onClick={connect}
-                    className="w-full bg-[#375BD2] text-base font-black leading-4 text-foreground hover:bg-[#375BD2]/90"
-                  >
-                    Minipay wallet
-                  </Button>
-
-                  // Rainbow kit Wallet connect
                   // <Button
-                  //   onClick={openConnectModal}
+                  //   onClick={connect}
                   //   className="w-full bg-[#375BD2] text-base font-black leading-4 text-foreground hover:bg-[#375BD2]/90"
                   // >
-                  //   Connect Wallet
+                  //   Minipay wallet
                   // </Button>
+
+                  // Rainbow kit Wallet connect
+                  <Button
+                    onClick={openConnectModal}
+                    className="w-full bg-[#375BD2] text-base font-black leading-4 text-foreground hover:bg-[#375BD2]/90"
+                  >
+                    Connect Wallet
+                  </Button>
                 )
               }
               if (!chainIdList.includes(chain.id)) {
-                console.log('chain', chain)
+                // console.log('chain', chain)
                 return (
                   <Button
                     onClick={openChainModal}

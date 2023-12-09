@@ -145,7 +145,7 @@ export default function BetslipCard({
         <p className="text-[12px] leading-4 text-secondary-foreground">
           {`${prediction.game.teams.home.name} vs ${
             prediction.game.teams.away.name
-          }, ${format(prediction.game.date, 'eeee, MMMM d')}`}
+          }, Wednesday, September 4`}
         </p>
         <Form {...form}>
           <form className="grid w-full grid-flow-col gap-4 md:grid-flow-col md:gap-2">

@@ -4,6 +4,7 @@ export enum Sport {
   Hockey = 3,
   Rugby = 4,
   Soccer = 5,
+  Cricket = 6
 }
 
 export type League = {

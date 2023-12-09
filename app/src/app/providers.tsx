@@ -40,7 +40,7 @@ const CustomAvatar: AvatarComponent = ({ address, ensImage, size }) => {
 export function Providers({ children }: { children: React.ReactNode }) {
   const [mounted, setMounted] = React.useState(false)
   React.useEffect(() => setMounted(true), [])
-  console.log('all chains', chains)
+  // console.log('all chains', chains)
   return (
     <WagmiConfig config={config}>
       <MetaMaskProvider
