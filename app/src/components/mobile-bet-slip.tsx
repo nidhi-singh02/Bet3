@@ -15,7 +15,7 @@ export default function MobileBetSlip() {
       >
         <div className="flex h-16 items-center justify-center border-b border-b-border p-4">
           <Image
-            src="/logo.svg"
+            src="/boblogo.png"
             width={105}
             height={32}
             alt="logo"

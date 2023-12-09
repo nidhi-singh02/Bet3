@@ -9,7 +9,7 @@ const BetSlip = async () => {
   const games = (
     await Promise.all(
       leagueIds.map(async (leagueId) => {
-        const games = await fetchGames(Sport.Rugby, leagueId, currentSeason)
+        const games = await fetchGames(Sport.Cricket, leagueId, currentSeason)
         return games
       }),
     )

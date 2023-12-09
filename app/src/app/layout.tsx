@@ -40,7 +40,7 @@ export default async function RootLayout({
             <main className="max-w-[100vw] flex-1">
               <div className="flex h-16 items-center justify-between border-b border-b-border p-4 md:hidden">
                 <MobileNav />
-                <Image src="/logo.svg" width={105} height={32} alt="logo" className='ml-12' />
+                <Image src="/boblogo.png" width={105} height={32} alt="logo" className='ml-12' />
                 <div className="flex space-x-6">
                   <MobileConnectWallet />
                   <MobileBetSlip />

@@ -14,7 +14,7 @@ const { chains, publicClient, webSocketPublicClient } = configureChains(
 )
 
 const { connectors } = getDefaultWallets({
-  appName: 'rugby-predictions',
+  appName: 'cricket-predictions',
   chains,
   projectId: process.env.NEXT_PUBLIC_WALLET_CONNECT_ID!,
 })

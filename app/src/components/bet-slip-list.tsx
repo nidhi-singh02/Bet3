@@ -124,14 +124,14 @@ export default function BetSlipList({ games }: { games: Game[] }) {
           ) : (
             <div
               className={cn(
-                "flex w-full	flex-col items-center	justify-center bg-[url('/empty-bg.svg')] bg-center bg-no-repeat",
+                "flex w-full	flex-col items-center	justify-center bg-[url('/betonballs_bg.png')] bg-center bg-no-repeat",
                 predictionsError
                   ? 'h-[calc(100dvh-440px)] md:h-[calc(100vh-372px)]'
                   : 'h-[calc(100dvh-240px)] md:h-[calc(100vh-172px)]',
               )}
             >
               <Image
-                src="/rugby-man.svg"
+                src="/cricket 1 .png"
                 width={150}
                 height={204}
                 alt="empty-bets"
@@ -149,9 +149,9 @@ export default function BetSlipList({ games }: { games: Game[] }) {
         </TabsContent>
         <TabsContent value="my-bets" className="flex flex-col items-center ">
           {arePredictionsEmpty ? (
-            <div className="flex h-[calc(100dvh-240px)] w-full flex-col	items-center justify-center	bg-[url('/empty-bg.svg')] bg-center bg-no-repeat md:h-[calc(100vh-172px)]">
+            <div className="flex h-[calc(100dvh-240px)] w-full flex-col	items-center justify-center	bg-[url('/betonballs_bg.png')] bg-center bg-no-repeat md:h-[calc(100vh-172px)]">
               <Image
-                src="/rugby-man.svg"
+                src="/cricket 1 .png"
                 width={150}
                 height={204}
                 alt="empty-bets"

@@ -16,7 +16,7 @@ export default function MainNav() {
         <div className="border-b border-b-border pb-6">
           <Link href="/">
             <Image
-              src="/logo.svg"
+              src="/boblogo.png"
               width={155}
               height={48}
               alt="logo"
