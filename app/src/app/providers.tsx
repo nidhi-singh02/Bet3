@@ -13,6 +13,7 @@ import { chains, config } from '@/wagmi'
 import { LocalStateContextProvider } from '@/app/context'
 import { Alfajores, CeloProvider } from '@celo/react-celo'
 import '@celo/react-celo/lib/styles.css'
+import { MetaMaskProvider } from '@metamask/sdk-react'
 
 export const WC_PROJECT_ID = 'cbd4dfc72c388f372fc45f003becb013'
 
@@ -42,40 +43,51 @@ export function Providers({ children }: { children: React.ReactNode }) {
   console.log('all chains', chains)
   return (
     <WagmiConfig config={config}>
-      <CeloProvider
-        dapp={{
-          name: 'react-celo demo',
-          description: 'A demo DApp to showcase functionality',
-          url: 'https://react-celo.vercel.app',
-          icon: 'https://react-celo.vercel.app/favicon.ico',
-          walletConnectProjectId: WC_PROJECT_ID,
-        }}
-        network={{
-          name: 'Alfajores',
-          rpcUrl: 'https://alfajores-forno.celo-testnet.org',
-          graphQl: 'https://alfajores-blockscout.celo-testnet.org/graphiql',
-          explorer: 'https://alfajores-blockscout.celo-testnet.org',
-          chainId: 44787,
-        }}
-        defaultNetwork={Alfajores.name}
-        connectModal={{
-          providersOptions: { searchable: true },
+      <MetaMaskProvider
+        debug={false}
+        sdkOptions={{
+          checkInstallationImmediately: false,
+          dappMetadata: {
+            name: 'Demo React App',
+            url: window.location.host,
+          },
         }}
       >
-        <RainbowKitProvider
-          chains={chains}
-          avatar={CustomAvatar}
-          theme={darkTheme({
-            accentColor: '#375BD2',
-            accentColorForeground: '#FFFFFF',
-          })}
-          modalSize="compact"
+        <CeloProvider
+          dapp={{
+            name: 'react-celo demo',
+            description: 'A demo DApp to showcase functionality',
+            url: 'https://react-celo.vercel.app',
+            icon: 'https://react-celo.vercel.app/favicon.ico',
+            walletConnectProjectId: WC_PROJECT_ID,
+          }}
+          network={{
+            name: 'Alfajores',
+            rpcUrl: 'https://alfajores-forno.celo-testnet.org',
+            graphQl: 'https://alfajores-blockscout.celo-testnet.org/graphiql',
+            explorer: 'https://alfajores-blockscout.celo-testnet.org',
+            chainId: 44787,
+          }}
+          defaultNetwork={Alfajores.name}
+          connectModal={{
+            providersOptions: { searchable: true },
+          }}
         >
-          <LocalStateContextProvider>
-            {mounted && children}
-          </LocalStateContextProvider>
-        </RainbowKitProvider>
-      </CeloProvider>
+          <RainbowKitProvider
+            chains={chains}
+            avatar={CustomAvatar}
+            theme={darkTheme({
+              accentColor: '#375BD2',
+              accentColorForeground: '#FFFFFF',
+            })}
+            modalSize="compact"
+          >
+            <LocalStateContextProvider>
+              {mounted && children}
+            </LocalStateContextProvider>
+          </RainbowKitProvider>
+        </CeloProvider>
+      </MetaMaskProvider>
     </WagmiConfig>
   )
 }
