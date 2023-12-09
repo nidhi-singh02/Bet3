@@ -23,11 +23,11 @@ export default function MainNav() {
               className="mx-auto mt-1 hidden md:block"
             />
           </Link>
-          <div className="flex space-x-[16px] border-b border-b-border py-6">
+          {/* <div className="flex space-x-[16px] border-b border-b-border py-6">
             <Image src="/player.png" width={60} height={60} alt="player" />
             <UserBalance />
-          </div>
-          <Accordion type="single" defaultValue="disclaimer">
+          </div> */}
+          {/* <Accordion type="single" defaultValue="disclaimer">
             <AccordionItem value="disclaimer">
               <AccordionTrigger>
                 <div className="flex items-center space-x-[6px] text-base font-bold leading-4">
@@ -59,9 +59,9 @@ export default function MainNav() {
                 </p>
               </AccordionContent>
             </AccordionItem>
-          </Accordion>
+          </Accordion> */}
 
-          <a
+          {/* <a
             href="https://faucet.polygon.technology"
             target="_blank"
             rel="noreferrer"
@@ -90,9 +90,9 @@ export default function MainNav() {
               height={12}
               alt="external"
             />
-          </a>
+          </a> */}
         </div>
-        <div className="flex flex-col space-y-2">
+        {/* <div className="flex flex-col space-y-2">
           <p className="mb-2 font-bold leading-4 text-secondary-foreground">
             Demo Powered By:
           </p>
@@ -160,7 +160,7 @@ export default function MainNav() {
               alt="automation"
             />
           </a>
-        </div>
+        </div> */}
       </div>
     </ScrollArea>
   )

@@ -52,7 +52,7 @@ export const fetchGames = async (
   })
   
   console.log("debug1")
-  const res = await fetchSportData(sport, gamesPaths[sport], params)
+  // const res = await fetchSportData(sport, gamesPaths[sport], params)
 
   const jsonString = readFileSync('game-baseball.json', 'utf8');
   // Parse the JSON string into a JavaScript object
@@ -138,12 +138,12 @@ const transformScore = (scores: any, sport: Sport) => {
 }
 
 export const fetchCurrentLeagues = async (sport: Sport) => {
-  const res = await fetchSportData(
-    sport,
-    '/leagues',
-    new URLSearchParams(),
-    3600 * 24,
-  )
+  // const res = await fetchSportData(
+  //   sport,
+  //   '/leagues',
+  //   new URLSearchParams(),
+  //   3600 * 24,
+  // )
 
   const jsonString = readFileSync('Baseball_data.json', 'utf8');
 

@@ -34,28 +34,29 @@ export default async function Home({
       let allGames: Game[] = await fetchCurrentGames(Sport.Rugby, league.id)
       console.log("all games 2")
       // todo: remove after implementing dummy games
-      if (searchParams.mode === 'test') {
-        const testGames = await fetchTestGames(
-          Sport.Rugby,
-          league.id,
-          currentSeason,
-        )
-        allGames = [...testGames, ...allGames]
-      }
+      // if (searchParams.mode === 'test') {
+      //   const testGames = await fetchTestGames(
+      //     Sport.Rugby,
+      //     league.id,
+      //     currentSeason,
+      //   )
+      //   allGames = [...testGames, ...allGames]
+      // }
 
       console.log("all games 3")
+      const games = allGames;
 
-      const games = searchParams.search
-        ? allGames.filter(
-            ({ teams }) =>
-              teams.home.name
-                .toLowerCase()
-                .includes((searchParams.search as string).toLowerCase()) ||
-              teams.away.name
-                .toLowerCase()
-                .includes((searchParams.search as string).toLowerCase()),
-          )
-        : allGames
+      // const games = searchParams.search
+      //   ? allGames.filter(
+      //       ({ teams }) =>
+      //         teams.home.name
+      //           .toLowerCase()
+      //           .includes((searchParams.search as string).toLowerCase()) ||
+      //         teams.away.name
+      //           .toLowerCase()
+      //           .includes((searchParams.search as string).toLowerCase()),
+      //     )
+      //   : allGames
         console.log("our game",games)
 
       return { league: leaguesData[league.id] || league, games }
