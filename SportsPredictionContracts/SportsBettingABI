@@ -1,0 +1,497 @@
+{[
+	{
+		"inputs": [
+			{
+				"internalType": "uint256",
+				"name": "gameId",
+				"type": "uint256"
+			}
+		],
+		"name": "claim",
+		"outputs": [],
+		"stateMutability": "nonpayable",
+		"type": "function"
+	},
+	{
+		"inputs": [],
+		"name": "GameAlreadyRegistered",
+		"type": "error"
+	},
+	{
+		"inputs": [],
+		"name": "GameAlreadyStarted",
+		"type": "error"
+	},
+	{
+		"inputs": [],
+		"name": "GameIsResolved",
+		"type": "error"
+	},
+	{
+		"inputs": [],
+		"name": "GameNotReadyToResolve",
+		"type": "error"
+	},
+	{
+		"inputs": [],
+		"name": "GameNotRegistered",
+		"type": "error"
+	},
+	{
+		"inputs": [],
+		"name": "GameNotResolved",
+		"type": "error"
+	},
+	{
+		"inputs": [],
+		"name": "InsufficientValue",
+		"type": "error"
+	},
+	{
+		"inputs": [],
+		"name": "InvalidResult",
+		"type": "error"
+	},
+	{
+		"inputs": [],
+		"name": "NothingToClaim",
+		"type": "error"
+	},
+	{
+		"inputs": [
+			{
+				"internalType": "uint256",
+				"name": "gameId",
+				"type": "uint256"
+			},
+			{
+				"internalType": "enum SportsPredictionGame.Result",
+				"name": "result",
+				"type": "uint8"
+			}
+		],
+		"name": "predict",
+		"outputs": [],
+		"stateMutability": "payable",
+		"type": "function"
+	},
+	{
+		"inputs": [
+			{
+				"internalType": "uint256",
+				"name": "sportId",
+				"type": "uint256"
+			},
+			{
+				"internalType": "uint256",
+				"name": "externalId",
+				"type": "uint256"
+			},
+			{
+				"internalType": "uint256",
+				"name": "timestamp",
+				"type": "uint256"
+			},
+			{
+				"internalType": "enum SportsPredictionGame.Result",
+				"name": "result",
+				"type": "uint8"
+			}
+		],
+		"name": "registerAndPredict",
+		"outputs": [],
+		"stateMutability": "payable",
+		"type": "function"
+	},
+	{
+		"inputs": [],
+		"name": "ResolveAlreadyRequested",
+		"type": "error"
+	},
+	{
+		"inputs": [
+			{
+				"internalType": "uint256",
+				"name": "gameId",
+				"type": "uint256"
+			},
+			{
+				"internalType": "enum SportsPredictionGame.Result",
+				"name": "result",
+				"type": "uint8"
+			}
+		],
+		"name": "resolveGameOriginal",
+		"outputs": [],
+		"stateMutability": "nonpayable",
+		"type": "function"
+	},
+	{
+		"inputs": [],
+		"name": "TimestampInPast",
+		"type": "error"
+	},
+	{
+		"inputs": [],
+		"name": "ValueTooHigh",
+		"type": "error"
+	},
+	{
+		"anonymous": false,
+		"inputs": [
+			{
+				"indexed": true,
+				"internalType": "address",
+				"name": "user",
+				"type": "address"
+			},
+			{
+				"indexed": true,
+				"internalType": "uint256",
+				"name": "gameId",
+				"type": "uint256"
+			},
+			{
+				"indexed": false,
+				"internalType": "uint256",
+				"name": "amount",
+				"type": "uint256"
+			}
+		],
+		"name": "Claimed",
+		"type": "event"
+	},
+	{
+		"anonymous": false,
+		"inputs": [
+			{
+				"indexed": true,
+				"internalType": "uint256",
+				"name": "gameId",
+				"type": "uint256"
+			}
+		],
+		"name": "GameRegistered",
+		"type": "event"
+	},
+	{
+		"anonymous": false,
+		"inputs": [
+			{
+				"indexed": true,
+				"internalType": "uint256",
+				"name": "gameId",
+				"type": "uint256"
+			},
+			{
+				"indexed": false,
+				"internalType": "enum SportsPredictionGame.Result",
+				"name": "result",
+				"type": "uint8"
+			}
+		],
+		"name": "GameResolved",
+		"type": "event"
+	},
+	{
+		"anonymous": false,
+		"inputs": [
+			{
+				"indexed": true,
+				"internalType": "address",
+				"name": "user",
+				"type": "address"
+			},
+			{
+				"indexed": true,
+				"internalType": "uint256",
+				"name": "gameId",
+				"type": "uint256"
+			},
+			{
+				"indexed": false,
+				"internalType": "enum SportsPredictionGame.Result",
+				"name": "result",
+				"type": "uint8"
+			},
+			{
+				"indexed": false,
+				"internalType": "uint256",
+				"name": "amount",
+				"type": "uint256"
+			}
+		],
+		"name": "Predicted",
+		"type": "event"
+	},
+	{
+		"inputs": [
+			{
+				"internalType": "uint256",
+				"name": "gameId",
+				"type": "uint256"
+			},
+			{
+				"internalType": "uint256",
+				"name": "wager",
+				"type": "uint256"
+			},
+			{
+				"internalType": "enum SportsPredictionGame.Result",
+				"name": "result",
+				"type": "uint8"
+			}
+		],
+		"name": "calculateWinnings",
+		"outputs": [
+			{
+				"internalType": "uint256",
+				"name": "",
+				"type": "uint256"
+			}
+		],
+		"stateMutability": "view",
+		"type": "function"
+	},
+	{
+		"inputs": [],
+		"name": "getActiveGames",
+		"outputs": [
+			{
+				"components": [
+					{
+						"internalType": "uint256",
+						"name": "sportId",
+						"type": "uint256"
+					},
+					{
+						"internalType": "uint256",
+						"name": "externalId",
+						"type": "uint256"
+					},
+					{
+						"internalType": "uint256",
+						"name": "timestamp",
+						"type": "uint256"
+					},
+					{
+						"internalType": "uint256",
+						"name": "homeWagerAmount",
+						"type": "uint256"
+					},
+					{
+						"internalType": "uint256",
+						"name": "awayWagerAmount",
+						"type": "uint256"
+					},
+					{
+						"internalType": "bool",
+						"name": "resolved",
+						"type": "bool"
+					},
+					{
+						"internalType": "enum SportsPredictionGame.Result",
+						"name": "result",
+						"type": "uint8"
+					}
+				],
+				"internalType": "struct SportsPredictionGame.Game[]",
+				"name": "",
+				"type": "tuple[]"
+			}
+		],
+		"stateMutability": "view",
+		"type": "function"
+	},
+	{
+		"inputs": [
+			{
+				"internalType": "address",
+				"name": "user",
+				"type": "address"
+			}
+		],
+		"name": "getActivePredictions",
+		"outputs": [
+			{
+				"components": [
+					{
+						"internalType": "uint256",
+						"name": "gameId",
+						"type": "uint256"
+					},
+					{
+						"internalType": "enum SportsPredictionGame.Result",
+						"name": "result",
+						"type": "uint8"
+					},
+					{
+						"internalType": "uint256",
+						"name": "amount",
+						"type": "uint256"
+					},
+					{
+						"internalType": "bool",
+						"name": "claimed",
+						"type": "bool"
+					}
+				],
+				"internalType": "struct SportsPredictionGame.Prediction[]",
+				"name": "",
+				"type": "tuple[]"
+			}
+		],
+		"stateMutability": "view",
+		"type": "function"
+	},
+	{
+		"inputs": [
+			{
+				"internalType": "uint256",
+				"name": "gameId",
+				"type": "uint256"
+			}
+		],
+		"name": "getGame",
+		"outputs": [
+			{
+				"components": [
+					{
+						"internalType": "uint256",
+						"name": "sportId",
+						"type": "uint256"
+					},
+					{
+						"internalType": "uint256",
+						"name": "externalId",
+						"type": "uint256"
+					},
+					{
+						"internalType": "uint256",
+						"name": "timestamp",
+						"type": "uint256"
+					},
+					{
+						"internalType": "uint256",
+						"name": "homeWagerAmount",
+						"type": "uint256"
+					},
+					{
+						"internalType": "uint256",
+						"name": "awayWagerAmount",
+						"type": "uint256"
+					},
+					{
+						"internalType": "bool",
+						"name": "resolved",
+						"type": "bool"
+					},
+					{
+						"internalType": "enum SportsPredictionGame.Result",
+						"name": "result",
+						"type": "uint8"
+					}
+				],
+				"internalType": "struct SportsPredictionGame.Game",
+				"name": "",
+				"type": "tuple"
+			}
+		],
+		"stateMutability": "view",
+		"type": "function"
+	},
+	{
+		"inputs": [
+			{
+				"internalType": "uint256",
+				"name": "sportId",
+				"type": "uint256"
+			},
+			{
+				"internalType": "uint256",
+				"name": "externalId",
+				"type": "uint256"
+			}
+		],
+		"name": "getGameId",
+		"outputs": [
+			{
+				"internalType": "uint256",
+				"name": "",
+				"type": "uint256"
+			}
+		],
+		"stateMutability": "pure",
+		"type": "function"
+	},
+	{
+		"inputs": [
+			{
+				"internalType": "address",
+				"name": "user",
+				"type": "address"
+			}
+		],
+		"name": "getPastPredictions",
+		"outputs": [
+			{
+				"components": [
+					{
+						"internalType": "uint256",
+						"name": "gameId",
+						"type": "uint256"
+					},
+					{
+						"internalType": "enum SportsPredictionGame.Result",
+						"name": "result",
+						"type": "uint8"
+					},
+					{
+						"internalType": "uint256",
+						"name": "amount",
+						"type": "uint256"
+					},
+					{
+						"internalType": "bool",
+						"name": "claimed",
+						"type": "bool"
+					}
+				],
+				"internalType": "struct SportsPredictionGame.Prediction[]",
+				"name": "",
+				"type": "tuple[]"
+			}
+		],
+		"stateMutability": "view",
+		"type": "function"
+	},
+	{
+		"inputs": [
+			{
+				"internalType": "address",
+				"name": "user",
+				"type": "address"
+			},
+			{
+				"internalType": "uint256",
+				"name": "gameId",
+				"type": "uint256"
+			},
+			{
+				"internalType": "uint32",
+				"name": "predictionIdx",
+				"type": "uint32"
+			}
+		],
+		"name": "isPredictionCorrect",
+		"outputs": [
+			{
+				"internalType": "bool",
+				"name": "",
+				"type": "bool"
+			}
+		],
+		"stateMutability": "view",
+		"type": "function"
+	}
+]}
