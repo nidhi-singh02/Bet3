@@ -36,6 +36,7 @@ function addIndexToPredictions(
 }
 
 export default function BetSlipList({ games }: { games: Game[] }) {
+  // console.log("in bet slip list, games", games)
   const { address, isConnected } = useAccount()
   const {
     predictions,
@@ -55,6 +56,16 @@ export default function BetSlipList({ games }: { games: Game[] }) {
       watch: true,
     })
   const activePredictions = addIndexToPredictions(activePredictionsData)
+  console.log("active predictions", activePredictions)
+  // console.log("in prog pred", activePredictions[0].prediction)
+  // console.log("in prog i", activePredictions[0].i)
+  const sample = activePredictions?.map((prediction, i) => (
+    i
+  // console.log("in prog pred", prediction)
+  // console.log("in prog i", i)
+  //                 // <BetCard key={i} prediction={prediction} games={games} />
+                ))
+                console.log("sample",sample)
 
   const { data: pastPredictionsData } =
     useSportsPredictionGameGetPastPredictions({
@@ -63,6 +74,7 @@ export default function BetSlipList({ games }: { games: Game[] }) {
       watch: true,
     })
   const pastPredictions = addIndexToPredictions(pastPredictionsData)
+  console.log("past predictions", pastPredictions)
 
   const arePredictionsEmpty =
     (!activePredictions && !pastPredictions) ||

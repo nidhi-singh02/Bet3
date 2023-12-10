@@ -6,14 +6,15 @@ import { getLeaguesIds } from '@/lib/server-context'
 
 const BetSlip = async () => {
   const leagueIds = getLeaguesIds()
-  const games = (
-    await Promise.all(
-      leagueIds.map(async (leagueId) => {
-        const games = await fetchGames(Sport.Cricket, leagueId, currentSeason)
-        return games
-      }),
-    )
-  ).flat()
+  const games = await fetchGames(Sport.Cricket, 1, currentSeason)
+  // const games = (
+  //   await Promise.all(
+  //     leagueIds.map(async (leagueId) => {
+  //       const games = await fetchGames(Sport.Cricket, leagueId, currentSeason)
+  //       return games
+  //     }),
+  //   )
+  // ).flat()
 
   return (
     <>

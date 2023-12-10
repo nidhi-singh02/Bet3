@@ -19,662 +19,1824 @@ import {
 // SportsPredictionGame
 //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
+// export const sportsPredictionGameABI = [
+//   {
+//     stateMutability: 'nonpayable',
+//     type: 'constructor',
+//     inputs: [
+//       {
+//         name: 'config',
+//         internalType: 'struct Config',
+//         type: 'tuple',
+//         components: [
+//           { name: 'oracle', internalType: 'address', type: 'address' },
+//           { name: 'ccipRouter', internalType: 'address', type: 'address' },
+//           { name: 'link', internalType: 'address', type: 'address' },
+//           { name: 'weth9Token', internalType: 'address', type: 'address' },
+//           { name: 'exchangeToken', internalType: 'address', type: 'address' },
+//           { name: 'uniswapV3Router', internalType: 'address', type: 'address' },
+//           { name: 'subscriptionId', internalType: 'uint64', type: 'uint64' },
+//           {
+//             name: 'destinationChainSelector',
+//             internalType: 'uint64',
+//             type: 'uint64',
+//           },
+//           { name: 'gasLimit', internalType: 'uint32', type: 'uint32' },
+//           { name: 'secrets', internalType: 'bytes', type: 'bytes' },
+//           { name: 'source', internalType: 'string', type: 'string' },
+//         ],
+//       },
+//     ],
+//   },
+//   {
+//     type: 'error',
+//     inputs: [
+//       {
+//         name: 'destinationChainSelector',
+//         internalType: 'uint64',
+//         type: 'uint64',
+//       },
+//     ],
+//     name: 'DestinationChainNotWhitelisted',
+//   },
+//   { type: 'error', inputs: [], name: 'EmptyArgs' },
+//   { type: 'error', inputs: [], name: 'EmptySecrets' },
+//   { type: 'error', inputs: [], name: 'EmptySource' },
+//   {
+//     type: 'error',
+//     inputs: [
+//       { name: 'owner', internalType: 'address', type: 'address' },
+//       { name: 'target', internalType: 'address', type: 'address' },
+//       { name: 'value', internalType: 'uint256', type: 'uint256' },
+//     ],
+//     name: 'FailedToWithdrawEth',
+//   },
+//   { type: 'error', inputs: [], name: 'GameAlreadyRegistered' },
+//   { type: 'error', inputs: [], name: 'GameAlreadyStarted' },
+//   { type: 'error', inputs: [], name: 'GameIsResolved' },
+//   { type: 'error', inputs: [], name: 'GameNotReadyToResolve' },
+//   { type: 'error', inputs: [], name: 'GameNotRegistered' },
+//   { type: 'error', inputs: [], name: 'GameNotResolved' },
+//   { type: 'error', inputs: [], name: 'InsufficientValue' },
+//   { type: 'error', inputs: [], name: 'InvalidResult' },
+//   { type: 'error', inputs: [], name: 'NoDestinationContractReceiver' },
+//   { type: 'error', inputs: [], name: 'NoInlineSecrets' },
+//   {
+//     type: 'error',
+//     inputs: [
+//       { name: 'currentBalance', internalType: 'uint256', type: 'uint256' },
+//       { name: 'calculatedFees', internalType: 'uint256', type: 'uint256' },
+//     ],
+//     name: 'NotEnoughBalance',
+//   },
+//   { type: 'error', inputs: [], name: 'NothingToClaim' },
+//   { type: 'error', inputs: [], name: 'NothingToWithdraw' },
+//   { type: 'error', inputs: [], name: 'RequestIsAlreadyPending' },
+//   { type: 'error', inputs: [], name: 'RequestIsNotPending' },
+//   { type: 'error', inputs: [], name: 'SenderIsNotRegistry' },
+//   { type: 'error', inputs: [], name: 'TimestampInPast' },
+//   {
+//     type: 'event',
+//     anonymous: false,
+//     inputs: [
+//       { name: 'user', internalType: 'address', type: 'address', indexed: true },
+//       {
+//         name: 'gameId',
+//         internalType: 'uint256',
+//         type: 'uint256',
+//         indexed: true,
+//       },
+//       {
+//         name: 'amount',
+//         internalType: 'uint256',
+//         type: 'uint256',
+//         indexed: false,
+//       },
+//     ],
+//     name: 'Claimed',
+//   },
+//   {
+//     type: 'event',
+//     anonymous: false,
+//     inputs: [
+//       {
+//         name: 'gameId',
+//         internalType: 'uint256',
+//         type: 'uint256',
+//         indexed: true,
+//       },
+//     ],
+//     name: 'GameRegistered',
+//   },
+//   {
+//     type: 'event',
+//     anonymous: false,
+//     inputs: [
+//       {
+//         name: 'gameId',
+//         internalType: 'uint256',
+//         type: 'uint256',
+//         indexed: true,
+//       },
+//       {
+//         name: 'result',
+//         internalType: 'enum SportsPredictionGame.Result',
+//         type: 'uint8',
+//         indexed: false,
+//       },
+//     ],
+//     name: 'GameResolved',
+//   },
+//   {
+//     type: 'event',
+//     anonymous: false,
+//     inputs: [
+//       {
+//         name: 'messageId',
+//         internalType: 'bytes32',
+//         type: 'bytes32',
+//         indexed: true,
+//       },
+//       {
+//         name: 'destinationChainSelector',
+//         internalType: 'uint64',
+//         type: 'uint64',
+//         indexed: true,
+//       },
+//       {
+//         name: 'receiver',
+//         internalType: 'address',
+//         type: 'address',
+//         indexed: false,
+//       },
+//       { name: 'data', internalType: 'bytes', type: 'bytes', indexed: false },
+//       {
+//         name: 'token',
+//         internalType: 'address',
+//         type: 'address',
+//         indexed: false,
+//       },
+//       {
+//         name: 'tokenAmount',
+//         internalType: 'uint256',
+//         type: 'uint256',
+//         indexed: false,
+//       },
+//       {
+//         name: 'feeToken',
+//         internalType: 'address',
+//         type: 'address',
+//         indexed: false,
+//       },
+//       {
+//         name: 'fees',
+//         internalType: 'uint256',
+//         type: 'uint256',
+//         indexed: false,
+//       },
+//     ],
+//     name: 'MessageSent',
+//   },
+//   { type: 'event', anonymous: false, inputs: [], name: 'NoPendingRequest' },
+//   {
+//     type: 'event',
+//     anonymous: false,
+//     inputs: [
+//       { name: 'from', internalType: 'address', type: 'address', indexed: true },
+//       { name: 'to', internalType: 'address', type: 'address', indexed: true },
+//     ],
+//     name: 'OwnershipTransferRequested',
+//   },
+//   {
+//     type: 'event',
+//     anonymous: false,
+//     inputs: [
+//       { name: 'from', internalType: 'address', type: 'address', indexed: true },
+//       { name: 'to', internalType: 'address', type: 'address', indexed: true },
+//     ],
+//     name: 'OwnershipTransferred',
+//   },
+//   {
+//     type: 'event',
+//     anonymous: false,
+//     inputs: [
+//       { name: 'user', internalType: 'address', type: 'address', indexed: true },
+//       {
+//         name: 'gameId',
+//         internalType: 'uint256',
+//         type: 'uint256',
+//         indexed: true,
+//       },
+//       {
+//         name: 'result',
+//         internalType: 'enum SportsPredictionGame.Result',
+//         type: 'uint8',
+//         indexed: false,
+//       },
+//       {
+//         name: 'amount',
+//         internalType: 'uint256',
+//         type: 'uint256',
+//         indexed: false,
+//       },
+//     ],
+//     name: 'Predicted',
+//   },
+//   {
+//     type: 'event',
+//     anonymous: false,
+//     inputs: [
+//       {
+//         name: 'response',
+//         internalType: 'bytes',
+//         type: 'bytes',
+//         indexed: false,
+//       },
+//     ],
+//     name: 'RequestFailed',
+//   },
+//   {
+//     type: 'event',
+//     anonymous: false,
+//     inputs: [
+//       { name: 'id', internalType: 'bytes32', type: 'bytes32', indexed: true },
+//     ],
+//     name: 'RequestFulfilled',
+//   },
+//   {
+//     type: 'event',
+//     anonymous: false,
+//     inputs: [
+//       { name: 'id', internalType: 'bytes32', type: 'bytes32', indexed: true },
+//     ],
+//     name: 'RequestSent',
+//   },
+//   {
+//     type: 'event',
+//     anonymous: false,
+//     inputs: [
+//       {
+//         name: 'sportId',
+//         internalType: 'uint256',
+//         type: 'uint256',
+//         indexed: false,
+//       },
+//       {
+//         name: 'externalId',
+//         internalType: 'uint256',
+//         type: 'uint256',
+//         indexed: false,
+//       },
+//       {
+//         name: 'requestId',
+//         internalType: 'bytes32',
+//         type: 'bytes32',
+//         indexed: false,
+//       },
+//     ],
+//     name: 'RequestedResult',
+//   },
+//   {
+//     type: 'event',
+//     anonymous: false,
+//     inputs: [
+//       {
+//         name: 'requestId',
+//         internalType: 'bytes32',
+//         type: 'bytes32',
+//         indexed: false,
+//       },
+//       {
+//         name: 'response',
+//         internalType: 'bytes',
+//         type: 'bytes',
+//         indexed: false,
+//       },
+//     ],
+//     name: 'ResultReceived',
+//   },
+//   {
+//     type: 'event',
+//     anonymous: false,
+//     inputs: [
+//       {
+//         name: 'requestId',
+//         internalType: 'bytes32',
+//         type: 'bytes32',
+//         indexed: true,
+//       },
+//       { name: 'to', internalType: 'address', type: 'address', indexed: true },
+//       {
+//         name: 'amount',
+//         internalType: 'uint256',
+//         type: 'uint256',
+//         indexed: false,
+//       },
+//     ],
+//     name: 'TransferRequestSent',
+//   },
+//   {
+//     stateMutability: 'nonpayable',
+//     type: 'function',
+//     inputs: [],
+//     name: 'acceptOwnership',
+//     outputs: [],
+//   },
+//   {
+//     stateMutability: 'view',
+//     type: 'function',
+//     inputs: [
+//       { name: 'gameId', internalType: 'uint256', type: 'uint256' },
+//       { name: 'wager', internalType: 'uint256', type: 'uint256' },
+//       {
+//         name: 'result',
+//         internalType: 'enum SportsPredictionGame.Result',
+//         type: 'uint8',
+//       },
+//     ],
+//     name: 'calculateWinnings',
+//     outputs: [{ name: '', internalType: 'uint256', type: 'uint256' }],
+//   },
+//   {
+//     stateMutability: 'view',
+//     type: 'function',
+//     inputs: [{ name: '', internalType: 'bytes', type: 'bytes' }],
+//     name: 'checkUpkeep',
+//     outputs: [
+//       { name: '', internalType: 'bool', type: 'bool' },
+//       { name: '', internalType: 'bytes', type: 'bytes' },
+//     ],
+//   },
+//   {
+//     stateMutability: 'nonpayable',
+//     type: 'function',
+//     inputs: [
+//       { name: 'gameId', internalType: 'uint256', type: 'uint256' },
+//       { name: 'transfer', internalType: 'bool', type: 'bool' },
+//     ],
+//     name: 'claim',
+//     outputs: [],
+//   },
+//   {
+//     stateMutability: 'nonpayable',
+//     type: 'function',
+//     inputs: [
+//       {
+//         name: '_destinationChainSelector',
+//         internalType: 'uint64',
+//         type: 'uint64',
+//       },
+//     ],
+//     name: 'denylistDestinationChain',
+//     outputs: [],
+//   },
+//   {
+//     stateMutability: 'view',
+//     type: 'function',
+//     inputs: [
+//       {
+//         name: 'req',
+//         internalType: 'struct Functions.Request',
+//         type: 'tuple',
+//         components: [
+//           {
+//             name: 'codeLocation',
+//             internalType: 'enum Functions.Location',
+//             type: 'uint8',
+//           },
+//           {
+//             name: 'secretsLocation',
+//             internalType: 'enum Functions.Location',
+//             type: 'uint8',
+//           },
+//           {
+//             name: 'language',
+//             internalType: 'enum Functions.CodeLanguage',
+//             type: 'uint8',
+//           },
+//           { name: 'source', internalType: 'string', type: 'string' },
+//           { name: 'secrets', internalType: 'bytes', type: 'bytes' },
+//           { name: 'args', internalType: 'string[]', type: 'string[]' },
+//         ],
+//       },
+//       { name: 'subscriptionId', internalType: 'uint64', type: 'uint64' },
+//       { name: 'gasLimit', internalType: 'uint32', type: 'uint32' },
+//       { name: 'gasPrice', internalType: 'uint256', type: 'uint256' },
+//     ],
+//     name: 'estimateCost',
+//     outputs: [{ name: '', internalType: 'uint96', type: 'uint96' }],
+//   },
+//   {
+//     stateMutability: 'view',
+//     type: 'function',
+//     inputs: [],
+//     name: 'getActiveGames',
+//     outputs: [
+//       {
+//         name: '',
+//         internalType: 'struct SportsPredictionGame.Game[]',
+//         type: 'tuple[]',
+//         components: [
+//           { name: 'sportId', internalType: 'uint256', type: 'uint256' },
+//           { name: 'externalId', internalType: 'uint256', type: 'uint256' },
+//           { name: 'timestamp', internalType: 'uint256', type: 'uint256' },
+//           { name: 'homeWagerAmount', internalType: 'uint256', type: 'uint256' },
+//           { name: 'awayWagerAmount', internalType: 'uint256', type: 'uint256' },
+//           { name: 'resolved', internalType: 'bool', type: 'bool' },
+//           {
+//             name: 'result',
+//             internalType: 'enum SportsPredictionGame.Result',
+//             type: 'uint8',
+//           },
+//         ],
+//       },
+//     ],
+//   },
+//   {
+//     stateMutability: 'view',
+//     type: 'function',
+//     inputs: [{ name: 'user', internalType: 'address', type: 'address' }],
+//     name: 'getActivePredictions',
+//     outputs: [
+//       {
+//         name: '',
+//         internalType: 'struct SportsPredictionGame.Prediction[]',
+//         type: 'tuple[]',
+//         components: [
+//           { name: 'gameId', internalType: 'uint256', type: 'uint256' },
+//           {
+//             name: 'result',
+//             internalType: 'enum SportsPredictionGame.Result',
+//             type: 'uint8',
+//           },
+//           { name: 'amount', internalType: 'uint256', type: 'uint256' },
+//           { name: 'claimed', internalType: 'bool', type: 'bool' },
+//         ],
+//       },
+//     ],
+//   },
+//   {
+//     stateMutability: 'view',
+//     type: 'function',
+//     inputs: [],
+//     name: 'getDONPublicKey',
+//     outputs: [{ name: '', internalType: 'bytes', type: 'bytes' }],
+//   },
+//   {
+//     stateMutability: 'view',
+//     type: 'function',
+//     inputs: [{ name: 'gameId', internalType: 'uint256', type: 'uint256' }],
+//     name: 'getGame',
+//     outputs: [
+//       {
+//         name: '',
+//         internalType: 'struct SportsPredictionGame.Game',
+//         type: 'tuple',
+//         components: [
+//           { name: 'sportId', internalType: 'uint256', type: 'uint256' },
+//           { name: 'externalId', internalType: 'uint256', type: 'uint256' },
+//           { name: 'timestamp', internalType: 'uint256', type: 'uint256' },
+//           { name: 'homeWagerAmount', internalType: 'uint256', type: 'uint256' },
+//           { name: 'awayWagerAmount', internalType: 'uint256', type: 'uint256' },
+//           { name: 'resolved', internalType: 'bool', type: 'bool' },
+//           {
+//             name: 'result',
+//             internalType: 'enum SportsPredictionGame.Result',
+//             type: 'uint8',
+//           },
+//         ],
+//       },
+//     ],
+//   },
+//   {
+//     stateMutability: 'pure',
+//     type: 'function',
+//     inputs: [
+//       { name: 'sportId', internalType: 'uint256', type: 'uint256' },
+//       { name: 'externalId', internalType: 'uint256', type: 'uint256' },
+//     ],
+//     name: 'getGameId',
+//     outputs: [{ name: '', internalType: 'uint256', type: 'uint256' }],
+//   },
+//   {
+//     stateMutability: 'view',
+//     type: 'function',
+//     inputs: [{ name: 'user', internalType: 'address', type: 'address' }],
+//     name: 'getPastPredictions',
+//     outputs: [
+//       {
+//         name: '',
+//         internalType: 'struct SportsPredictionGame.Prediction[]',
+//         type: 'tuple[]',
+//         components: [
+//           { name: 'gameId', internalType: 'uint256', type: 'uint256' },
+//           {
+//             name: 'result',
+//             internalType: 'enum SportsPredictionGame.Result',
+//             type: 'uint8',
+//           },
+//           { name: 'amount', internalType: 'uint256', type: 'uint256' },
+//           { name: 'claimed', internalType: 'bool', type: 'bool' },
+//         ],
+//       },
+//     ],
+//   },
+//   {
+//     stateMutability: 'nonpayable',
+//     type: 'function',
+//     inputs: [
+//       { name: 'requestId', internalType: 'bytes32', type: 'bytes32' },
+//       { name: 'response', internalType: 'bytes', type: 'bytes' },
+//       { name: 'err', internalType: 'bytes', type: 'bytes' },
+//     ],
+//     name: 'handleOracleFulfillment',
+//     outputs: [],
+//   },
+//   {
+//     stateMutability: 'view',
+//     type: 'function',
+//     inputs: [
+//       { name: 'user', internalType: 'address', type: 'address' },
+//       { name: 'gameId', internalType: 'uint256', type: 'uint256' },
+//       { name: 'predictionIdx', internalType: 'uint32', type: 'uint32' },
+//     ],
+//     name: 'isPredictionCorrect',
+//     outputs: [{ name: '', internalType: 'bool', type: 'bool' }],
+//   },
+//   {
+//     stateMutability: 'view',
+//     type: 'function',
+//     inputs: [],
+//     name: 'owner',
+//     outputs: [{ name: '', internalType: 'address', type: 'address' }],
+//   },
+//   {
+//     stateMutability: 'nonpayable',
+//     type: 'function',
+//     inputs: [{ name: 'data', internalType: 'bytes', type: 'bytes' }],
+//     name: 'performUpkeep',
+//     outputs: [],
+//   },
+//   {
+//     stateMutability: 'payable',
+//     type: 'function',
+//     inputs: [
+//       { name: 'gameId', internalType: 'uint256', type: 'uint256' },
+//       {
+//         name: 'result',
+//         internalType: 'enum SportsPredictionGame.Result',
+//         type: 'uint8',
+//       },
+//     ],
+//     name: 'predict',
+//     outputs: [],
+//   },
+//   {
+//     stateMutability: 'view',
+//     type: 'function',
+//     inputs: [{ name: 'gameId', internalType: 'uint256', type: 'uint256' }],
+//     name: 'readyToResolve',
+//     outputs: [{ name: '', internalType: 'bool', type: 'bool' }],
+//   },
+//   {
+//     stateMutability: 'payable',
+//     type: 'function',
+//     inputs: [
+//       { name: 'sportId', internalType: 'uint256', type: 'uint256' },
+//       { name: 'externalId', internalType: 'uint256', type: 'uint256' },
+//       { name: 'timestamp', internalType: 'uint256', type: 'uint256' },
+//       {
+//         name: 'result',
+//         internalType: 'enum SportsPredictionGame.Result',
+//         type: 'uint8',
+//       },
+//     ],
+//     name: 'registerAndPredict',
+//     outputs: [],
+//   },
+//   {
+//     stateMutability: 'nonpayable',
+//     type: 'function',
+//     inputs: [
+//       {
+//         name: '_destinationContractReceiver',
+//         internalType: 'address',
+//         type: 'address',
+//       },
+//     ],
+//     name: 'setDestinationContractReceiver',
+//     outputs: [],
+//   },
+//   {
+//     stateMutability: 'nonpayable',
+//     type: 'function',
+//     inputs: [{ name: 'to', internalType: 'address', type: 'address' }],
+//     name: 'transferOwnership',
+//     outputs: [],
+//   },
+//   {
+//     stateMutability: 'nonpayable',
+//     type: 'function',
+//     inputs: [
+//       {
+//         name: '_destinationChainSelector',
+//         internalType: 'uint64',
+//         type: 'uint64',
+//       },
+//     ],
+//     name: 'whitelistDestinationChain',
+//     outputs: [],
+//   },
+//   {
+//     stateMutability: 'view',
+//     type: 'function',
+//     inputs: [{ name: '', internalType: 'uint64', type: 'uint64' }],
+//     name: 'whitelistedDestinationChains',
+//     outputs: [{ name: '', internalType: 'bool', type: 'bool' }],
+//   },
+//   {
+//     stateMutability: 'nonpayable',
+//     type: 'function',
+//     inputs: [
+//       { name: '_beneficiary', internalType: 'address', type: 'address' },
+//     ],
+//     name: 'withdraw',
+//     outputs: [],
+//   },
+//   {
+//     stateMutability: 'nonpayable',
+//     type: 'function',
+//     inputs: [
+//       { name: '_beneficiary', internalType: 'address', type: 'address' },
+//       { name: '_token', internalType: 'address', type: 'address' },
+//     ],
+//     name: 'withdrawToken',
+//     outputs: [],
+//   },
+//   { stateMutability: 'payable', type: 'receive' },
+// ] as const
+
 export const sportsPredictionGameABI = [
-  {
-    stateMutability: 'nonpayable',
-    type: 'constructor',
-    inputs: [
-      {
-        name: 'config',
-        internalType: 'struct Config',
-        type: 'tuple',
-        components: [
-          { name: 'oracle', internalType: 'address', type: 'address' },
-          { name: 'ccipRouter', internalType: 'address', type: 'address' },
-          { name: 'link', internalType: 'address', type: 'address' },
-          { name: 'weth9Token', internalType: 'address', type: 'address' },
-          { name: 'exchangeToken', internalType: 'address', type: 'address' },
-          { name: 'uniswapV3Router', internalType: 'address', type: 'address' },
-          { name: 'subscriptionId', internalType: 'uint64', type: 'uint64' },
-          {
-            name: 'destinationChainSelector',
-            internalType: 'uint64',
-            type: 'uint64',
-          },
-          { name: 'gasLimit', internalType: 'uint32', type: 'uint32' },
-          { name: 'secrets', internalType: 'bytes', type: 'bytes' },
-          { name: 'source', internalType: 'string', type: 'string' },
-        ],
-      },
-    ],
-  },
-  {
-    type: 'error',
-    inputs: [
-      {
-        name: 'destinationChainSelector',
-        internalType: 'uint64',
-        type: 'uint64',
-      },
-    ],
-    name: 'DestinationChainNotWhitelisted',
-  },
-  { type: 'error', inputs: [], name: 'EmptyArgs' },
-  { type: 'error', inputs: [], name: 'EmptySecrets' },
-  { type: 'error', inputs: [], name: 'EmptySource' },
-  {
-    type: 'error',
-    inputs: [
-      { name: 'owner', internalType: 'address', type: 'address' },
-      { name: 'target', internalType: 'address', type: 'address' },
-      { name: 'value', internalType: 'uint256', type: 'uint256' },
-    ],
-    name: 'FailedToWithdrawEth',
-  },
-  { type: 'error', inputs: [], name: 'GameAlreadyRegistered' },
-  { type: 'error', inputs: [], name: 'GameAlreadyStarted' },
-  { type: 'error', inputs: [], name: 'GameIsResolved' },
-  { type: 'error', inputs: [], name: 'GameNotReadyToResolve' },
-  { type: 'error', inputs: [], name: 'GameNotRegistered' },
-  { type: 'error', inputs: [], name: 'GameNotResolved' },
-  { type: 'error', inputs: [], name: 'InsufficientValue' },
-  { type: 'error', inputs: [], name: 'InvalidResult' },
-  { type: 'error', inputs: [], name: 'NoDestinationContractReceiver' },
-  { type: 'error', inputs: [], name: 'NoInlineSecrets' },
-  {
-    type: 'error',
-    inputs: [
-      { name: 'currentBalance', internalType: 'uint256', type: 'uint256' },
-      { name: 'calculatedFees', internalType: 'uint256', type: 'uint256' },
-    ],
-    name: 'NotEnoughBalance',
-  },
-  { type: 'error', inputs: [], name: 'NothingToClaim' },
-  { type: 'error', inputs: [], name: 'NothingToWithdraw' },
-  { type: 'error', inputs: [], name: 'RequestIsAlreadyPending' },
-  { type: 'error', inputs: [], name: 'RequestIsNotPending' },
-  { type: 'error', inputs: [], name: 'SenderIsNotRegistry' },
-  { type: 'error', inputs: [], name: 'TimestampInPast' },
-  {
-    type: 'event',
-    anonymous: false,
-    inputs: [
-      { name: 'user', internalType: 'address', type: 'address', indexed: true },
-      {
-        name: 'gameId',
-        internalType: 'uint256',
-        type: 'uint256',
-        indexed: true,
-      },
-      {
-        name: 'amount',
-        internalType: 'uint256',
-        type: 'uint256',
-        indexed: false,
-      },
-    ],
-    name: 'Claimed',
-  },
-  {
-    type: 'event',
-    anonymous: false,
-    inputs: [
-      {
-        name: 'gameId',
-        internalType: 'uint256',
-        type: 'uint256',
-        indexed: true,
-      },
-    ],
-    name: 'GameRegistered',
-  },
-  {
-    type: 'event',
-    anonymous: false,
-    inputs: [
-      {
-        name: 'gameId',
-        internalType: 'uint256',
-        type: 'uint256',
-        indexed: true,
-      },
-      {
-        name: 'result',
-        internalType: 'enum SportsPredictionGame.Result',
-        type: 'uint8',
-        indexed: false,
-      },
-    ],
-    name: 'GameResolved',
-  },
-  {
-    type: 'event',
-    anonymous: false,
-    inputs: [
-      {
-        name: 'messageId',
-        internalType: 'bytes32',
-        type: 'bytes32',
-        indexed: true,
-      },
-      {
-        name: 'destinationChainSelector',
-        internalType: 'uint64',
-        type: 'uint64',
-        indexed: true,
-      },
-      {
-        name: 'receiver',
-        internalType: 'address',
-        type: 'address',
-        indexed: false,
-      },
-      { name: 'data', internalType: 'bytes', type: 'bytes', indexed: false },
-      {
-        name: 'token',
-        internalType: 'address',
-        type: 'address',
-        indexed: false,
-      },
-      {
-        name: 'tokenAmount',
-        internalType: 'uint256',
-        type: 'uint256',
-        indexed: false,
-      },
-      {
-        name: 'feeToken',
-        internalType: 'address',
-        type: 'address',
-        indexed: false,
-      },
-      {
-        name: 'fees',
-        internalType: 'uint256',
-        type: 'uint256',
-        indexed: false,
-      },
-    ],
-    name: 'MessageSent',
-  },
-  { type: 'event', anonymous: false, inputs: [], name: 'NoPendingRequest' },
-  {
-    type: 'event',
-    anonymous: false,
-    inputs: [
-      { name: 'from', internalType: 'address', type: 'address', indexed: true },
-      { name: 'to', internalType: 'address', type: 'address', indexed: true },
-    ],
-    name: 'OwnershipTransferRequested',
-  },
-  {
-    type: 'event',
-    anonymous: false,
-    inputs: [
-      { name: 'from', internalType: 'address', type: 'address', indexed: true },
-      { name: 'to', internalType: 'address', type: 'address', indexed: true },
-    ],
-    name: 'OwnershipTransferred',
-  },
-  {
-    type: 'event',
-    anonymous: false,
-    inputs: [
-      { name: 'user', internalType: 'address', type: 'address', indexed: true },
-      {
-        name: 'gameId',
-        internalType: 'uint256',
-        type: 'uint256',
-        indexed: true,
-      },
-      {
-        name: 'result',
-        internalType: 'enum SportsPredictionGame.Result',
-        type: 'uint8',
-        indexed: false,
-      },
-      {
-        name: 'amount',
-        internalType: 'uint256',
-        type: 'uint256',
-        indexed: false,
-      },
-    ],
-    name: 'Predicted',
-  },
-  {
-    type: 'event',
-    anonymous: false,
-    inputs: [
-      {
-        name: 'response',
-        internalType: 'bytes',
-        type: 'bytes',
-        indexed: false,
-      },
-    ],
-    name: 'RequestFailed',
-  },
-  {
-    type: 'event',
-    anonymous: false,
-    inputs: [
-      { name: 'id', internalType: 'bytes32', type: 'bytes32', indexed: true },
-    ],
-    name: 'RequestFulfilled',
-  },
-  {
-    type: 'event',
-    anonymous: false,
-    inputs: [
-      { name: 'id', internalType: 'bytes32', type: 'bytes32', indexed: true },
-    ],
-    name: 'RequestSent',
-  },
-  {
-    type: 'event',
-    anonymous: false,
-    inputs: [
-      {
-        name: 'sportId',
-        internalType: 'uint256',
-        type: 'uint256',
-        indexed: false,
-      },
-      {
-        name: 'externalId',
-        internalType: 'uint256',
-        type: 'uint256',
-        indexed: false,
-      },
-      {
-        name: 'requestId',
-        internalType: 'bytes32',
-        type: 'bytes32',
-        indexed: false,
-      },
-    ],
-    name: 'RequestedResult',
-  },
-  {
-    type: 'event',
-    anonymous: false,
-    inputs: [
-      {
-        name: 'requestId',
-        internalType: 'bytes32',
-        type: 'bytes32',
-        indexed: false,
-      },
-      {
-        name: 'response',
-        internalType: 'bytes',
-        type: 'bytes',
-        indexed: false,
-      },
-    ],
-    name: 'ResultReceived',
-  },
-  {
-    type: 'event',
-    anonymous: false,
-    inputs: [
-      {
-        name: 'requestId',
-        internalType: 'bytes32',
-        type: 'bytes32',
-        indexed: true,
-      },
-      { name: 'to', internalType: 'address', type: 'address', indexed: true },
-      {
-        name: 'amount',
-        internalType: 'uint256',
-        type: 'uint256',
-        indexed: false,
-      },
-    ],
-    name: 'TransferRequestSent',
-  },
-  {
-    stateMutability: 'nonpayable',
-    type: 'function',
-    inputs: [],
-    name: 'acceptOwnership',
-    outputs: [],
-  },
-  {
-    stateMutability: 'view',
-    type: 'function',
-    inputs: [
-      { name: 'gameId', internalType: 'uint256', type: 'uint256' },
-      { name: 'wager', internalType: 'uint256', type: 'uint256' },
-      {
-        name: 'result',
-        internalType: 'enum SportsPredictionGame.Result',
-        type: 'uint8',
-      },
-    ],
-    name: 'calculateWinnings',
-    outputs: [{ name: '', internalType: 'uint256', type: 'uint256' }],
-  },
-  {
-    stateMutability: 'view',
-    type: 'function',
-    inputs: [{ name: '', internalType: 'bytes', type: 'bytes' }],
-    name: 'checkUpkeep',
-    outputs: [
-      { name: '', internalType: 'bool', type: 'bool' },
-      { name: '', internalType: 'bytes', type: 'bytes' },
-    ],
-  },
-  {
-    stateMutability: 'nonpayable',
-    type: 'function',
-    inputs: [
-      { name: 'gameId', internalType: 'uint256', type: 'uint256' },
-      { name: 'transfer', internalType: 'bool', type: 'bool' },
-    ],
-    name: 'claim',
-    outputs: [],
-  },
-  {
-    stateMutability: 'nonpayable',
-    type: 'function',
-    inputs: [
-      {
-        name: '_destinationChainSelector',
-        internalType: 'uint64',
-        type: 'uint64',
-      },
-    ],
-    name: 'denylistDestinationChain',
-    outputs: [],
-  },
-  {
-    stateMutability: 'view',
-    type: 'function',
-    inputs: [
-      {
-        name: 'req',
-        internalType: 'struct Functions.Request',
-        type: 'tuple',
-        components: [
-          {
-            name: 'codeLocation',
-            internalType: 'enum Functions.Location',
-            type: 'uint8',
-          },
-          {
-            name: 'secretsLocation',
-            internalType: 'enum Functions.Location',
-            type: 'uint8',
-          },
-          {
-            name: 'language',
-            internalType: 'enum Functions.CodeLanguage',
-            type: 'uint8',
-          },
-          { name: 'source', internalType: 'string', type: 'string' },
-          { name: 'secrets', internalType: 'bytes', type: 'bytes' },
-          { name: 'args', internalType: 'string[]', type: 'string[]' },
-        ],
-      },
-      { name: 'subscriptionId', internalType: 'uint64', type: 'uint64' },
-      { name: 'gasLimit', internalType: 'uint32', type: 'uint32' },
-      { name: 'gasPrice', internalType: 'uint256', type: 'uint256' },
-    ],
-    name: 'estimateCost',
-    outputs: [{ name: '', internalType: 'uint96', type: 'uint96' }],
-  },
-  {
-    stateMutability: 'view',
-    type: 'function',
-    inputs: [],
-    name: 'getActiveGames',
-    outputs: [
-      {
-        name: '',
-        internalType: 'struct SportsPredictionGame.Game[]',
-        type: 'tuple[]',
-        components: [
-          { name: 'sportId', internalType: 'uint256', type: 'uint256' },
-          { name: 'externalId', internalType: 'uint256', type: 'uint256' },
-          { name: 'timestamp', internalType: 'uint256', type: 'uint256' },
-          { name: 'homeWagerAmount', internalType: 'uint256', type: 'uint256' },
-          { name: 'awayWagerAmount', internalType: 'uint256', type: 'uint256' },
-          { name: 'resolved', internalType: 'bool', type: 'bool' },
-          {
-            name: 'result',
-            internalType: 'enum SportsPredictionGame.Result',
-            type: 'uint8',
-          },
-        ],
-      },
-    ],
-  },
-  {
-    stateMutability: 'view',
-    type: 'function',
-    inputs: [{ name: 'user', internalType: 'address', type: 'address' }],
-    name: 'getActivePredictions',
-    outputs: [
-      {
-        name: '',
-        internalType: 'struct SportsPredictionGame.Prediction[]',
-        type: 'tuple[]',
-        components: [
-          { name: 'gameId', internalType: 'uint256', type: 'uint256' },
-          {
-            name: 'result',
-            internalType: 'enum SportsPredictionGame.Result',
-            type: 'uint8',
-          },
-          { name: 'amount', internalType: 'uint256', type: 'uint256' },
-          { name: 'claimed', internalType: 'bool', type: 'bool' },
-        ],
-      },
-    ],
-  },
-  {
-    stateMutability: 'view',
-    type: 'function',
-    inputs: [],
-    name: 'getDONPublicKey',
-    outputs: [{ name: '', internalType: 'bytes', type: 'bytes' }],
-  },
-  {
-    stateMutability: 'view',
-    type: 'function',
-    inputs: [{ name: 'gameId', internalType: 'uint256', type: 'uint256' }],
-    name: 'getGame',
-    outputs: [
-      {
-        name: '',
-        internalType: 'struct SportsPredictionGame.Game',
-        type: 'tuple',
-        components: [
-          { name: 'sportId', internalType: 'uint256', type: 'uint256' },
-          { name: 'externalId', internalType: 'uint256', type: 'uint256' },
-          { name: 'timestamp', internalType: 'uint256', type: 'uint256' },
-          { name: 'homeWagerAmount', internalType: 'uint256', type: 'uint256' },
-          { name: 'awayWagerAmount', internalType: 'uint256', type: 'uint256' },
-          { name: 'resolved', internalType: 'bool', type: 'bool' },
-          {
-            name: 'result',
-            internalType: 'enum SportsPredictionGame.Result',
-            type: 'uint8',
-          },
-        ],
-      },
-    ],
-  },
-  {
-    stateMutability: 'pure',
-    type: 'function',
-    inputs: [
-      { name: 'sportId', internalType: 'uint256', type: 'uint256' },
-      { name: 'externalId', internalType: 'uint256', type: 'uint256' },
-    ],
-    name: 'getGameId',
-    outputs: [{ name: '', internalType: 'uint256', type: 'uint256' }],
-  },
-  {
-    stateMutability: 'view',
-    type: 'function',
-    inputs: [{ name: 'user', internalType: 'address', type: 'address' }],
-    name: 'getPastPredictions',
-    outputs: [
-      {
-        name: '',
-        internalType: 'struct SportsPredictionGame.Prediction[]',
-        type: 'tuple[]',
-        components: [
-          { name: 'gameId', internalType: 'uint256', type: 'uint256' },
-          {
-            name: 'result',
-            internalType: 'enum SportsPredictionGame.Result',
-            type: 'uint8',
-          },
-          { name: 'amount', internalType: 'uint256', type: 'uint256' },
-          { name: 'claimed', internalType: 'bool', type: 'bool' },
-        ],
-      },
-    ],
-  },
-  {
-    stateMutability: 'nonpayable',
-    type: 'function',
-    inputs: [
-      { name: 'requestId', internalType: 'bytes32', type: 'bytes32' },
-      { name: 'response', internalType: 'bytes', type: 'bytes' },
-      { name: 'err', internalType: 'bytes', type: 'bytes' },
-    ],
-    name: 'handleOracleFulfillment',
-    outputs: [],
-  },
-  {
-    stateMutability: 'view',
-    type: 'function',
-    inputs: [
-      { name: 'user', internalType: 'address', type: 'address' },
-      { name: 'gameId', internalType: 'uint256', type: 'uint256' },
-      { name: 'predictionIdx', internalType: 'uint32', type: 'uint32' },
-    ],
-    name: 'isPredictionCorrect',
-    outputs: [{ name: '', internalType: 'bool', type: 'bool' }],
-  },
-  {
-    stateMutability: 'view',
-    type: 'function',
-    inputs: [],
-    name: 'owner',
-    outputs: [{ name: '', internalType: 'address', type: 'address' }],
-  },
-  {
-    stateMutability: 'nonpayable',
-    type: 'function',
-    inputs: [{ name: 'data', internalType: 'bytes', type: 'bytes' }],
-    name: 'performUpkeep',
-    outputs: [],
-  },
-  {
-    stateMutability: 'payable',
-    type: 'function',
-    inputs: [
-      { name: 'gameId', internalType: 'uint256', type: 'uint256' },
-      {
-        name: 'result',
-        internalType: 'enum SportsPredictionGame.Result',
-        type: 'uint8',
-      },
-    ],
-    name: 'predict',
-    outputs: [],
-  },
-  {
-    stateMutability: 'view',
-    type: 'function',
-    inputs: [{ name: 'gameId', internalType: 'uint256', type: 'uint256' }],
-    name: 'readyToResolve',
-    outputs: [{ name: '', internalType: 'bool', type: 'bool' }],
-  },
-  {
-    stateMutability: 'payable',
-    type: 'function',
-    inputs: [
-      { name: 'sportId', internalType: 'uint256', type: 'uint256' },
-      { name: 'externalId', internalType: 'uint256', type: 'uint256' },
-      { name: 'timestamp', internalType: 'uint256', type: 'uint256' },
-      {
-        name: 'result',
-        internalType: 'enum SportsPredictionGame.Result',
-        type: 'uint8',
-      },
-    ],
-    name: 'registerAndPredict',
-    outputs: [],
-  },
-  {
-    stateMutability: 'nonpayable',
-    type: 'function',
-    inputs: [
-      {
-        name: '_destinationContractReceiver',
-        internalType: 'address',
-        type: 'address',
-      },
-    ],
-    name: 'setDestinationContractReceiver',
-    outputs: [],
-  },
-  {
-    stateMutability: 'nonpayable',
-    type: 'function',
-    inputs: [{ name: 'to', internalType: 'address', type: 'address' }],
-    name: 'transferOwnership',
-    outputs: [],
-  },
-  {
-    stateMutability: 'nonpayable',
-    type: 'function',
-    inputs: [
-      {
-        name: '_destinationChainSelector',
-        internalType: 'uint64',
-        type: 'uint64',
-      },
-    ],
-    name: 'whitelistDestinationChain',
-    outputs: [],
-  },
-  {
-    stateMutability: 'view',
-    type: 'function',
-    inputs: [{ name: '', internalType: 'uint64', type: 'uint64' }],
-    name: 'whitelistedDestinationChains',
-    outputs: [{ name: '', internalType: 'bool', type: 'bool' }],
-  },
-  {
-    stateMutability: 'nonpayable',
-    type: 'function',
-    inputs: [
-      { name: '_beneficiary', internalType: 'address', type: 'address' },
-    ],
-    name: 'withdraw',
-    outputs: [],
-  },
-  {
-    stateMutability: 'nonpayable',
-    type: 'function',
-    inputs: [
-      { name: '_beneficiary', internalType: 'address', type: 'address' },
-      { name: '_token', internalType: 'address', type: 'address' },
-    ],
-    name: 'withdrawToken',
-    outputs: [],
-  },
-  { stateMutability: 'payable', type: 'receive' },
-] as const
+    {
+      "inputs": [
+        {
+          "components": [
+            {
+              "internalType": "address",
+              "name": "oracle",
+              "type": "address"
+            },
+            {
+              "internalType": "address",
+              "name": "ccipRouter",
+              "type": "address"
+            },
+            {
+              "internalType": "address",
+              "name": "link",
+              "type": "address"
+            },
+            {
+              "internalType": "address",
+              "name": "weth9Token",
+              "type": "address"
+            },
+            {
+              "internalType": "address",
+              "name": "exchangeToken",
+              "type": "address"
+            },
+            {
+              "internalType": "address",
+              "name": "uniswapV3Router",
+              "type": "address"
+            },
+            {
+              "internalType": "uint64",
+              "name": "subscriptionId",
+              "type": "uint64"
+            },
+            {
+              "internalType": "uint64",
+              "name": "destinationChainSelector",
+              "type": "uint64"
+            },
+            {
+              "internalType": "uint32",
+              "name": "gasLimit",
+              "type": "uint32"
+            },
+            {
+              "internalType": "bytes",
+              "name": "secrets",
+              "type": "bytes"
+            },
+            {
+              "internalType": "string",
+              "name": "source",
+              "type": "string"
+            }
+          ],
+          "internalType": "struct Config",
+          "name": "config",
+          "type": "tuple"
+        }
+      ],
+      "stateMutability": "nonpayable",
+      "type": "constructor"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "uint64",
+          "name": "destinationChainSelector",
+          "type": "uint64"
+        }
+      ],
+      "name": "DestinationChainNotWhitelisted",
+      "type": "error"
+    },
+    {
+      "inputs": [],
+      "name": "EmptyArgs",
+      "type": "error"
+    },
+    {
+      "inputs": [],
+      "name": "EmptySecrets",
+      "type": "error"
+    },
+    {
+      "inputs": [],
+      "name": "EmptySource",
+      "type": "error"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "address",
+          "name": "owner",
+          "type": "address"
+        },
+        {
+          "internalType": "address",
+          "name": "target",
+          "type": "address"
+        },
+        {
+          "internalType": "uint256",
+          "name": "value",
+          "type": "uint256"
+        }
+      ],
+      "name": "FailedToWithdrawEth",
+      "type": "error"
+    },
+    {
+      "inputs": [],
+      "name": "GameAlreadyRegistered",
+      "type": "error"
+    },
+    {
+      "inputs": [],
+      "name": "GameAlreadyStarted",
+      "type": "error"
+    },
+    {
+      "inputs": [],
+      "name": "GameIsResolved",
+      "type": "error"
+    },
+    {
+      "inputs": [],
+      "name": "GameNotReadyToResolve",
+      "type": "error"
+    },
+    {
+      "inputs": [],
+      "name": "GameNotRegistered",
+      "type": "error"
+    },
+    {
+      "inputs": [],
+      "name": "GameNotResolved",
+      "type": "error"
+    },
+    {
+      "inputs": [],
+      "name": "InsufficientValue",
+      "type": "error"
+    },
+    {
+      "inputs": [],
+      "name": "InvalidResult",
+      "type": "error"
+    },
+    {
+      "inputs": [],
+      "name": "NoDestinationContractReceiver",
+      "type": "error"
+    },
+    {
+      "inputs": [],
+      "name": "NoInlineSecrets",
+      "type": "error"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "uint256",
+          "name": "currentBalance",
+          "type": "uint256"
+        },
+        {
+          "internalType": "uint256",
+          "name": "calculatedFees",
+          "type": "uint256"
+        }
+      ],
+      "name": "NotEnoughBalance",
+      "type": "error"
+    },
+    {
+      "inputs": [],
+      "name": "NothingToClaim",
+      "type": "error"
+    },
+    {
+      "inputs": [],
+      "name": "NothingToWithdraw",
+      "type": "error"
+    },
+    {
+      "inputs": [],
+      "name": "RequestIsAlreadyPending",
+      "type": "error"
+    },
+    {
+      "inputs": [],
+      "name": "RequestIsNotPending",
+      "type": "error"
+    },
+    {
+      "inputs": [],
+      "name": "ResolveAlreadyRequested",
+      "type": "error"
+    },
+    {
+      "inputs": [],
+      "name": "SenderIsNotRegistry",
+      "type": "error"
+    },
+    {
+      "inputs": [],
+      "name": "TimestampInPast",
+      "type": "error"
+    },
+    {
+      "inputs": [],
+      "name": "ValueTooHigh",
+      "type": "error"
+    },
+    {
+      "anonymous": false,
+      "inputs": [
+        {
+          "indexed": true,
+          "internalType": "address",
+          "name": "user",
+          "type": "address"
+        },
+        {
+          "indexed": true,
+          "internalType": "uint256",
+          "name": "gameId",
+          "type": "uint256"
+        },
+        {
+          "indexed": false,
+          "internalType": "uint256",
+          "name": "amount",
+          "type": "uint256"
+        }
+      ],
+      "name": "Claimed",
+      "type": "event"
+    },
+    {
+      "anonymous": false,
+      "inputs": [
+        {
+          "indexed": true,
+          "internalType": "uint256",
+          "name": "gameId",
+          "type": "uint256"
+        }
+      ],
+      "name": "GameRegistered",
+      "type": "event"
+    },
+    {
+      "anonymous": false,
+      "inputs": [
+        {
+          "indexed": true,
+          "internalType": "uint256",
+          "name": "gameId",
+          "type": "uint256"
+        },
+        {
+          "indexed": false,
+          "internalType": "enum SportsPredictionGame.Result",
+          "name": "result",
+          "type": "uint8"
+        }
+      ],
+      "name": "GameResolved",
+      "type": "event"
+    },
+    {
+      "anonymous": false,
+      "inputs": [
+        {
+          "indexed": true,
+          "internalType": "bytes32",
+          "name": "messageId",
+          "type": "bytes32"
+        },
+        {
+          "indexed": true,
+          "internalType": "uint64",
+          "name": "destinationChainSelector",
+          "type": "uint64"
+        },
+        {
+          "indexed": false,
+          "internalType": "address",
+          "name": "receiver",
+          "type": "address"
+        },
+        {
+          "indexed": false,
+          "internalType": "bytes",
+          "name": "data",
+          "type": "bytes"
+        },
+        {
+          "indexed": false,
+          "internalType": "address",
+          "name": "token",
+          "type": "address"
+        },
+        {
+          "indexed": false,
+          "internalType": "uint256",
+          "name": "tokenAmount",
+          "type": "uint256"
+        },
+        {
+          "indexed": false,
+          "internalType": "address",
+          "name": "feeToken",
+          "type": "address"
+        },
+        {
+          "indexed": false,
+          "internalType": "uint256",
+          "name": "fees",
+          "type": "uint256"
+        }
+      ],
+      "name": "MessageSent",
+      "type": "event"
+    },
+    {
+      "anonymous": false,
+      "inputs": [],
+      "name": "NoPendingRequest",
+      "type": "event"
+    },
+    {
+      "anonymous": false,
+      "inputs": [
+        {
+          "indexed": true,
+          "internalType": "address",
+          "name": "from",
+          "type": "address"
+        },
+        {
+          "indexed": true,
+          "internalType": "address",
+          "name": "to",
+          "type": "address"
+        }
+      ],
+      "name": "OwnershipTransferRequested",
+      "type": "event"
+    },
+    {
+      "anonymous": false,
+      "inputs": [
+        {
+          "indexed": true,
+          "internalType": "address",
+          "name": "from",
+          "type": "address"
+        },
+        {
+          "indexed": true,
+          "internalType": "address",
+          "name": "to",
+          "type": "address"
+        }
+      ],
+      "name": "OwnershipTransferred",
+      "type": "event"
+    },
+    {
+      "anonymous": false,
+      "inputs": [
+        {
+          "indexed": true,
+          "internalType": "address",
+          "name": "user",
+          "type": "address"
+        },
+        {
+          "indexed": true,
+          "internalType": "uint256",
+          "name": "gameId",
+          "type": "uint256"
+        },
+        {
+          "indexed": false,
+          "internalType": "enum SportsPredictionGame.Result",
+          "name": "result",
+          "type": "uint8"
+        },
+        {
+          "indexed": false,
+          "internalType": "uint256",
+          "name": "amount",
+          "type": "uint256"
+        }
+      ],
+      "name": "Predicted",
+      "type": "event"
+    },
+    {
+      "anonymous": false,
+      "inputs": [
+        {
+          "indexed": false,
+          "internalType": "bytes",
+          "name": "response",
+          "type": "bytes"
+        }
+      ],
+      "name": "RequestFailed",
+      "type": "event"
+    },
+    {
+      "anonymous": false,
+      "inputs": [
+        {
+          "indexed": true,
+          "internalType": "bytes32",
+          "name": "id",
+          "type": "bytes32"
+        }
+      ],
+      "name": "RequestFulfilled",
+      "type": "event"
+    },
+    {
+      "anonymous": false,
+      "inputs": [
+        {
+          "indexed": true,
+          "internalType": "bytes32",
+          "name": "id",
+          "type": "bytes32"
+        }
+      ],
+      "name": "RequestSent",
+      "type": "event"
+    },
+    {
+      "anonymous": false,
+      "inputs": [
+        {
+          "indexed": false,
+          "internalType": "uint256",
+          "name": "sportId",
+          "type": "uint256"
+        },
+        {
+          "indexed": false,
+          "internalType": "uint256",
+          "name": "externalId",
+          "type": "uint256"
+        },
+        {
+          "indexed": false,
+          "internalType": "bytes32",
+          "name": "requestId",
+          "type": "bytes32"
+        }
+      ],
+      "name": "RequestedResult",
+      "type": "event"
+    },
+    {
+      "anonymous": false,
+      "inputs": [
+        {
+          "indexed": false,
+          "internalType": "bytes32",
+          "name": "requestId",
+          "type": "bytes32"
+        },
+        {
+          "indexed": false,
+          "internalType": "bytes",
+          "name": "response",
+          "type": "bytes"
+        }
+      ],
+      "name": "ResultReceived",
+      "type": "event"
+    },
+    {
+      "anonymous": false,
+      "inputs": [
+        {
+          "indexed": true,
+          "internalType": "bytes32",
+          "name": "requestId",
+          "type": "bytes32"
+        },
+        {
+          "indexed": true,
+          "internalType": "address",
+          "name": "to",
+          "type": "address"
+        },
+        {
+          "indexed": false,
+          "internalType": "uint256",
+          "name": "amount",
+          "type": "uint256"
+        }
+      ],
+      "name": "TransferRequestSent",
+      "type": "event"
+    },
+    {
+      "inputs": [],
+      "name": "acceptOwnership",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "uint256",
+          "name": "gameId",
+          "type": "uint256"
+        },
+        {
+          "internalType": "uint256",
+          "name": "wager",
+          "type": "uint256"
+        },
+        {
+          "internalType": "enum SportsPredictionGame.Result",
+          "name": "result",
+          "type": "uint8"
+        }
+      ],
+      "name": "calculateWinnings",
+      "outputs": [
+        {
+          "internalType": "uint256",
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "bytes",
+          "name": "",
+          "type": "bytes"
+        }
+      ],
+      "name": "checkUpkeep",
+      "outputs": [
+        {
+          "internalType": "bool",
+          "name": "",
+          "type": "bool"
+        },
+        {
+          "internalType": "bytes",
+          "name": "",
+          "type": "bytes"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "uint256",
+          "name": "gameId",
+          "type": "uint256"
+        },
+        {
+          "internalType": "bool",
+          "name": "transfer",
+          "type": "bool"
+        }
+      ],
+      "name": "claim",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "uint256",
+          "name": "gameId",
+          "type": "uint256"
+        }
+      ],
+      "name": "deletePendingRequest",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "uint64",
+          "name": "_destinationChainSelector",
+          "type": "uint64"
+        }
+      ],
+      "name": "denylistDestinationChain",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "components": [
+            {
+              "internalType": "enum Functions.Location",
+              "name": "codeLocation",
+              "type": "uint8"
+            },
+            {
+              "internalType": "enum Functions.Location",
+              "name": "secretsLocation",
+              "type": "uint8"
+            },
+            {
+              "internalType": "enum Functions.CodeLanguage",
+              "name": "language",
+              "type": "uint8"
+            },
+            {
+              "internalType": "string",
+              "name": "source",
+              "type": "string"
+            },
+            {
+              "internalType": "bytes",
+              "name": "secrets",
+              "type": "bytes"
+            },
+            {
+              "internalType": "string[]",
+              "name": "args",
+              "type": "string[]"
+            }
+          ],
+          "internalType": "struct Functions.Request",
+          "name": "req",
+          "type": "tuple"
+        },
+        {
+          "internalType": "uint64",
+          "name": "subscriptionId",
+          "type": "uint64"
+        },
+        {
+          "internalType": "uint32",
+          "name": "gasLimit",
+          "type": "uint32"
+        },
+        {
+          "internalType": "uint256",
+          "name": "gasPrice",
+          "type": "uint256"
+        }
+      ],
+      "name": "estimateCost",
+      "outputs": [
+        {
+          "internalType": "uint96",
+          "name": "",
+          "type": "uint96"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "name": "getActiveGames",
+      "outputs": [
+        {
+          "components": [
+            {
+              "internalType": "uint256",
+              "name": "sportId",
+              "type": "uint256"
+            },
+            {
+              "internalType": "uint256",
+              "name": "externalId",
+              "type": "uint256"
+            },
+            {
+              "internalType": "uint256",
+              "name": "timestamp",
+              "type": "uint256"
+            },
+            {
+              "internalType": "uint256",
+              "name": "homeWagerAmount",
+              "type": "uint256"
+            },
+            {
+              "internalType": "uint256",
+              "name": "awayWagerAmount",
+              "type": "uint256"
+            },
+            {
+              "internalType": "bool",
+              "name": "resolved",
+              "type": "bool"
+            },
+            {
+              "internalType": "enum SportsPredictionGame.Result",
+              "name": "result",
+              "type": "uint8"
+            }
+          ],
+          "internalType": "struct SportsPredictionGame.Game[]",
+          "name": "",
+          "type": "tuple[]"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "address",
+          "name": "user",
+          "type": "address"
+        }
+      ],
+      "name": "getActivePredictions",
+      "outputs": [
+        {
+          "components": [
+            {
+              "internalType": "uint256",
+              "name": "gameId",
+              "type": "uint256"
+            },
+            {
+              "internalType": "enum SportsPredictionGame.Result",
+              "name": "result",
+              "type": "uint8"
+            },
+            {
+              "internalType": "uint256",
+              "name": "amount",
+              "type": "uint256"
+            },
+            {
+              "internalType": "bool",
+              "name": "claimed",
+              "type": "bool"
+            }
+          ],
+          "internalType": "struct SportsPredictionGame.Prediction[]",
+          "name": "",
+          "type": "tuple[]"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "name": "getDONPublicKey",
+      "outputs": [
+        {
+          "internalType": "bytes",
+          "name": "",
+          "type": "bytes"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "uint256",
+          "name": "gameId",
+          "type": "uint256"
+        }
+      ],
+      "name": "getGame",
+      "outputs": [
+        {
+          "components": [
+            {
+              "internalType": "uint256",
+              "name": "sportId",
+              "type": "uint256"
+            },
+            {
+              "internalType": "uint256",
+              "name": "externalId",
+              "type": "uint256"
+            },
+            {
+              "internalType": "uint256",
+              "name": "timestamp",
+              "type": "uint256"
+            },
+            {
+              "internalType": "uint256",
+              "name": "homeWagerAmount",
+              "type": "uint256"
+            },
+            {
+              "internalType": "uint256",
+              "name": "awayWagerAmount",
+              "type": "uint256"
+            },
+            {
+              "internalType": "bool",
+              "name": "resolved",
+              "type": "bool"
+            },
+            {
+              "internalType": "enum SportsPredictionGame.Result",
+              "name": "result",
+              "type": "uint8"
+            }
+          ],
+          "internalType": "struct SportsPredictionGame.Game",
+          "name": "",
+          "type": "tuple"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "uint256",
+          "name": "sportId",
+          "type": "uint256"
+        },
+        {
+          "internalType": "uint256",
+          "name": "externalId",
+          "type": "uint256"
+        }
+      ],
+      "name": "getGameId",
+      "outputs": [
+        {
+          "internalType": "uint256",
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "stateMutability": "pure",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "address",
+          "name": "user",
+          "type": "address"
+        }
+      ],
+      "name": "getPastPredictions",
+      "outputs": [
+        {
+          "components": [
+            {
+              "internalType": "uint256",
+              "name": "gameId",
+              "type": "uint256"
+            },
+            {
+              "internalType": "enum SportsPredictionGame.Result",
+              "name": "result",
+              "type": "uint8"
+            },
+            {
+              "internalType": "uint256",
+              "name": "amount",
+              "type": "uint256"
+            },
+            {
+              "internalType": "bool",
+              "name": "claimed",
+              "type": "bool"
+            }
+          ],
+          "internalType": "struct SportsPredictionGame.Prediction[]",
+          "name": "",
+          "type": "tuple[]"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "bytes32",
+          "name": "requestId",
+          "type": "bytes32"
+        },
+        {
+          "internalType": "bytes",
+          "name": "response",
+          "type": "bytes"
+        },
+        {
+          "internalType": "bytes",
+          "name": "err",
+          "type": "bytes"
+        }
+      ],
+      "name": "handleOracleFulfillment",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "address",
+          "name": "user",
+          "type": "address"
+        },
+        {
+          "internalType": "uint256",
+          "name": "gameId",
+          "type": "uint256"
+        },
+        {
+          "internalType": "uint32",
+          "name": "predictionIdx",
+          "type": "uint32"
+        }
+      ],
+      "name": "isPredictionCorrect",
+      "outputs": [
+        {
+          "internalType": "bool",
+          "name": "",
+          "type": "bool"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "name": "owner",
+      "outputs": [
+        {
+          "internalType": "address",
+          "name": "",
+          "type": "address"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "bytes",
+          "name": "data",
+          "type": "bytes"
+        }
+      ],
+      "name": "performUpkeep",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "uint256",
+          "name": "gameId",
+          "type": "uint256"
+        },
+        {
+          "internalType": "enum SportsPredictionGame.Result",
+          "name": "result",
+          "type": "uint8"
+        }
+      ],
+      "name": "predict",
+      "outputs": [],
+      "stateMutability": "payable",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "uint256",
+          "name": "sportId",
+          "type": "uint256"
+        },
+        {
+          "internalType": "uint256",
+          "name": "externalId",
+          "type": "uint256"
+        },
+        {
+          "internalType": "uint256",
+          "name": "timestamp",
+          "type": "uint256"
+        },
+        {
+          "internalType": "enum SportsPredictionGame.Result",
+          "name": "result",
+          "type": "uint8"
+        }
+      ],
+      "name": "registerAndPredict",
+      "outputs": [],
+      "stateMutability": "payable",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "uint256",
+          "name": "gameId",
+          "type": "uint256"
+        }
+      ],
+      "name": "requestResolve",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "uint256",
+          "name": "gameId",
+          "type": "uint256"
+        },
+        {
+          "internalType": "enum SportsPredictionGame.Result",
+          "name": "result",
+          "type": "uint8"
+        }
+      ],
+      "name": "resolveGameOriginal",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "address",
+          "name": "_destinationContractReceiver",
+          "type": "address"
+        }
+      ],
+      "name": "setDestinationContractReceiver",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "address",
+          "name": "to",
+          "type": "address"
+        }
+      ],
+      "name": "transferOwnership",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "uint64",
+          "name": "_destinationChainSelector",
+          "type": "uint64"
+        }
+      ],
+      "name": "whitelistDestinationChain",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "uint64",
+          "name": "",
+          "type": "uint64"
+        }
+      ],
+      "name": "whitelistedDestinationChains",
+      "outputs": [
+        {
+          "internalType": "bool",
+          "name": "",
+          "type": "bool"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "address",
+          "name": "_beneficiary",
+          "type": "address"
+        }
+      ],
+      "name": "withdraw",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "address",
+          "name": "_beneficiary",
+          "type": "address"
+        },
+        {
+          "internalType": "address",
+          "name": "_token",
+          "type": "address"
+        }
+      ],
+      "name": "withdrawToken",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "stateMutability": "payable",
+      "type": "receive"
+    }
+  ] as const
 
 //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 // React

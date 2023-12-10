@@ -23,12 +23,14 @@ export default function BetCard({
   prediction: PredictionResponse
   games: Game[]
 }) {
+
   const { address } = useAccount()
   const [transferInProgress, setTransferInProgress] = useState(false)
   const { data: gameData } = useSportsPredictionGameGetGame({
     address: contractAddress,
     args: [prediction.gameId],
   })
+  console.log("in bet card, gamedata",gameData)
   const { data: isPredictionCorrect } =
     useSportsPredictionGameIsPredictionCorrect({
       address: contractAddress,
@@ -53,6 +55,10 @@ export default function BetCard({
 
   const transferMsgId =
     prediction.claimed && localStorage.getItem(`transfer-${prediction.gameId}`)
+
+  console.log("in bet card")
+  console.log("prediction",prediction)
+  console.log("games",games)
 
   return (
     <div className="mb-8">
@@ -137,7 +143,7 @@ export default function BetCard({
                 <p className="text-[12px] leading-4 text-secondary-foreground">
                   {`${game.teams.home.name} vs ${
                     game.teams.away.name
-                  }, ${format(game.date, 'eeee, MMMM d')}`}
+                  }, Wednesday, September 4`}
                 </p>
               </div>
             </div>
@@ -146,7 +152,7 @@ export default function BetCard({
             ((isPredictionCorrect || isDrawResult) && !prediction.claimed) ||
             transferInProgress ? (
               <ClaimButton
-                calculatedWinnings={calculatedWinnings ?? BigInt(0)}
+                // calculatedWinnings={calculatedWinnings ?? BigInt(0)}
                 gameId={prediction.gameId}
                 onTransfer={setTransferInProgress}
               />

@@ -13,7 +13,7 @@ import { Loader2 } from 'lucide-react'
 import { useLocalStateContext } from '@/app/context'
 import { Button } from '@/components/ui/button'
 import { Alert, AlertTitle } from '@/components/ui/alert'
-import { contractAddress, maxWager, minWager } from '@/config/contract'
+import { contractAddress, maxWager, minWager, currChain } from '@/config/contract'
 import { winnerToResult } from '@/config/api'
 import { sportsPredictionGameABI } from '@/generated'
 // import dotenv from 'dotenv';
@@ -30,6 +30,7 @@ export default function PlaceBetButton({
   const { predictions, setPredictions } = useLocalStateContext()
 
   const placePredictions = async () => {
+    console.log("in place prediction")
     setError(null)
     if (predictions.some((p) => p.wager === undefined || p.wager <= 0)) {
       setError('You must enter a wager amount to continue')
@@ -37,12 +38,12 @@ export default function PlaceBetButton({
       return
     }
     if (predictions.some((p) => p.wager! < minWager)) {
-      setError(`Minimum bet amount is ${minWager} MATIC`)
+      setError(`Minimum bet amount is ${minWager} ${currChain.nativeCurrency.symbol}`)
       setTimeout(() => setError(null), 3000)
       return
     }
     if (predictions.some((p) => p.wager! > maxWager)) {
-      setError(`Maximum bet amount is ${maxWager} MATIC`)
+      setError(`Maximum bet amount is ${maxWager} ${currChain.nativeCurrency.symbol}`)
       setTimeout(() => setError(null), 3000)
       return
     }
@@ -55,6 +56,8 @@ export default function PlaceBetButton({
       return
     }
     setIsLoading(true)
+    console.log("predictions",predictions)
+    console.log("sportPredContract",contractAddress)
     try {
       await Promise.all(
         predictions.map(async (prediction) => {
@@ -92,6 +95,7 @@ export default function PlaceBetButton({
               ],
               value: parseEther(`${prediction.wager ?? 0}`),
             })
+            console.log(config)
             tx = await writeContract(config)
           } else {
             const config = await prepareWriteContract({
@@ -101,6 +105,7 @@ export default function PlaceBetButton({
               args: [gameId, winnerToResult[prediction.predictedWinner]],
               value: parseEther(`${prediction.wager ?? 0}`),
             })
+            console.log(config)
             tx = await writeContract(config)
           }
           setPredictions([])

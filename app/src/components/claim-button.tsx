@@ -23,11 +23,11 @@ import {
 
 const ClaimButton = ({
   gameId,
-  calculatedWinnings,
+  // calculatedWinnings,
   onTransfer,
 }: {
   gameId: bigint
-  calculatedWinnings: bigint
+  // calculatedWinnings: bigint
   onTransfer: (bool: boolean) => void
 }) => {
   const [isCcipInProgress, setIsCcipInProgress] = useState(false)
@@ -141,11 +141,11 @@ const ClaimButton = ({
                 <DialogTitle className="text-2xl">
                   Transfer tokens via CCIP
                 </DialogTitle>
-                <DialogDescription className="font-[450] text-muted-foreground">
+                {/* <DialogDescription className="font-[450] text-muted-foreground">
                   {`You are transferring ${formatEther(
-                    calculatedWinnings,
+                    // calculatedWinnings,
                   )} MATIC from Polygon Mumbai to Avalanche Fuji.`}
-                </DialogDescription>
+                </DialogDescription> */}
               </DialogHeader>
               <div className="flex w-full items-end space-x-4">
                 <div>
@@ -157,9 +157,9 @@ const ClaimButton = ({
                       height={24}
                       alt="matic"
                     />
-                    <div className="text-sm font-[450] leading-4">{`${formatEther(
+                    {/* <div className="text-sm font-[450] leading-4">{`${formatEther(
                       calculatedWinnings,
-                    )} MATIC`}</div>
+                    )} MATIC`}</div> */}
                   </div>
                 </div>
                 <Image

@@ -91,9 +91,9 @@ export default function BetslipCard({
   //   "lineaTestnet": "ETH"
   // };
 
-  console.log("curr chain",currChain);
+  // console.log("curr chain",currChain);
   const tokenSymbol = currChain.nativeCurrency.symbol;
-  console.log("Token Symbol:", tokenSymbol);
+  // console.log("Token Symbol:", tokenSymbol);
   const chainToToken = {
     MATIC: "/matic.svg",
     ETH: "/ethereum-eth-logo.svg",

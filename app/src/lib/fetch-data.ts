@@ -59,19 +59,25 @@ export const fetchGames = async (
     season: season.toString(),
   })
   
-  // console.log("debug1")
-  // const res = await fetchSportData(sport, gamesPaths[sport], params)
-
-  const jsonString = readFileSync('game-baseball.json', 'utf8');
+  console.log("games First")
+  const jsonString = readFileSync('cricket_data.json', 'utf8');
   // Parse the JSON string into a JavaScript object
   const jsonObject = JSON.parse(jsonString);
-  const res1 = jsonObject
+  const res1 = jsonObject.typeMatches[0].seriesAdWrapper
 
-  const games: Game[] = res1.response.map((game: any) =>
+let allMatches: any[] = []
+for(const series of res1){
+  if(series.seriesMatches){
+    allMatches = allMatches.concat(series.seriesMatches.matches)
+  }
+}
+  const games: Game[] = allMatches.map((game: any) =>
     transformGame(game, sport),
   )
-  // console.log("debugg")
-  return games
+  // console.log("games 1",games)
+
+
+return games
 }
 
 const transformGame = (game: any, sport: Sport) => {
